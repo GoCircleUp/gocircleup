@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. Marco Conceptual y Metodológico &#8212; Circle UP ⚫</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fb436c1d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Marco Conceptual';</script>
+    <script src="../_static/custom.js?v=16113e41"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Marco Metodológico" href="Marco%20Metodol%C3%B3gico.html" />
+    <link rel="prev" title="1. Introducción" href="Introducci%C3%B3n.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Circle UP ⚫ - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Circle UP ⚫ - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    CircleUp | Innovación Social
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Docs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3n.html">1. Introducción</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Marco Conceptual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Metodol%C3%B3gico.html">3. Marco Metodológico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poblaci%C3%B3n.html">4. Población</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/Marco Conceptual.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Marco Conceptual.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2. Marco Conceptual y Metodológico</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marco-teorico">Marco Teórico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#community-based-learning-cbl">Community-Based Learning (CBL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aprendizaje-a-lo-largo-de-la-vida">Aprendizaje a lo largo de la vida</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#economia-del-conocimiento">Economía del conocimiento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#innovacion-social">Innovación social</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnologias-emergentes-en-educacion">Tecnologías emergentes en educación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aprendizaje-intergeneracional">Aprendizaje intergeneracional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-marco-canceptual">Conclusión Marco Canceptual</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="position: relative; width: 100%; padding: 10px;">
+    <div style="border-radius: 10px; overflow: hidden;">
+        <img src="https://i.ibb.co/TH6HzwQ/body.jpg" alt="Imagen de fondo" style="width: 100%; height: auto;">
+    </div>
+</div>
+<section id="marco-conceptual-y-metodologico">
+<h1>2. Marco Conceptual y Metodológico<a class="headerlink" href="#marco-conceptual-y-metodologico" title="Link to this heading">#</a></h1>
+<section id="marco-teorico">
+<h2>Marco Teórico<a class="headerlink" href="#marco-teorico" title="Link to this heading">#</a></h2>
+<p>El fundamento conceptual de CircleUp se basa en una convergencia de teorías y prácticas educativas que han evolucionado en respuesta a los desafíos de la sociedad contemporánea. Este marco teórico explora los conceptos clave que sustentan la iniciativa, proporcionando una base para su desarrollo y evaluación crítica.</p>
+<section id="community-based-learning-cbl">
+<h3>Community-Based Learning (CBL)<a class="headerlink" href="#community-based-learning-cbl" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Definición de CBL</p>
+<p>El Community-Based Learning (CBL) es un enfoque pedagógico que integra el aprendizaje académico con el servicio comunitario y la reflexión crítica.</p>
+</div>
+<p>Este modelo tiene sus raíces en la filosofía educativa de John Dewey, quien argumentaba que el aprendizaje más efectivo ocurre a través de la experiencia y la reflexión sobre esa experiencia (<em>Giles &amp; Eyler</em>, 1994, p. 78). En las últimas décadas, el CBL ha evolucionado para incluir una variedad de prácticas, desde el aprendizaje-servicio hasta la investigación-acción participativa.</p>
+<p><em>Bringle y Clayton</em> (2020) definen el (SL) de “aprendizaje-servicio” (service-learning en inglés) como un enfoque educativo que combina el aprendizaje académico con el servicio comunitario. Los estudiantes aplican lo que aprenden en clase para abordar problemas reales en su comunidad, y a su vez, reflexionan sobre sus experiencias para profundizar su comprensión académica. (p. 47).</p>
+<p>Según <em>Bringle y Clayton</em> (2020), este enfoque innovador integra de manera significativa el servicio a la comunidad en el currículo académico de las universidades, otorgando a los estudiantes créditos por el aprendizaje adquirido a través de su compromiso activo en la resolución de problemas del mundo real.</p>
+<p>El aprendizaje-servicio trasciende las aulas universitarias y se extiende a la comunidad en general. Estudiantes, académicos y miembros de la comunidad trabajan de la mano, compartiendo conocimientos, habilidades y perspectivas diversas. Este enfoque colaborativo fomenta la creación de comunidades de aprendizaje donde todos los participantes se convierten en recursos de enseñanza, solucionadores de problemas y socios en la búsqueda de soluciones a los desafíos del mundo real.</p>
+<p>El (SL) ha sido elogiado por su potencial para fomentar el compromiso cívico y el aprendizaje experiencial, uniendo a estudiantes y comunidades en proyectos de beneficio mutuo. Sin embargo, como señala <em>Stoecker</em> (2016), el (SL) no está exento de críticas.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><em>Stoecker</em> (2016) argumenta que el (SL) institucionalizado a menudo se centra en los resultados de aprendizaje de los estudiantes, dejando de lado las necesidades y prioridades de la comunidad. Este enfoque puede perpetuar dinámicas de poder desiguales, donde las instituciones educativas dictan los términos del compromiso sin una verdadera colaboración con la comunidad.</p>
+</div>
+<p>Además, existe la crítica de que el (SL) puede caer en el “tokenismo” o práctica de involucrar a miembros de la comunidad de manera superficial o simbólica, utilizando a las comunidades como meros escenarios de aprendizaje para los estudiantes, sin un compromiso genuino con el cambio social.</p>
+<p>Estas críticas no pretenden invalidar el (SL), sino más bien subrayar la importancia de un diseño cuidadoso y una evaluación continua de estos programas. Para que el (SL) sea verdaderamente transformador, debe basarse en relaciones equitativas y respetuosas entre las instituciones educativas y las comunidades. Esto implica reconocer y valorar el conocimiento y la experiencia de los miembros de la comunidad, así como involucrarlos en todas las etapas del proceso, desde la identificación de necesidades hasta la evaluación del impacto.</p>
+</section>
+<section id="aprendizaje-a-lo-largo-de-la-vida">
+<h3>Aprendizaje a lo largo de la vida<a class="headerlink" href="#aprendizaje-a-lo-largo-de-la-vida" title="Link to this heading">#</a></h3>
+<p>El concepto de aprendizaje a lo largo de la vida ha ganado prominencia en las últimas décadas como respuesta a los rápidos cambios tecnológicos y sociales. La UNESCO ha sido un defensor clave de este enfoque, argumentando que el aprendizaje a lo largo de la vida es esencial para el desarrollo sostenible y la cohesión social (UNESCO, 2016, p. 8).</p>
+<blockquote class="epigraph">
+<div><p>El aprendizaje a lo largo de toda la vida o Life Long Learning por sus siglas en inglés (LLL) abarca toda la gama de aprendizaje que incluye: formal, informal y no formal.</p>
+<p class="attribution">—<em>Laal y Salamati</em> (2012)</p>
+</div></blockquote>
+<p>Esta perspectiva amplia del aprendizaje reconoce que la educación no se limita a las instituciones formales o a una etapa particular de la vida. Los autores destacan que el LLL ocurre en diversos contextos, incluyendo experiencias cotidianas, el lugar de trabajo y actividades de ocio, y que puede conducir tanto al desarrollo personal como al crecimiento profesional.</p>
+<p>Además, <em>Laal y Salamati</em> (2012) señalan que “en el siglo XXI, todos debemos ser aprendices de por vida. Necesitamos mantener continuamente nuestras habilidades actualizadas para tener una ventaja en todo lo que hacemos”. Esta afirmación subraya la importancia del aprendizaje continuo en el mundo actual, que cambia rápidamente, y enfatiza que el aprendizaje no es solo un medio para un fin, sino un proceso continuo que abarca toda la vida.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Sin embargo, es crucial reconocer que el acceso a oportunidades de aprendizaje a lo largo de la vida no es equitativo (<em>Desjardins &amp; Ioannidou</em>, 2020). Factores como el nivel socioeconómico, la ubicación geográfica y las obligaciones familiares pueden limitar la capacidad de las personas para participar en el aprendizaje continuo.</p>
+</div>
+<p>Aquellos que ya están mejor educados y aquellos con posiciones profesionales relativamente seguras están expandiendo aún más su ventaja a través de inversiones adicionales en el aprendizaje de adultos, el llamado principio de Mateo o al fenómeno en el que aquellos que ya tienen ventajas, como una mejor educación o posiciones profesionales seguras, continúan acumulando más ventajas a través de la participación en el aprendizaje. Los hallazgos de la investigación hasta la fecha también confirman que, por varias razones, las empresas apoyan a aquellos empleados en su desarrollo de competencias que ya poseen mayores habilidades. Por lo tanto, cualquier iniciativa que busque promover el aprendizaje a lo largo de la vida debe abordar estas barreras de manera proactiva.</p>
+</section>
+<section id="economia-del-conocimiento">
+<h3>Economía del conocimiento<a class="headerlink" href="#economia-del-conocimiento" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Definición de Economía del Conocimiento</p>
+<p>La economía del conocimiento representa un cambio de paradigma en el que la producción y los servicios se basan principalmente en actividades intensivas en conocimiento.</p>
+</div>
+<p>Este cambio se caracteriza por un mayor énfasis en las capacidades intelectuales que en los insumos físicos o los recursos naturales. <em>Powell y Snellman</em> (2004) señalan que la economía del conocimiento se distingue por “una mayor dependencia de las capacidades intelectuales que de los insumos físicos o los recursos naturales” (p. 201). En este sentido, la innovación, la creatividad y la capacidad de adaptación son cruciales para el éxito en este nuevo modelo económico.</p>
+<p>La economía del conocimiento también se caracteriza por un ritmo acelerado de cambio tecnológico y científico. Las nuevas tecnologías y los avances científicos surgen a un ritmo sin precedentes, lo que a su vez conduce a una rápida obsolescencia de los productos y servicios existentes. <em>Powell y Snellman</em> (2004) afirman que la economía del conocimiento se caracteriza por “un ritmo acelerado de avance técnico y científico, así como por una obsolescencia igualmente rápida” (p. 199). En este entorno, las empresas y los individuos deben ser capaces de adaptarse rápidamente a los cambios para seguir siendo competitivos.</p>
+<p>Además, la economía del conocimiento está impulsada por la producción y difusión de nuevos conocimientos. Las inversiones en investigación y desarrollo (I+D), educación y tecnología de la información y la comunicación son fundamentales para el crecimiento y el desarrollo. Esto implica que el conocimiento no solo se produce, sino que también se comparte y se aplica de manera efectiva en todos los niveles de la economía.</p>
+<p>En este contexto, las “habilidades del siglo XXI” han ganado prominencia. <em>Binkley et al.</em> (2012) identificaron diez habilidades clave para el siglo XXI, agrupándolas en cuatro categorías:</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Habilidades del Siglo XXI<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Formas de pensar:</strong> Creatividad e innovación, pensamiento crítico, resolución de problemas y toma de decisiones, y aprender a aprender y metacognición.</p></li>
+<li><p class="sd-card-text"><strong>Formas de trabajar:</strong> Comunicación y colaboración (trabajo en equipo).</p></li>
+<li><p class="sd-card-text"><strong>Herramientas para trabajar:</strong> Alfabetización informacional (que incluye investigación) y alfabetización en TIC.</p></li>
+<li><p class="sd-card-text"><strong>Vivir en el mundo</strong>: Ciudadanía (local y global), vida y carrera, y responsabilidad personal y social (incluyendo conciencia y competencia cultural) (p. 18-19).</p></li>
+</ul>
+</div>
+</details><p>Estas habilidades reflejan la creciente necesidad de que los individuos se adapten a los cambios rápidos en la sociedad y la tecnología. Se enfatiza la importancia de que los estudiantes desarrollen un pensamiento de orden superior, habilidades de resolución de problemas flexibles y colaboración, y habilidades de comunicación para tener éxito en el trabajo y la vida.</p>
+<p>Un informe del Foro Económico Mundial (2023) sobre el futuro del trabajo revela tendencias significativas en el mercado laboral, especialmente en lo que respecta a la creciente importancia de las habilidades blandas y la adopción de tecnología. El informe, basado en una encuesta a 803 empresas en 27 sectores y 45 economías, destaca que más del 85% de las organizaciones encuestadas anticipan que la adopción de tecnologías nuevas y de vanguardia, junto con un mayor acceso digital, impulsará la transformación en sus empresas (Foro Económico Mundial, 2023, p. 10).</p>
+<p>En América Latina, se espera que las empresas adopten principalmente tecnologías como el big data, la computación en la nube y la inteligencia artificial (IA) en los próximos cinco años (Foro Económico Mundial, 2023, pp. 32-33). Aunque se prevé que la mayoría de estas tecnologías tengan un impacto positivo neto en el empleo, las empresas de la región también anticipan una importante disrupción laboral debido a factores como el aumento del costo de vida y la ralentización del crecimiento económico (Foro Económico Mundial, 2023, pp. 20-21).</p>
+<p>El informe subraya la creciente importancia de las habilidades blandas en el entorno laboral actual. A pesar de los avances en automatización, el pensamiento analítico y creativo siguen siendo las habilidades más valoradas por los empleadores (Foro Económico Mundial, 2023, p. 38). Además, habilidades como la resiliencia, la flexibilidad, la motivación y la autoconciencia son cada vez más esenciales para que los trabajadores se adapten a los cambios constantes en el lugar de trabajo y colaboren eficazmente (Foro Económico Mundial, 2023, p. 38).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Se estima que el 44% de las habilidades actuales de los trabajadores podrían quedar obsoletas en los próximos cinco años (Foro Económico Mundial, 2023, p. 37), lo que subraya la necesidad urgente de invertir en programas de capacitación y actualización.</p>
+</div>
+<p>Las empresas de la región reconocen esta necesidad y planean invertir en el aprendizaje y la capacitación en el trabajo como parte de sus estrategias para el futuro (Foro Económico Mundial, 2023, p. 50). No obstante, la responsabilidad de cerrar esta brecha de habilidades no recae únicamente en las empresas, sino que requiere un esfuerzo conjunto de los sectores público y privado para garantizar que los trabajadores estén preparados para los desafíos y oportunidades que presenta la economía del conocimiento.</p>
+<p>Las políticas públicas y las prácticas organizacionales por otro lado juegan un papel crucial en la economía del conocimiento al facilitar el desarrollo de habilidades y la adaptabilidad de la fuerza laboral. <em>Brown et al.</em> (2020) argumentan que la teoría ortodoxa del capital humano ha llevado a políticas que reducen la productividad humana a “aprender para ganar”, lo que limita el potencial de crecimiento y desarrollo de los trabajadores.</p>
+<p>En este sentido, es fundamental que las políticas públicas promuevan un enfoque más holístico de la educación y el desarrollo de habilidades, que vaya más allá de la simple adquisición de credenciales y se centre en el crecimiento personal y el florecimiento humano (<em>Brown et al.</em>, 2020, p. 143). Esto implica fomentar habilidades como el pensamiento crítico, la creatividad, la colaboración y la adaptabilidad, que son esenciales en la economía del conocimiento en constante cambio.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Las prácticas organizacionales deben adaptarse para apoyar el desarrollo continuo de los empleados y fomentar una cultura de aprendizaje. Esto puede incluir programas de capacitación y desarrollo, oportunidades de aprendizaje en el trabajo, tutoría y coaching, y sistemas de evaluación del desempeño que reconozcan y recompensen el aprendizaje y el crecimiento (<em>Brown et al.</em>, 2020, p. 183).</p>
+</div>
+<p>El aprendizaje-servicio (SL) puede complementar este enfoque al proporcionar oportunidades para que los empleados apliquen sus conocimientos y habilidades en contextos reales y desarrollen un sentido de responsabilidad cívica (<em>Bringle &amp; Clayton</em>, 2020). Al participar en proyectos de SL, los empleados pueden adquirir nuevas habilidades, ampliar sus perspectivas y fortalecer su compromiso con el aprendizaje continuo y el crecimiento personal.</p>
+<div class="tip admonition">
+<p class="admonition-title">Beneficios del Aprendizaje-Servicio en Organizaciones</p>
+<ul class="simple">
+<li><p>Aplicación práctica de conocimientos y habilidades</p></li>
+<li><p>Desarrollo de responsabilidad cívica</p></li>
+<li><p>Adquisición de nuevas habilidades</p></li>
+<li><p>Ampliación de perspectivas</p></li>
+<li><p>Fortalecimiento del compromiso con el aprendizaje continuo</p></li>
+<li><p>Fomento del crecimiento personal</p></li>
+</ul>
+</div>
+</section>
+<section id="innovacion-social">
+<h3>Innovación social<a class="headerlink" href="#innovacion-social" title="Link to this heading">#</a></h3>
+<blockquote class="epigraph">
+<div><p>La innovación social representa cambios en las relaciones sociales, sistemas de gobernanza y empoderamiento colectivo que conducen a una mayor inclusión social.</p>
+<p class="attribution">—<em>Moulaert y MacCallum</em> (2019, p. 13)</p>
+</div></blockquote>
+<p>La innovación social ha emergido como un campo de estudio y práctica que busca abordar desafíos sociales complejos a través de soluciones novedosas. Esta definición enfatiza el aspecto transformador de la innovación social, más allá de simplemente proponer nuevas soluciones.</p>
+<p>El concepto de innovación social ha ganado prominencia en las últimas décadas como respuesta a la creciente complejidad de los problemas sociales y a las limitaciones de las soluciones tradicionales basadas en el mercado o la tecnología. <em>Howaldt et al.</em> (2018) argumentan que la innovación social representa un cambio de paradigma en cómo abordamos los desafíos sociales, alejándonos de soluciones puramente tecnológicas o de mercado hacia enfoques más participativos y centrados en la comunidad (pág. 16).</p>
+<div class="note admonition">
+<p class="admonition-title">Definición de Innovación Social</p>
+<p>La innovación social se define como el desarrollo e implementación de nuevas ideas, productos, servicios y modelos que satisfacen necesidades sociales y crean nuevas relaciones sociales o colaboraciones (<em>Howaldt et al.</em>, 2018, pág. 84).</p>
+</div>
+<p>A diferencia de la innovación tradicional, que a menudo se centra en el beneficio económico y la ventaja competitiva, la innovación social prioriza el bienestar social y la creación de valor público. Este enfoque reconoce que los problemas sociales complejos, como la pobreza, la desigualdad y el cambio climático, requieren soluciones que vayan más allá de las intervenciones individuales y aborden las causas fundamentales de los problemas.</p>
+<p><em>Howaldt et al.</em> (2018) enfatizan que la innovación social no se limita a un solo sector o disciplina, sino que abarca una amplia gama de actores, incluidos ciudadanos, organizaciones sin fines de lucro, empresas, instituciones gubernamentales e instituciones de investigación (pág. 4). La colaboración entre estos diversos actores es esencial para aprovechar diferentes perspectivas, conocimientos y recursos, lo que permite el desarrollo de soluciones más integrales y sostenibles. Además, la innovación social a menudo implica la participación activa de los ciudadanos y las comunidades afectadas por los problemas sociales, lo que garantiza que las soluciones sean relevantes y respondan a sus necesidades específicas.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><em>Krlev et al.</em> (2021) encontraron en su estudio empírico que “las iniciativas de innovación social más exitosas son aquellas que logran crear redes diversas de actores y fomentar la co-creación con la comunidad” (p. 288).</p>
+</div>
+<p>Este hallazgo subraya la importancia de la participación y el empoderamiento comunitario en los procesos de innovación social. La co-creación, en particular, permite que las soluciones sean diseñadas y desarrolladas en colaboración con aquellos que experimentan los problemas sociales, asegurando así que las innovaciones sean relevantes y respondan a las necesidades reales de la comunidad (p. 259).</p>
+<p>Además, <em>Krlev et al.</em> (2021) destacan que la innovación social no se trata solo de crear nuevas ideas o soluciones, sino de institucionalizar nuevas prácticas que aborden las causas fundamentales de los problemas sociales (p. 280). El estudio también revela que el éxito de la innovación social a menudo depende de la capacidad de los actores para movilizar diversos recursos y establecer colaboraciones intersectoriales (p. 281). Esto puede incluir la combinación de recursos financieros, humanos y sociales de diferentes sectores, como el gobierno, las empresas y las organizaciones de la sociedad civil. Al aprovechar las fortalezas y los conocimientos de diversos actores, las iniciativas de innovación social pueden lograr un mayor impacto y abordar los problemas sociales de manera más integral.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><em>Pel et al.</em> (2020) advierten sobre el riesgo de que “la retórica de la innovación social se utilice para justificar la retirada del estado de la provisión de servicios sociales, sin abordar las causas estructurales de los problemas sociales” (pág. 2).</p>
+</div>
+<p>Esta crítica subraya la necesidad de considerar la innovación social en el contexto más amplio de las políticas sociales y las estructuras de poder existentes. No se debe ver como una panacea para todos los problemas sociales, sino como una herramienta que puede ser utilizada de manera efectiva o ineficaz, dependiendo de cómo se implemente y quién la controle.</p>
+<p><em>Pel et al.</em> (2020) también señalan la importancia de comprender la innovación social como un proceso relacional y contextualizado (pág. 3). Las innovaciones sociales no ocurren en el vacío; están profundamente arraigadas en las relaciones sociales existentes y en contextos sociomateriales específicos. Por lo tanto, el análisis de la innovación social debe ir más allá de las iniciativas individuales y considerar las dinámicas de poder, las instituciones y las estructuras sociales que dan forma a estas innovaciones.</p>
+<p>Además, <em>Pel et al.</em> (2020) destacan la necesidad de distinguir entre diferentes tipos de innovación social (pág. 5). No todas las innovaciones sociales son iguales en términos de su potencial transformador. Algunas pueden ser incrementales, mientras que otras pueden ser más radicales y desafiar las estructuras de poder existentes. Es crucial, por lo tanto, desarrollar una comprensión más matizada de los diversos tipos de innovación social y sus implicaciones para el cambio social.</p>
+</section>
+<section id="tecnologias-emergentes-en-educacion">
+<h3>Tecnologías emergentes en educación<a class="headerlink" href="#tecnologias-emergentes-en-educacion" title="Link to this heading">#</a></h3>
+<p>En el contexto latinoamericano, la adopción de tecnologías emergentes en educación presenta tanto oportunidades como desafíos únicos. La región ha experimentado un crecimiento significativo en el uso de tecnologías educativas en la última década, impulsado por la necesidad de mejorar la calidad y el acceso a la educación en diversos contextos socioeconómicos.</p>
+<div class="warning admonition">
+<p class="admonition-title">Desafío en la Adopción de Tecnologías</p>
+<p><em>Avello Martínez et al.</em> (2021) señalan que “las áreas urbanas se han beneficiado más que las rurales” (p. 45) en la integración de tecnologías educativas.</p>
+</div>
+<p>Esta disparidad se debe a varios factores, incluyendo la falta de infraestructura tecnológica en áreas rurales, la insuficiente capacitación docente en el uso de tecnologías emergentes y las limitaciones económicas que impiden a muchas escuelas rurales adquirir y mantener estas tecnologías.</p>
+<p>Entre las tecnologías emergentes con potencial significativo en la educación latinoamericana, el aprendizaje móvil destaca por su accesibilidad. <em>Crompton y Burke</em> (2018) argumentan que “el alto índice de penetración de teléfonos móviles en países en desarrollo ofrece una oportunidad única para democratizar el acceso a recursos educativos digitales” (p. 53). Esta tendencia es particularmente relevante en América Latina, donde los teléfonos móviles están ampliamente disponibles incluso en áreas con recursos limitados.</p>
+<p>La inteligencia artificial (IA) también está emergiendo como una herramienta prometedora en el panorama educativo latinoamericano. <em>Zawacki-Richter et al.</em> (2019) señalan que “la IA en educación tiene el potencial de proporcionar apoyo personalizado a los estudiantes, automatizar tareas administrativas y ofrecer análisis de aprendizaje detallados” (p. 3). Los sistemas de tutoría inteligente, por ejemplo, pueden adaptar el ritmo y el contenido de la instrucción a las necesidades individuales de cada estudiante, mejorando significativamente la eficiencia y la eficacia del aprendizaje, especialmente en contextos donde los recursos docentes son limitados.</p>
+<p>Sin embargo, la implementación efectiva de la IA en la educación requiere una cuidadosa adaptación a los contextos educativos locales. <em>Zawacki-Richter et al.</em> (2019) enfatizan la importancia de considerar aspectos éticos, como el uso responsable y transparente de los datos de los estudiantes, la protección de su privacidad y la prevención de cualquier tipo de discriminación (p. 21).</p>
+<p>Es crucial mantener una perspectiva crítica sobre la adopción de estas tecnologías emergentes. <em>Lugo y Ithurburu</em> (2019) advierten que “la implementación de tecnología educativa debe ir más allá de la mera provisión de dispositivos, para enfocarse en el desarrollo de competencias digitales tanto en estudiantes como en docentes” (p. 12). Esta visión subraya la importancia de un enfoque holístico que no solo se centre en el acceso a dispositivos y conectividad, sino también en el desarrollo de habilidades para utilizar estas herramientas de manera crítica y creativa.</p>
+<p>En el contexto de CircleUp en Tocancipá, Colombia, la integración de tecnologías emergentes ofrece oportunidades para enriquecer el aprendizaje comunitario y ampliar su alcance. Sin embargo, será crucial evaluar críticamente su implementación y su impacto en los resultados de aprendizaje y la equidad educativa, considerando las particularidades del contexto latinoamericano y colombiano.</p>
+</section>
+<section id="aprendizaje-intergeneracional">
+<h3>Aprendizaje intergeneracional<a class="headerlink" href="#aprendizaje-intergeneracional" title="Link to this heading">#</a></h3>
+<p>El aprendizaje intergeneracional, un proceso que fomenta el intercambio de conocimientos y experiencias entre distintas generaciones, se está convirtiendo en un componente cada vez más crucial en las organizaciones modernas. Este enfoque reconoce que tanto los empleados jóvenes como los mayores poseen valiosos conocimientos y experiencias que pueden compartir entre sí, desafiando la visión tradicional de la transferencia de conocimientos unidireccional de los mayores a los jóvenes.</p>
+<div class="tip admonition">
+<p class="admonition-title">Estudio de Caso: Aprendizaje Intergeneracional</p>
+<p><em>Gerpott et al.</em> (2017) exploraron la dinámica del aprendizaje intergeneracional en un programa de aprendizaje de 18 meses en una empresa automovilística alemana, donde aprendices jóvenes (16-19 años) y experimentados (41-47 años) colaboraron para formarse como fabricantes de herramientas.</p>
+</div>
+<p>Este entorno de aprendizaje único permitió a los investigadores observar cómo el conocimiento fluía en ambas direcciones, con aprendices jóvenes y mayores compartiendo sus conocimientos y habilidades únicas. Por ejemplo, los aprendices más jóvenes aportaron sus conocimientos sobre tecnología y métodos de aprendizaje actuales, mientras que los aprendices mayores compartieron su amplia experiencia práctica y conocimientos específicos de la empresa. Este intercambio bidireccional de conocimientos pone de relieve el concepto de “mentoría inversa”, en el que los empleados más jóvenes enseñan a los mayores, un fenómeno cada vez más reconocido en el panorama empresarial actual.</p>
+<p>Los hallazgos de <em>Gerpott et al.</em> (2017) revelaron que “ambas generaciones poseen distintos conocimientos expertos, prácticos, sociales y metacognitivos, e intercambian diferentes tipos de conocimiento en distintos momentos” (p. 4). El estudio identificó cuatro tipos de conocimiento intercambiados durante el programa.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Tipos de Conocimiento en el Aprendizaje Intergeneracional<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Conocimiento experto:</strong> Información que se puede articular y transmitir fácilmente, como el conocimiento escolar de los aprendices más jóvenes sobre matemáticas o mecánica (p. 20).</p></li>
+<li><p class="sd-card-text"><strong>Conocimiento práctico:</strong> Conocimiento tácito adquirido a través de la experiencia, relacionado con saber cómo realizar tareas específicas. Los aprendices mayores poseían un amplio conocimiento práctico sobre los procedimientos y movimientos manuales necesarios para crear herramientas (p. 22).</p></li>
+<li><p class="sd-card-text"><strong>Conocimiento social:</strong> Abarca habilidades como la gestión de relaciones y la interacción eficaz con los demás. Los aprendices mayores a menudo actuaban como modelos a seguir, enseñando a gestionar conflictos y la importancia de la amistad y la integridad en el trabajo (p. 23).</p></li>
+<li><p class="sd-card-text"><strong>Conocimiento metacognitivo:</strong> Se refiere a la supervisión de los procesos de pensamiento propios. Los aprendices jóvenes enseñaron nuevas estrategias para memorizar información, mientras que los mayores demostraron cómo mantener la concentración y afrontar situaciones estresantes (p. 24).</p></li>
+</ul>
+</div>
+</details><p>Si bien el aprendizaje intergeneracional ofrece numerosos beneficios, su implementación exitosa requiere una planificación y consideración cuidadosas. <em>Findsen y Formosa</em> (2011) destacan la importancia de abordar los desafíos potenciales que pueden surgir debido a las diferencias generacionales. Los autores señalan que “las diferencias en estilos de aprendizaje, expectativas y experiencias de vida pueden crear barreras para la comunicación efectiva entre generaciones” (p. 168). Por ejemplo, los aprendices mayores pueden preferir métodos de enseñanza tradicionales, mientras que los más jóvenes pueden sentirse más cómodos con enfoques basados en la tecnología. Además, las expectativas sobre los roles y responsabilidades en el aprendizaje pueden variar entre generaciones, lo que puede llevar a malentendidos y conflictos.</p>
+<p>Además de las diferencias en los estilos de aprendizaje y las expectativas, <em>Findsen y Formosa</em> (2011) también señalan que los estereotipos negativos sobre el envejecimiento y las capacidades de los adultos mayores pueden ser un obstáculo importante para el aprendizaje intergeneracional. Estos estereotipos pueden llevar a una falta de respeto y comprensión mutua, lo que dificulta la creación de un entorno de aprendizaje positivo e inclusivo.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Para superar estos desafíos, los autores sugieren que el diseño de programas intergeneracionales debe ser intencional y reflexivo. Esto implica reconocer y valorar las diversas perspectivas y experiencias que cada generación aporta al entorno de aprendizaje.</p>
+</div>
+<p>Los programas deben diseñarse para fomentar el respeto mutuo, la comprensión y la colaboración entre generaciones. La capacitación en comunicación intercultural, la facilitación de grupos y las actividades que promueven la interacción y el intercambio de conocimientos pueden ser herramientas valiosas para lograr estos objetivos. Además, es fundamental abordar los estereotipos negativos a través de la educación y la promoción de interacciones positivas entre generaciones. Al hacerlo, podemos crear programas de aprendizaje intergeneracional más efectivos que aprovechen el poder de la diversidad generacional para beneficio de todos los involucrados.</p>
+</section>
+<section id="conclusion-marco-canceptual">
+<h3>Conclusión Marco Canceptual<a class="headerlink" href="#conclusion-marco-canceptual" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Marco Teórico de CircleUp</p>
+<p>Este marco teórico proporciona la base conceptual para CircleUp, situando la iniciativa en el contexto de las teorías y prácticas educativas contemporáneas.</p>
+</div>
+<p>Al combinar elementos del CBL, el aprendizaje a lo largo de la vida, la innovación social y el uso de tecnologías emergentes, CircleUp busca crear un modelo de aprendizaje comunitario que sea relevante y adaptable a las necesidades cambiantes de la sociedad. Solo a través de una consideración cuidadosa de estos factores podremos evaluar verdaderamente el potencial de CircleUp para contribuir al aprendizaje y desarrollo comunitario.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sin embargo, es crucial reconocer que cada uno de estos conceptos presenta sus propios desafíos y limitaciones. La implementación y evaluación de CircleUp deberá abordar cuidadosamente estas complejidades, manteniendo un enfoque crítico y reflexivo en todo momento.</p>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Introducci%C3%B3n.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1. Introducción</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Marco%20Metodol%C3%B3gico.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3. Marco Metodológico</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marco-teorico">Marco Teórico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#community-based-learning-cbl">Community-Based Learning (CBL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aprendizaje-a-lo-largo-de-la-vida">Aprendizaje a lo largo de la vida</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#economia-del-conocimiento">Economía del conocimiento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#innovacion-social">Innovación social</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnologias-emergentes-en-educacion">Tecnologías emergentes en educación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aprendizaje-intergeneracional">Aprendizaje intergeneracional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-marco-canceptual">Conclusión Marco Canceptual</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Circle Up Community ⚫
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Living Stones 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

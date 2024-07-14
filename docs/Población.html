@@ -1,0 +1,2023 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Población &#8212; Circle UP ⚫</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fb436c1d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Población';</script>
+    <script src="../_static/custom.js?v=16113e41"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="3. Marco Metodológico" href="Marco%20Metodol%C3%B3gico.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Circle UP ⚫ - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Circle UP ⚫ - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    CircleUp | Innovación Social
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Docs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3n.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Conceptual.html">2. Marco Conceptual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Metodol%C3%B3gico.html">3. Marco Metodológico</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Población</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/Población.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Población.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>4. Población</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4. Población</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-demografico-y-socioeconomico-de-tocancipa">Análisis Demográfico y Socioeconómico de Tocancipá</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crecimiento-poblacional-y-estructura-etaria">Crecimiento Poblacional y Estructura Etaria</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-segmentacion-tocancipa">Análisis de Segmentación | Tocancipá</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-distribuciones-etarias">Comparación de Distribuciones Etarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-de-extrapolacion">Metodología de Extrapolación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-estimacion">Proceso de Estimación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajuste-por-distribucion-etaria">Ajuste por Distribución Etaria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones-y-consideraciones">Limitaciones y Consideraciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-demografico-de-voluntarios-academicos-va">Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-datos-poblacion-va-25-44-anos">Distribución de Datos Población <span class="va">(VA, 25-44 años)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-por-subgrupos-de-edad">Distribución por Subgrupos de Edad</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implicaciones-para-circleup">Implicaciones para CircleUp</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-panorama-laboral">Voluntarios Académicos <span class="va">(VA)</span>: Panorama Laboral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#situacion-laboral-va-25-44-anos">Situación Laboral <span class="va">(VA, 25-44 años)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-perfil-ocupacional">Voluntarios Académicos <span class="va">(VA)</span>: Perfil Ocupacional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-ocupacional-va-25-44-anos-empleados">Distribución Ocupacional <span class="va">(VA, 25-44 años) Empleados</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-perfil-educativo-y-migratorio">Voluntarios Académicos <span class="va">(VA)</span>: Perfil Educativo y Migratorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-nivel-educativo-va-25-44-anos-empleados-educacion">Distribución Nivel Educativo <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-vital-de-voluntarios-academicos-va">Satisfacción Vital de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-con-la-vida-va-25-44-anos-empleados-educacion">Satisfacción con la Vida <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-laboral-de-voluntarios-academicos-va">Satisfacción Laboral de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-comunitaria-de-voluntarios-academicos-va">Satisfacción Comunitaria de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-internet-para-educacion-entre-voluntarios-academicos-va">Uso de Internet para Educación entre Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redes-sociales-puente-digital-para-va">Redes Sociales: Puente Digital para VA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-demografico-mi-potencial-y-desafios">Perfil Demográfico MI: Potencial y Desafíos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-educativo-mi-base-para-la-innovacion-intergeneracional">Perfil Educativo MI: Base para la Innovación Intergeneracional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-vital-mi-fundamento-para-mentoria-efectiva">Satisfacción Vital MI: Fundamento para Mentoría Efectiva</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-comunitaria-mi-catalizador-de-compromiso-local">Satisfacción Comunitaria MI: Catalizador de Compromiso Local</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-poblacional-li-catalizadores-de-innovacion-social">Perfil Poblacional LI: Catalizadores de Innovación Social</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversidad-de-origen-li-motor-de-innovacion-local">Diversidad de Origen LI: Motor de Innovación Local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-etario-li-catalizador-multigeneracional-de-innovacion">Perfil Etario LI: Catalizador Multigeneracional de Innovación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-del-analisis-demografico">Conclusiones del Análisis Demográfico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-generales">1. Conclusiones Generales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subsegmentacion-estrategica-de-circleup">Subsegmentación Estratégica de CircleUp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-voluntarios-academicos-va">a. Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-mentores-inversos-mi">b. Mentores Inversos <span class="mi">(MI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-laboratorio-de-innovacion-li">c. Laboratorio de Innovación <span class="li">(LI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-finales">3. Conclusiones Finales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentacion-estrategica-alternativa-de-circleup">Segmentación Estratégica Alternativa de CircleUp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">a. Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">b. Mentores Inversos <span class="mi">(MI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">c. Laboratorio de Innovación <span class="li">(LI)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="position: relative; width: 100%; padding: 10px;">
+    <div style="border-radius: 10px; overflow: hidden;">
+        <img src="https://i.ibb.co/TH6HzwQ/body.jpg" alt="Imagen de fondo" style="width: 100%; height: auto;">
+    </div>
+</div>
+<section id="poblacion">
+<h1>4. Población<a class="headerlink" href="#poblacion" title="Link to this heading">#</a></h1>
+<section id="analisis-demografico-y-socioeconomico-de-tocancipa">
+<h2>Análisis Demográfico y Socioeconómico de Tocancipá<a class="headerlink" href="#analisis-demografico-y-socioeconomico-de-tocancipa" title="Link to this heading">#</a></h2>
+<p>La segmentación de la población es un pilar fundamental para CircleUp en Tocancipá. Para diseñar e implementar programas efectivos, es esencial comprender en profundidad el contexto demográfico y socioeconómico actual del municipio. En este análisis, nos basaremos principalmente en dos fuentes de datos clave: el Censo Nacional de Población y Vivienda (CNPV) de 2018 y la Encuesta Multipropósito de Bogotá-Cundinamarca (EM) de 2021.</p>
+<div class="tip admonition">
+<p class="admonition-title">Nota Metodológica</p>
+<p>Aunque estos conjuntos de datos tienen algunos años de antigüedad, representan la información más completa y confiable recopilada por el DANE para Tocancipá. Nuestro análisis buscará conciliar y contextualizar las diferencias entre estas fuentes para proporcionar una visión lo más actualizada posible de la situación demográfica del municipio.</p>
+</div>
+<section id="crecimiento-poblacional-y-estructura-etaria">
+<h3>Crecimiento Poblacional y Estructura Etaria<a class="headerlink" href="#crecimiento-poblacional-y-estructura-etaria" title="Link to this heading">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>El CNPV 2018 registró una población total de 39,416 habitantes en Tocancipá, evidenciando un crecimiento poblacional significativo desde los 23,981 habitantes contabilizados en 2005.</p>
+</div>
+<p>La estructura etaria de Tocancipá muestra variaciones notables entre el CNPV 2018 y la EM 2021:</p>
+<table class="table" id="comparacion-etaria">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Comparación de distribución etaria (CNPV 2018 vs EM 2021)</span><a class="headerlink" href="#comparacion-etaria" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Grupo de edad</p></th>
+<th class="head text-left"><p>CNPV 2018</p></th>
+<th class="head text-left"><p>EM 2021</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>0-14 años</p></td>
+<td class="text-left"><p>24.4%</p></td>
+<td class="text-left"><p>7.5%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>15-59 años</p></td>
+<td class="text-left"><p>68.6%</p></td>
+<td class="text-left"><p>80.5%</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>60 años o más</p></td>
+<td class="text-left"><p>7.0%</p></td>
+<td class="text-left"><p>12.0%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Esta discrepancia en los datos presenta tanto oportunidades como desafíos para CircleUp:</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Implicaciones para CircleUp<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Oportunidades</strong>: La mayor proporción de población entre 15-59 años según la EM 2021 (80.5%) sugiere un amplio pool de potenciales participantes para los programas de voluntariado y mentoría.</p></li>
+<li><p class="sd-card-text"><strong>Desafíos</strong>: La marcada diferencia en la proporción de menores de 14 años entre ambas fuentes indica la necesidad de un análisis más profundo para entender la verdadera composición demográfica actual, aunque no será necesario dado que la población objetivo esta en mayores de 14 años.</p></li>
+</ul>
+</div>
+</details><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Las diferencias observadas entre el CNPV 2018 y la EM 2021 podrían indicar un sesgo en la muestra de la EM o cambios demográficos. Es crucial considerar ambas fuentes al diseñar estrategias para CircleUp y, posiblemente, realizar ajustes en las estimaciones.</p>
+</div>
+<p>La (EM 2021) proporciona una visión detallada y multidimensional de Tocancipá, crucial para el diseño e implementación de CircleUp. El enfoque será sobre los datos relevantes para la población mayor de 14 años, que constituye el grupo objetivo de todas las líneas de trabajo de CircleUp.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Capítulos Seleccionados | Encuesta Multipropósito<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Identificación</p></li>
+<li><p class="sd-card-text">Datos de la vivienda y su entorno</p></li>
+<li><p class="sd-card-text">Composición del hogar y demografía</p></li>
+<li><p class="sd-card-text">Salud</p></li>
+<li><p class="sd-card-text">Educación</p></li>
+<li><p class="sd-card-text">Uso de tecnologías de la información (TIC)</p></li>
+<li><p class="sd-card-text">Participación en organizaciones y redes sociales</p></li>
+<li><p class="sd-card-text">Fuerza de trabajo</p></li>
+</ol>
+</div>
+</details><p>Esta estructura integral nos permite analizar diversos aspectos relevantes para CircleUp, desde el nivel educativo y el uso de tecnologías hasta la participación comunitaria y las condiciones laborales de la población adulta y joven de Tocancipá.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Para CircleUp, esta información es crucial para adaptar cada una de sus líneas de trabajo a las necesidades específicas de la población mayor de 14 años en Tocancipá:</p>
+</div>
+<ol class="arabic simple">
+<li><p><strong>El Programa de Voluntariado Académico</strong> puede beneficiarse de los datos sobre nivel educativo y fuerza de trabajo para identificar potenciales voluntarios y áreas de conocimiento necesarias.</p></li>
+<li><p><strong>El Programa de Mentoría Inversa</strong> puede utilizar la información sobre uso de TIC y composición del hogar para diseñar estrategias efectivas de intercambio intergeneracional.</p></li>
+<li><p><strong>El Laboratorio de Innovación Social</strong> puede aprovechar los datos sobre participación en organizaciones para identificar áreas prioritarias de intervención.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="analisis-de-segmentacion-tocancipa">
+<h1>Análisis de Segmentación | Tocancipá<a class="headerlink" href="#analisis-de-segmentacion-tocancipa" title="Link to this heading">#</a></h1>
+<p>El análisis de segmentación de la población de Tocancipá se basa en dos fuentes principales de información: el Censo Nacional de Población y Vivienda (CNPV) de 2018 y la Encuesta Multipropósito (EM) de Bogotá-Cundinamarca de 2021. Estas fuentes presentan diferencias significativas en la distribución etaria de la población, lo que requiere un análisis cuidadoso y una metodología de extrapolación para obtener estimaciones actualizadas y coherentes.</p>
+<section id="comparacion-de-distribuciones-etarias">
+<h2>Comparación de Distribuciones Etarias<a class="headerlink" href="#comparacion-de-distribuciones-etarias" title="Link to this heading">#</a></h2>
+<table class="table" id="comparacion-etaria-revisada">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Comparación de distribución etaria: CNPV 2018 vs EM 2021</span><a class="headerlink" href="#comparacion-etaria-revisada" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Grupo de edad</p></th>
+<th class="head text-left"><p>CNPV 2018</p></th>
+<th class="head text-left"><p>EM 2021</p></th>
+<th class="head text-left"><p>Diferencia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>0-14 años</p></td>
+<td class="text-left"><p>24.4%</p></td>
+<td class="text-left"><p>7.5%</p></td>
+<td class="text-left"><p>-16.9%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>15-59 años</p></td>
+<td class="text-left"><p>68.6%</p></td>
+<td class="text-left"><p>80.5%</p></td>
+<td class="text-left"><p>+11.9%</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>60 años o más</p></td>
+<td class="text-left"><p>7.0%</p></td>
+<td class="text-left"><p>12.0%</p></td>
+<td class="text-left"><p>+5.0%</p></td>
+</tr>
+</tbody>
+</table>
+<p>Las discrepancias observadas entre el CNPV 2018 y la EM 2021 no reflejan necesariamente cambios reales en la población, sino que pueden ser atribuidas a diferencias en las metodologías de recolección de datos y en los tamaños de muestra.</p>
+</section>
+<section id="metodologia-de-extrapolacion">
+<h2>Metodología de Extrapolación<a class="headerlink" href="#metodologia-de-extrapolacion" title="Link to this heading">#</a></h2>
+<p>Para abordar estas diferencias y obtener estimaciones actualizadas, se emplea una metodología de extrapolación estadística. Este enfoque se basa en el diseño muestral de la EM 2021, que según el documento metodológico, es “una muestra probabilística, estratificada y de conglomerados” (DANE, 2021, p. 8).</p>
+<section id="proceso-de-estimacion">
+<h3>Proceso de Estimación<a class="headerlink" href="#proceso-de-estimacion" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Cálculo de la Proporción Muestral</strong></p>
+<p>La proporción muestral se calcula como:</p>
+<div class="math notranslate nohighlight">
+\[p = \frac{x}{n}\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(x\)</span> es el número de individuos con la característica de interés y <span class="math notranslate nohighlight">\(n\)</span> es el tamaño total de la muestra.</p>
+</li>
+<li><p><strong>Estimación del Error Estándar</strong></p>
+<p>El error estándar se calcula como:</p>
+<div class="math notranslate nohighlight">
+\[SE = \sqrt{\frac{p(1-p)}{n}}\]</div>
+<p>Esta fórmula considera el diseño muestral complejo de la EM 2021.</p>
+</li>
+<li><p><strong>Cálculo del Intervalo de Confianza</strong></p>
+<p>Se utiliza un intervalo de confianza del 95%, calculado como:</p>
+<div class="math notranslate nohighlight">
+\[CI_{95\%} = p \pm z \times SE\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(z\)</span> es el valor crítico de la distribución normal estándar para un nivel de confianza del 95%, que es aproximadamente 1.96. Este valor se deriva de la teoría de la distribución normal y se utiliza comúnmente en estadísticas para un nivel de confianza del 95%.</p>
+</li>
+<li><p><strong>Extrapolación a la Población Total</strong></p>
+<p>La estimación para la población total se calcula como:</p>
+<div class="math notranslate nohighlight">
+\[\hat{N} = p \times N\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(N\)</span> es la población total según el CNPV 2018 (39,416 para Tocancipá).</p>
+</li>
+<li><p><strong>Cálculo del Error Estándar Relativo</strong></p>
+<p>El error estándar relativo se calcula como:</p>
+<div class="math notranslate nohighlight">
+\[RSE = \frac{SE}{p} \times 100\%\]</div>
+<p>Según la EM 2021, se espera una “precisión esperada medida en términos del error estándar relativo igual a 7%, con un nivel de confiabilidad del 95%, para prevalencias de alrededor del 10%” (DANE, 2021, p. 8).</p>
+</li>
+</ol>
+</section>
+<section id="ajuste-por-distribucion-etaria">
+<h3>Ajuste por Distribución Etaria<a class="headerlink" href="#ajuste-por-distribucion-etaria" title="Link to this heading">#</a></h3>
+<p>Es importante notar que la muestra de la EM 2021 para Tocancipá (n=2015) debe ser ajustada para reflejar la distribución etaria del CNPV 2018. Este proceso de post-estratificación implica asignar pesos a las observaciones de la EM 2021 para que coincidan con la distribución del censo. Este ajuste es crucial para garantizar que las estimaciones finales sean representativas de la estructura poblacional actual de Tocancipá.</p>
+</section>
+<section id="limitaciones-y-consideraciones">
+<h3>Limitaciones y Consideraciones<a class="headerlink" href="#limitaciones-y-consideraciones" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Desfase Temporal</strong>: La extrapolación de datos de 2021 a una base poblacional de 2018 puede no capturar completamente los cambios demográficos recientes.</p></li>
+<li><p><strong>Tamaño de Muestra</strong>: La EM 2021 se basa en una muestra relativamente pequeña para Tocancipá, lo que puede aumentar el margen de error en las estimaciones.</p></li>
+<li><p><strong>Homogeneidad Asumida</strong>: El método asume una distribución similar de características poblacionales entre 2018 y 2021, lo cual puede no ser completamente preciso.</p></li>
+</ol>
+<div class="warning admonition">
+<p class="admonition-title">Nota Importante</p>
+<p>Las estimaciones resultantes deben interpretarse con cautela, considerando estas limitaciones. Se recomienda complementar este análisis con datos locales adicionales cuando sea posible.</p>
+</div>
+</section>
+</section>
+<section id="analisis-demografico-de-voluntarios-academicos-va">
+<h2>Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#analisis-demografico-de-voluntarios-academicos-va" title="Link to this heading">#</a></h2>
+<section id="distribucion-de-datos-poblacion-va-25-44-anos">
+<h3>Distribución de Datos Población <span class="va">(VA, 25-44 años)</span><a class="headerlink" href="#distribucion-de-datos-poblacion-va-25-44-anos" title="Link to this heading">#</a></h3>
+<p>La identificación precisa de la población objetivo es fundamental para el éxito operativo de las líneas de trabajo de CircleUp. Para este análisis, nos enfocamos en:</p>
+<ul class="simple">
+<li><p>Voluntarios Académicos <span class="va">(VA, 25-44 años)</span></p></li>
+</ul>
+<table class="table" id="va-gender-age">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Distribución etaria y de género en Tocancipá: Valores muestrales y estimaciones poblacionales</span><a class="headerlink" href="#va-gender-age" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>14-17</strong></p></th>
+<th class="head"><p><strong>18-19</strong></p></th>
+<th class="head"><p><strong>20-24</strong></p></th>
+<th class="head"><p><strong>25-29</strong></p></th>
+<th class="head"><p><strong>30-34</strong></p></th>
+<th class="head"><p><strong>35-39</strong></p></th>
+<th class="head"><p><strong>40-44</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>70 <span class="hl">(1,054-1,684)</span></p></td>
+<td><p>36 <span class="hl">(476-932)</span></p></td>
+<td><p>125 <span class="hl">(2,030-2,860)</span></p></td>
+<td><p>105 <span class="hl">(1,671-2,436)</span></p></td>
+<td><p>87 <span class="hl">(1,352-2,052)</span></p></td>
+<td><p>70 <span class="hl">(1,054-1,684)</span></p></td>
+<td><p>81 <span class="hl">(1,246-1,923)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>56 <span class="hl">(813-1,378)</span></p></td>
+<td><p>38 <span class="hl">(509-977)</span></p></td>
+<td><p>105 <span class="hl">(1,671-2,436)</span></p></td>
+<td><p>108 <span class="hl">(1,725-2,500)</span></p></td>
+<td><p>90 <span class="hl">(1,405-2,116)</span></p></td>
+<td><p>81 <span class="hl">(1,246-1,923)</span></p></td>
+<td><p>93 <span class="hl">(1,458-2,180)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="admonition-title">Nota metodológica</p>
+<p>Las estimaciones poblacionales se basan en la extrapolación de la muestra de 2,015 personas de la EM 2021 a la población total de 39,416 según el CNPV 2018. Es importante considerar que esta extrapolación asume una distribución proporcional, lo cual puede no reflejar cambios demográficos ocurridos entre 2018 y 2021.</p>
+</div>
+</section>
+<section id="id1">
+<h3>Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>El segmento de Voluntarios Académicos <span class="va">(VA)</span>, que abarca el rango de edad de 25 a 44 años, presenta una composición demográfica significativa para el programa CircleUp. En la muestra, este grupo está compuesto por 343 hombres y 372 mujeres, lo que se traduce en una estimación poblacional de 6,715 hombres y 7,284 mujeres en Tocancipá.</p>
+<div class="tip admonition">
+<p class="admonition-title">Insight Clave</p>
+<p>La presencia de un 8.46% más de mujeres que hombres en el segmento <span class="va">VA</span> (372 vs 343 en la muestra) sugiere un potencial de liderazgo femenino en el programa de voluntariado académico de CircleUp, reflejando una tendencia de mayor participación femenina en actividades de desarrollo comunitario.</p>
+</div>
+</section>
+<section id="distribucion-por-subgrupos-de-edad">
+<h3>Distribución por Subgrupos de Edad<a class="headerlink" href="#distribucion-por-subgrupos-de-edad" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>25-29 años</strong>: Este subgrupo muestra una ligera predominancia femenina, con 108 mujeres (estimado 1,725-2,500) frente a 105 hombres (estimado 1,671-2,436). Esta paridad sugiere un equilibrio generacional en los profesionales jóvenes que podrían aportar perspectivas frescas al programa.</p></li>
+<li><p><strong>30-34 años</strong>: Se observa un pequeño desequilibrio a favor de las mujeres, con 90 mujeres (estimado 1,405-2,116) contra 87 hombres (estimado 1,352-2,052). Este subgrupo podría representar profesionales con experiencia emergente, valiosa para el programa.</p></li>
+<li><p><strong>35-39 años</strong>: Aquí se invierte la tendencia, con 81 mujeres (estimado 1,246-1,923) y 70 hombres (estimado 1,054-1,684). Este subgrupo podría aportar una experiencia profesional más consolidada al programa.</p></li>
+<li><p><strong>40-44 años</strong>: El subgrupo de mayor edad muestra de nuevo una predominancia femenina, con 93 mujeres (estimado 1,458-2,180) frente a 81 hombres (estimado 1,246-1,923). Este segmento podría ofrecer la experiencia más sólida y diversa al programa.</p></li>
+</ol>
+</section>
+</section>
+<section id="implicaciones-para-circleup">
+<h2>Implicaciones para CircleUp<a class="headerlink" href="#implicaciones-para-circleup" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Diversidad de Experiencias</strong>: La distribución relativamente uniforme entre los subgrupos de edad sugiere que CircleUp puede beneficiarse de un amplio espectro de experiencias profesionales y vitales en su programa <span class="va">VA</span>.</p></li>
+<li><p><strong>Potencial de Mentorías Internas</strong>: La presencia de diferentes cohortes de edad dentro del grupo <span class="va">VA</span> ofrece la posibilidad de establecer un sistema de mentorías internas, donde los voluntarios de mayor edad puedan guiar a los más jóvenes.</p></li>
+<li><p><strong>Enfoque en Equidad de Género</strong>: Aunque hay una ligera predominancia femenina, CircleUp debe mantener un enfoque en la equidad de género para asegurar una representación balanceada en todos los niveles del programa.</p></li>
+<li><p><strong>Adaptabilidad Generacional</strong>: La diversidad de edades dentro del grupo <span class="va">VA</span> requiere que CircleUp desarrolle estrategias de engagement y retención adaptadas a las diferentes generaciones representadas.</p></li>
+<li><p><strong>Potencial de Innovación Intergeneracional</strong>: La mezcla de diferentes cohortes de edad dentro del grupo <span class="va">VA</span> puede fomentar la innovación a través del intercambio de perspectivas entre generaciones.</p></li>
+</ol>
+<p>Este análisis demográfico proporciona una base sólida para el diseño y adaptación del programa de Voluntarios Académicos de CircleUp. La diversidad de edad y la ligera predominancia femenina ofrecen oportunidades únicas para crear un programa de voluntariado rico en experiencias y perspectivas, capaz de abordar de manera efectiva los desafíos educativos y sociales de Tocancipá.</p>
+<section id="voluntarios-academicos-va-panorama-laboral">
+<h3>Voluntarios Académicos <span class="va">(VA)</span>: Panorama Laboral<a class="headerlink" href="#voluntarios-academicos-va-panorama-laboral" title="Link to this heading">#</a></h3>
+</section>
+<section id="situacion-laboral-va-25-44-anos">
+<h3>Situación Laboral <span class="va">(VA, 25-44 años)</span><a class="headerlink" href="#situacion-laboral-va-25-44-anos" title="Link to this heading">#</a></h3>
+<table class="table" id="va-labor">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Situación laboral de potenciales Voluntarios Académicos (25-44 años) en Tocancipá</span><a class="headerlink" href="#va-labor" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>Buscando trabajo</strong></p></th>
+<th class="head"><p><strong>Estudiando</strong></p></th>
+<th class="head"><p><strong>Incapacitado(a) permanente para trabajar</strong></p></th>
+<th class="head"><p><strong>Oficios del hogar</strong></p></th>
+<th class="head"><p><strong>Otra actividad</strong></p></th>
+<th class="head"><p><strong>Trabajando</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>49 <span class="hl">(693-1,224)</span></p></td>
+<td><p>127 <span class="hl">(2,066-2,903)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>16 <span class="hl">(160-466)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+<td><p>375 <span class="hl">(6,666-8,005)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>43 <span class="hl">(592-1,090)</span></p></td>
+<td><p>101 <span class="hl">(1,600-2,351)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>114 <span class="hl">(1,832-2,628)</span></p></td>
+<td><p>6 <span class="hl">(24-211)</span></p></td>
+<td><p>300 <span class="hl">(5,256-6,481)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="admonition-title">Nota metodológica</p>
+<p>Las estimaciones poblacionales asumen una distribución proporcional entre la muestra y la población total, lo cual puede no reflejar cambios recientes en la dinámica laboral de Tocancipá.</p>
+</div>
+<p>El análisis de la situación laboral de los potenciales Voluntarios Académicos <span class="va">(VA)</span> revela patrones significativos que impactan directamente en la estrategia de reclutamiento y retención de CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Población Activa</strong>: La mayoría de los <span class="va">VA</span> potenciales están trabajando, con 375 hombres (estimado 6,666-8,005) y 300 mujeres (estimado 5,256-6,481) en esta categoría. Esta preponderancia de individuos empleados sugiere un rico pool de experiencias profesionales, pero también implica la necesidad de diseñar un programa de voluntariado flexible que se adapte a los horarios laborales.</p></li>
+<li><p><strong>Buscadores de Empleo</strong>: Un segmento significativo está buscando trabajo: 49 hombres (estimado 693-1,224) y 43 mujeres (estimado 592-1,090). Este grupo representa una oportunidad única para CircleUp, ya que el voluntariado podría servir como plataforma para el desarrollo de habilidades y networking, mejorando sus perspectivas de empleo.</p></li>
+<li><p><strong>Brecha de Género en Oficios del Hogar</strong>: Se observa una marcada diferencia en la categoría de oficios del hogar, con 114 mujeres (estimado 1,832-2,628) frente a solo 16 hombres (estimado 160-466). Esta disparidad refleja patrones culturales que CircleUp debe considerar al diseñar estrategias de inclusión y empoderamiento.</p></li>
+<li><p><strong>Población Estudiantil</strong>: Un número considerable de individuos en este grupo etario aún está estudiando: 127 hombres (estimado 2,066-2,903) y 101 mujeres (estimado 1,600-2,351). Este segmento ofrece la oportunidad de integrar el voluntariado con el desarrollo académico y profesional temprano.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Insight Clave</p>
+<p>La diversidad de situaciones laborales en el grupo <span class="va">VA</span> sugiere la necesidad de un enfoque multifacético en el programa de voluntariado de CircleUp. La estrategia debe equilibrar la experiencia de los profesionales activos con las aspiraciones de desarrollo de los buscadores de empleo y estudiantes.</p>
+</div>
+<p>Estas tendencias laborales tienen implicaciones directas para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Flexibilidad Programática</strong>: Es crucial desarrollar un programa que ofrezca opciones de voluntariado en diversos horarios para acomodar a los <span class="va">VA</span> empleados.</p></li>
+<li><p><strong>Desarrollo de Habilidades</strong>: Integrar componentes de desarrollo profesional en el programa de voluntariado podría atraer a buscadores de empleo y estudiantes, creando un ciclo de beneficio mutuo.</p></li>
+<li><p><strong>Inclusión de Género</strong>: Implementar estrategias específicas para involucrar a mujeres en oficios del hogar podría diversificar el pool de voluntarios y abordar desigualdades de género.</p></li>
+<li><p><strong>Mentorías Cruzadas</strong>: Facilitar interacciones entre <span class="va">VA</span> empleados y aquellos buscando trabajo o estudiando podría enriquecer la experiencia de voluntariado y fortalecer el tejido social de Tocancipá.</p></li>
+<li><p><strong>Alianzas Estratégicas</strong>: Colaborar con empleadores locales para promover el voluntariado como parte del desarrollo profesional podría aumentar la participación de <span class="va">VA</span> empleados.</p></li>
+</ol>
+<p>Este análisis revela que la diversidad laboral entre los potenciales Voluntarios Académicos <span class="va">(VA)</span> es tanto un desafío como una oportunidad para CircleUp. Al adaptar su programa para satisfacer las necesidades y aprovechar las fortalezas de cada segmento laboral, CircleUp puede maximizar su impacto en la comunidad de Tocancipá mientras ofrece experiencias de voluntariado enriquecedoras y relevantes.</p>
+</section>
+<section id="voluntarios-academicos-va-perfil-ocupacional">
+<h3>Voluntarios Académicos <span class="va">(VA)</span>: Perfil Ocupacional<a class="headerlink" href="#voluntarios-academicos-va-perfil-ocupacional" title="Link to this heading">#</a></h3>
+</section>
+<section id="distribucion-ocupacional-va-25-44-anos-empleados">
+<h3>Distribución Ocupacional <span class="va">(VA, 25-44 años) Empleados</span><a class="headerlink" href="#distribucion-ocupacional-va-25-44-anos-empleados" title="Link to this heading">#</a></h3>
+<table class="table" id="va-employed">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Distribución Ocupacional por Género de la Población Empleada de 25 a 44 Años en Tocancipá (Estimaciones)</span><a class="headerlink" href="#va-employed" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>Empleado doméstico</strong></p></th>
+<th class="head"><p><strong>Jornalero o peón</strong></p></th>
+<th class="head"><p><strong>Obrero o empleado de empresa particular</strong></p></th>
+<th class="head"><p><strong>Obrero o empleado del gobierno</strong></p></th>
+<th class="head"><p><strong>Patrón o empleador</strong></p></th>
+<th class="head"><p><strong>Profesional independiente</strong></p></th>
+<th class="head"><p><strong>Trabajador independiente o por cuenta propia</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>236 <span class="hl">(4,063-5,170)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>70 <span class="hl">(1,054-1,684)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>183 <span class="hl">(3,085-4,074)</span></p></td>
+<td><p>11 <span class="hl">(88-342)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>9 <span class="hl">(61-291)</span></p></td>
+<td><p>52 <span class="hl">(744-1,290)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>El análisis de la distribución ocupacional de los Voluntarios Académicos <span class="va">(VA)</span> empleados revela patrones significativos que tienen implicaciones directas para el programa de CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Predominancia del Sector Privado</strong>: La mayoría de los <span class="va">VA</span> empleados, tanto hombres (236, estimado 4,063-5,170) como mujeres (183, estimado 3,085-4,074), trabajan en empresas particulares. Este dato sugiere un amplio pool de experiencias en el sector privado que CircleUp puede aprovechar para su programa de voluntariado.</p></li>
+<li><p><strong>Brecha de Género en Empleos Gubernamentales</strong>: Aunque la participación en el sector público es baja en general, se observa una mayor presencia femenina (11 mujeres, estimado 88-342) en comparación con los hombres (5, estimado 12-183). Esta diferencia podría indicar un mayor potencial entre las mujeres <span class="va">VA</span> para proyectos relacionados con servicios públicos y administración.</p></li>
+<li><p><strong>Emprendimiento y Trabajo Independiente</strong>: Un número significativo de <span class="va">VA</span> son trabajadores independientes o por cuenta propia, con 70 hombres (estimado 1,054-1,684) y 52 mujeres (estimado 744-1,290). Este grupo podría aportar valiosas habilidades de autogestión y creatividad al programa de voluntariado.</p></li>
+<li><p><strong>Profesionales Independientes</strong>: Aunque en menor número, la presencia de profesionales independientes (7 hombres, estimado 36-238; 9 mujeres, estimado 61-291) sugiere un nicho de expertise especializada que CircleUp podría aprovechar para proyectos más técnicos o complejos.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Insight Clave</p>
+<p>La diversidad ocupacional entre los <span class="va">VA</span> empleados ofrece a CircleUp un rico ecosistema de habilidades y experiencias. Sin embargo, la concentración en el sector privado sugiere la necesidad de estrategias específicas para involucrar a estos profesionales en actividades de voluntariado que complementen sus carreras corporativas.</p>
+</div>
+<p>Estas tendencias ocupacionales tienen implicaciones estratégicas para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Alianzas Corporativas</strong>: Dada la alta proporción de empleados en empresas particulares, CircleUp podría beneficiarse de establecer alianzas con empresas locales para promover el voluntariado corporativo como parte de sus programas de responsabilidad social.</p></li>
+<li><p><strong>Proyectos Especializados</strong>: Los profesionales independientes y trabajadores por cuenta propia podrían liderar proyectos específicos que requieran habilidades especializadas, como consultoría para emprendedores locales o talleres de desarrollo profesional.</p></li>
+<li><p><strong>Diversificación de Proyectos</strong>: Para atraer a <span class="va">VA</span> con diferentes perfiles ocupacionales, CircleUp debería ofrecer una variedad de proyectos que aprovechen distintas habilidades y experiencias profesionales.</p></li>
+<li><p><strong>Mentorías Cruzadas</strong>: Fomentar la colaboración entre <span class="va">VA</span> de diferentes sectores (privado, público, independiente) podría enriquecer el intercambio de conocimientos y ampliar el impacto del programa.</p></li>
+<li><p><strong>Desarrollo de Habilidades Complementarias</strong>: Ofrecer oportunidades para que los <span class="va">VA</span> desarrollen habilidades fuera de su ámbito profesional habitual podría aumentar el atractivo del programa y contribuir al crecimiento personal de los voluntarios.</p></li>
+</ol>
+<p>Este análisis ocupacional revela que CircleUp tiene acceso a un diverso pool de talentos entre los <span class="va">VA</span> empleados. Al diseñar un programa de voluntariado que aproveche esta diversidad ocupacional y ofrezca oportunidades de desarrollo complementarias, CircleUp puede maximizar el impacto de sus iniciativas en la comunidad de Tocancipá mientras proporciona experiencias enriquecedoras para sus voluntarios.</p>
+</section>
+<section id="voluntarios-academicos-va-perfil-educativo-y-migratorio">
+<h3>Voluntarios Académicos <span class="va">(VA)</span>: Perfil Educativo y Migratorio<a class="headerlink" href="#voluntarios-academicos-va-perfil-educativo-y-migratorio" title="Link to this heading">#</a></h3>
+</section>
+<section id="distribucion-nivel-educativo-va-25-44-anos-empleados-educacion">
+<h3>Distribución Nivel Educativo <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span><a class="headerlink" href="#distribucion-nivel-educativo-va-25-44-anos-empleados-educacion" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Niveles de Educación</p>
+<p>Los niveles de educación considerados en este análisis son:</p>
+<ol class="arabic simple">
+<li><p>Técnico</p></li>
+<li><p>Universitaria completa (con título)</p></li>
+<li><p>Especialización completa (con título)</p></li>
+<li><p>Universitaria incompleta (sin título)</p></li>
+<li><p>Tecnológico</p></li>
+<li><p>Maestría completa (con título)</p></li>
+</ol>
+</div>
+<table class="table" id="va-employed-education">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">Nivel Educativo y Lugar de Residencia Hace 5 Años de la Población Empleada de 25 a 44 Años en Tocancipá</span><a class="headerlink" href="#va-employed-education" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>Ubicacion (5 años)</strong></p></th>
+<th class="head"><p><strong>Especialización completa (con título)</strong></p></th>
+<th class="head"><p><strong>Maestría completa (con título)</strong></p></th>
+<th class="head"><p><strong>Tecnológico</strong></p></th>
+<th class="head"><p><strong>Técnico</strong></p></th>
+<th class="head"><p><strong>Universitaria  incompleta (sin título)</strong></p></th>
+<th class="head"><p><strong>Universitaria completa (con título)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p><em>Este municipio</em></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>14 <span class="hl">(131-417)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>12 <span class="hl">(102-367)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hombre</strong></p></td>
+<td><p><em>Otro municipio</em></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p><em>Otro país</em></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p><em>Este municipio</em></p></td>
+<td><p>9 <span class="hl">(61-291)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>17 <span class="hl">(175-490)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>14 <span class="hl">(131-417)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mujer</strong></p></td>
+<td><p><em>Otro municipio</em></p></td>
+<td><p>11 <span class="hl">(88-342)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>9 <span class="hl">(61-291)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>10 <span class="hl">(75-317)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p><em>Otro país</em></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>El análisis de la distribución del nivel educativo de los Voluntarios Académicos <span class="va">(VA)</span> empleados, considerando su lugar de residencia hace 5 años, revela patrones significativos que complementan nuestros hallazgos previos sobre la situación laboral y ocupacional:</p>
+<ol class="arabic simple">
+<li><p><strong>Atracción de Talento Calificado</strong>: Tocancipá está atrayendo profesionales con formación académica superior, especialmente en niveles de especialización y universitaria completa. Este flujo de talento calificado enriquece el pool de potenciales <span class="va">VA</span> para CircleUp, aportando diversidad de experiencias y conocimientos.</p></li>
+<li><p><strong>Movilidad Femenina Destacada</strong>: Se observa una mayor presencia de mujeres con niveles educativos superiores que se han trasladado a Tocancipá en los últimos 5 años. Por ejemplo, 11 mujeres con especialización completa (estimado 88-342) provienen de otros municipios, en comparación con 7 hombres (estimado 36-238). Esta tendencia subraya el potencial de liderazgo femenino identificado en análisis anteriores.</p></li>
+<li><p><strong>Predominio de Formación Técnica Local</strong>: Entre los residentes de larga data, se destaca una mayor presencia de formación técnica, con 14 hombres (estimado 131-417) y 17 mujeres (estimado 175-490) que residían en Tocancipá hace 5 años. Esto sugiere una base sólida de habilidades prácticas entre los <span class="va">VA</span> locales.</p></li>
+<li><p><strong>Migración Internacional Selectiva</strong>: Aunque en menor número, se observa una presencia de profesionales con títulos universitarios provenientes de otros países, especialmente hombres (5, estimado 12-183). Esto añade una capa adicional de diversidad cultural y experiencia internacional al pool de <span class="va">VA</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Insight Clave</p>
+<p>La combinación de talento local con formación técnica y la afluencia de profesionales con educación superior crea un ecosistema diverso de conocimientos y habilidades entre los <span class="va">VA</span>. CircleUp tiene la oportunidad de aprovechar esta diversidad para enriquecer sus programas de voluntariado y fomentar la innovación social en Tocancipá.</p>
+</div>
+<p>Estas tendencias educativas y migratorias tienen implicaciones estratégicas para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Programas de Integración</strong>: Desarrollar iniciativas que faciliten la integración de los nuevos residentes profesionales, especialmente mujeres, en la comunidad de Tocancipá a través del voluntariado.</p></li>
+<li><p><strong>Mentorías Multidimensionales</strong>: Implementar un sistema de mentorías que aproveche tanto la experiencia local (formación técnica) como la expertise de los profesionales recién llegados con formación superior.</p></li>
+<li><p><strong>Proyectos de Innovación Social</strong>: Diseñar proyectos que combinen el conocimiento práctico local con las perspectivas innovadoras de los profesionales con formación avanzada, fomentando soluciones creativas a desafíos comunitarios.</p></li>
+<li><p><strong>Desarrollo de Habilidades Complementarias</strong>: Ofrecer oportunidades para que los <span class="va">VA</span> con formación técnica amplíen sus conocimientos teóricos, y para que aquellos con formación universitaria adquieran habilidades prácticas locales.</p></li>
+<li><p><strong>Networking Profesional</strong>: Facilitar espacios de networking que promuevan la colaboración entre <span class="va">VA</span> de diferentes backgrounds educativos y orígenes geográficos, potenciando el intercambio de conocimientos y oportunidades.</p></li>
+</ol>
+<p>Este análisis educativo y migratorio revela que CircleUp tiene acceso a un rico y diverso pool de talentos entre los <span class="va">VA</span> empleados. Al diseñar programas de voluntariado que aprovechen esta diversidad educativa y la dinámica migratoria, CircleUp puede no solo maximizar el impacto de sus iniciativas en la comunidad de Tocancipá, sino también contribuir a la integración y desarrollo profesional de sus voluntarios, fortaleciendo así el tejido social y económico del municipio.</p>
+</section>
+<section id="satisfaccion-vital-de-voluntarios-academicos-va">
+<h3>Satisfacción Vital de Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#satisfaccion-vital-de-voluntarios-academicos-va" title="Link to this heading">#</a></h3>
+</section>
+<section id="satisfaccion-con-la-vida-va-25-44-anos-empleados-educacion">
+<h3>Satisfacción con la Vida <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span><a class="headerlink" href="#satisfaccion-con-la-vida-va-25-44-anos-empleados-educacion" title="Link to this heading">#</a></h3>
+<p>La distribución de la satisfacción vital entre los <span class="va">VA</span> empleados y con formación académica revela patrones significativos:</p>
+<figure class="align-center" id="va-fig-employed-education-satisfaction">
+<a class="reference internal image-reference" href="../_images/vida.png"><img alt="../_images/vida.png" src="../_images/vida.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Distribución de Satisfacción Vital en Potenciales Voluntarios Académicos <span class="va">(VA)</span> de CircleUp: Empleados de 25-44 años con Formación Superior</span><a class="headerlink" href="#va-fig-employed-education-satisfaction" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Concentración en Niveles Altos</strong>: Tanto hombres (34.3%) como mujeres (33.9%) presentan una concentración modal en el nivel 9 de satisfacción, indicando un bienestar subjetivo elevado en este segmento poblacional.</p></li>
+<li><p><strong>Dispersión Asimétrica</strong>: Se observa una asimetría negativa en ambos géneros, con una cola más larga hacia los valores inferiores. Esta distribución sugiere la existencia de subgrupos con niveles de satisfacción divergentes del patrón general.</p></li>
+<li><p><strong>Diferencias de Género Sutiles</strong>:</p>
+<ul class="simple">
+<li><p>Hombres: Muestran una distribución más uniforme entre los niveles 8, 9 y 10 (24.8%, 34.3%, 25.7% respectivamente).</p></li>
+<li><p>Mujeres: Presentan una concentración más pronunciada en los niveles 8 y 9 (32.2% y 33.9%), con menor representación en el nivel 10 (20.3%).</p></li>
+</ul>
+</li>
+<li><p><strong>Presencia de Casos Atípicos</strong>: La existencia de respuestas en niveles bajos (4-6) en ambos géneros, aunque minoritarias, señala la presencia de individuos con experiencias vitales significativamente diferentes al grueso de la población.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Insight Clave</p>
+<p>La alta satisfacción vital general, combinada con la presencia de casos atípicos, sugiere un escenario complejo donde coexisten experiencias diversas. Este panorama ofrece oportunidades para iniciativas de voluntariado que aborden tanto el mantenimiento del bienestar general como la atención a grupos específicos con necesidades particulares.</p>
+</div>
+<p>Implicaciones para la investigación y el diseño de programas:</p>
+<ol class="arabic simple">
+<li><p><strong>Segmentación de Iniciativas</strong>: La variabilidad en los niveles de satisfacción justifica el diseño de programas diferenciados que atiendan tanto a la mayoría satisfecha como a los subgrupos con menor bienestar subjetivo.</p></li>
+<li><p><strong>Análisis de Factores Contextuales</strong>: Es crucial explorar las variables socioeconómicas, laborales y comunitarias que podrían explicar la distribución observada, especialmente en los casos de baja satisfacción.</p></li>
+<li><p><strong>Enfoque en Equidad de Género</strong>: Las sutiles diferencias entre géneros ameritan una investigación más profunda sobre las causas subyacentes y sus implicaciones para la participación en actividades de voluntariado.</p></li>
+<li><p><strong>Monitoreo Longitudinal</strong>: Establecer un sistema de seguimiento temporal de la satisfacción vital permitiría evaluar el impacto de las iniciativas de voluntariado y los cambios en el contexto socioeconómico local.</p></li>
+<li><p><strong>Exploración de Motivaciones</strong>: Investigar la relación entre los niveles de satisfacción y las motivaciones para el voluntariado podría revelar patrones de participación y compromiso diferenciados.</p></li>
+<li><p><strong>Diseño de Intervenciones Focalizadas</strong>: Desarrollar programas específicos para abordar las necesidades de los individuos en los extremos inferiores de la escala de satisfacción, potencialmente en colaboración con servicios de apoyo psicosocial.</p></li>
+</ol>
+<p>La complejidad de la distribución de satisfacción vital entre los <span class="va">VA</span> subraya la necesidad de un enfoque matizado en el diseño de programas de voluntariado. Si bien la tendencia general hacia altos niveles de satisfacción sugiere un terreno fértil para iniciativas comunitarias, la presencia de variabilidad y casos atípicos demanda una aproximación flexible y adaptativa que reconozca la diversidad de experiencias y necesidades dentro de la población objetivo.</p>
+</section>
+<section id="satisfaccion-laboral-de-voluntarios-academicos-va">
+<h3>Satisfacción Laboral de Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#satisfaccion-laboral-de-voluntarios-academicos-va" title="Link to this heading">#</a></h3>
+<p>La satisfacción laboral de los potenciales <span class="va">VA</span> revela patrones significativos con implicaciones directas para CircleUp:</p>
+<figure class="align-center" id="va-sat-labor">
+<a class="reference internal image-reference" href="../_images/trabajo.png"><img alt="../_images/trabajo.png" src="../_images/trabajo.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Satisfacción Laboral en la Población (VA)</span><a class="headerlink" href="#va-sat-labor" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Alta Satisfacción General</strong>: Tanto hombres como mujeres muestran niveles elevados de satisfacción laboral, con una concentración en los niveles 7-9. Esta tendencia sugiere un ambiente laboral propicio en Tocancipá, que podría traducirse en una mayor disposición para el voluntariado.</p></li>
+<li><p><strong>Diferencias de Género Sutiles</strong>:</p>
+<ul class="simple">
+<li><p>Hombres: Pico en nivel 8 (36.2%), seguido por 9 (17.1%) y 7 (15.2%).</p></li>
+<li><p>Mujeres: Distribución más uniforme entre 9 (22.9%), 8 (21.2%) y 7 (16.1%).
+Esta variación indica posibles diferencias en las expectativas o experiencias laborales entre géneros, requiriendo un enfoque matizado en el reclutamiento de voluntarios.</p></li>
+</ul>
+</li>
+<li><p><strong>Casos de Baja Satisfacción</strong>: La presencia de un pequeño porcentaje con baja satisfacción (niveles 1-5) en ambos géneros señala la existencia de subgrupos que podrían beneficiarse de iniciativas de desarrollo profesional o apoyo laboral.</p></li>
+<li><p><strong>Implicaciones para CircleUp</strong>:</p>
+<ul class="simple">
+<li><p>La alta satisfacción laboral general sugiere un pool de potenciales voluntarios motivados y con experiencias positivas que pueden transferir al ámbito comunitario.</p></li>
+<li><p>La variabilidad en los niveles de satisfacción ofrece la oportunidad de diseñar programas de voluntariado que aborden diversas necesidades y motivaciones.</p></li>
+<li><p>La correlación entre satisfacción laboral y compromiso comunitario merece una investigación más profunda para optimizar las estrategias de reclutamiento y retención de voluntarios.</p></li>
+</ul>
+</li>
+<li><p><strong>Estrategias Recomendadas</strong>:</p>
+<ul class="simple">
+<li><p>Desarrollar programas de voluntariado que complementen las experiencias laborales positivas, aprovechando las habilidades y la motivación de los <span class="va">VA</span> altamente satisfechos.</p></li>
+<li><p>Implementar iniciativas específicas para involucrar a aquellos con menor satisfacción laboral, ofreciendo oportunidades de desarrollo personal y profesional a través del voluntariado.</p></li>
+<li><p>Establecer alianzas con empleadores locales para promover el voluntariado como una extensión del desarrollo profesional, potenciando la satisfacción tanto laboral como personal.</p></li>
+</ul>
+</li>
+</ol>
+<p>La distribución de satisfacción laboral entre los potenciales <span class="va">VA</span> presenta un panorama favorable para CircleUp, con un amplio segmento de profesionales satisfechos y motivados. Sin embargo, la presencia de variabilidad y casos de baja satisfacción subraya la necesidad de un enfoque diversificado en el diseño de programas de voluntariado, que considere tanto el aprovechamiento de las experiencias positivas como la atención a las necesidades de desarrollo y realización personal de todos los segmentos de la población objetivo.</p>
+</section>
+<section id="satisfaccion-comunitaria-de-voluntarios-academicos-va">
+<h3>Satisfacción Comunitaria de Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#satisfaccion-comunitaria-de-voluntarios-academicos-va" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="va-sat-comm">
+<a class="reference internal image-reference" href="../_images/comunidad.png"><img alt="../_images/comunidad.png" src="../_images/comunidad.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Satisfacción con la Comunidad en la Población Empleada de 25 a 44 Años con Formación Académica en Tocancipá</span><a class="headerlink" href="#va-sat-comm" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La <a class="reference internal" href="#va-sat-comm"><span class="std std-numref">Fig. 3</span></a> revela patrones críticos en la satisfacción comunitaria de los potenciales <span class="va">VA</span>, con implicaciones sustanciales para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Predominio de Alta Satisfacción</strong>: El nivel 8 de satisfacción domina en ambos géneros (42 hombres, est. 719-1,247; 36 mujeres, est. 616-1,067), indicando una base sólida de aprecio comunitario. Esta tendencia sugiere un terreno fértil para iniciativas de voluntariado arraigadas en el orgullo local.</p></li>
+<li><p><strong>Segmento de Excelencia</strong>: Un grupo significativo reporta nivel 9 de satisfacción (22 hombres, 26 mujeres), representando potenciales líderes comunitarios y embajadores entusiastas para los programas de CircleUp.</p></li>
+<li><p><strong>Diversidad de Experiencias</strong>: Aproximadamente un tercio de los encuestados (36.2% hombres, 37.3% mujeres) reporta niveles de satisfacción de 7 o menos, señalando un segmento crítico que percibe oportunidades de mejora comunitaria.</p></li>
+<li><p><strong>Implicaciones Estratégicas para CircleUp</strong>:</p>
+<ul class="simple">
+<li><p>La alta satisfacción general proporciona una base de voluntarios potencialmente comprometidos y motivados por el bienestar comunitario.</p></li>
+<li><p>La presencia de un segmento menos satisfecho ofrece oportunidades para programas de voluntariado enfocados en abordar preocupaciones específicas y mejorar la calidad de vida comunitaria.</p></li>
+<li><p>La distribución variada de satisfacción sugiere la necesidad de un enfoque diversificado en el reclutamiento y diseño de programas de voluntariado.</p></li>
+</ul>
+</li>
+<li><p><strong>Recomendaciones Operativas</strong>:</p>
+<ul class="simple">
+<li><p>Desarrollar programas que capitalicen el orgullo comunitario de los altamente satisfechos, involucrándolos en iniciativas de mejora y preservación.</p></li>
+<li><p>Implementar proyectos específicos que aborden las preocupaciones del segmento menos satisfecho, utilizando el voluntariado como herramienta de empoderamiento y cambio comunitario.</p></li>
+<li><p>Establecer un sistema de retroalimentación continua para monitorear cómo las iniciativas de voluntariado impactan la satisfacción comunitaria a lo largo del tiempo.</p></li>
+</ul>
+</li>
+</ol>
+<p>La distribución de satisfacción comunitaria entre los potenciales <span class="va">VA</span> presenta un escenario prometedor para CircleUp, con una mayoría satisfecha que puede impulsar iniciativas positivas. Sin embargo, la presencia de un segmento significativo con menor satisfacción subraya la importancia de un enfoque inclusivo y orientado a la mejora continua en el diseño de programas de voluntariado. Esta dualidad ofrece a CircleUp la oportunidad única de catalizar el compromiso cívico, aprovechando tanto el entusiasmo de los más satisfechos como la motivación para el cambio de aquellos que perciben áreas de mejora en su comunidad.</p>
+</section>
+<section id="uso-de-internet-para-educacion-entre-voluntarios-academicos-va">
+<h3>Uso de Internet para Educación entre Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#uso-de-internet-para-educacion-entre-voluntarios-academicos-va" title="Link to this heading">#</a></h3>
+<table class="table" id="tbl-inter-edu">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">Uso de Internet para Educación y Aprendizaje</span><a class="headerlink" href="#tbl-inter-edu" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>No</strong></p></th>
+<th class="head"><p><strong>Si</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>68 <span class="hl">(1,019-1,641)</span></p></td>
+<td><p>37 <span class="hl">(493-955)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>64 <span class="hl">(950-1,554)</span></p></td>
+<td><p>54 <span class="hl">(778-1,334)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-inter-edu"><span class="std std-numref">Table 7</span></a> revela patrones cruciales en el uso de Internet para educación entre los potenciales <span class="va">VA</span>, con implicaciones profundas para CircleUp y el panorama educativo en Tocancipá:</p>
+<ol class="arabic simple">
+<li><p><strong>Brecha Digital Educativa</strong>: La mayoría de los <span class="va">VA</span> no utiliza Internet para fines educativos (64.8% de hombres y 54.2% de mujeres), evidenciando una subutilización crítica de recursos digitales. Este fenómeno sugiere una desconexión entre la formación académica y la adopción de tecnologías educativas modernas, potencialmente limitando el desarrollo continuo de habilidades en la fuerza laboral local.</p></li>
+<li><p><strong>Disparidad de Género en Adopción Digital</strong>: Las mujeres muestran una mayor propensión al uso educativo de Internet (45.8% vs 35.2% en hombres), indicando una brecha de género en la adaptabilidad tecnológica. Esta tendencia podría reflejar diferencias en estrategias de desarrollo profesional o en la percepción del valor del aprendizaje en línea entre géneros.</p></li>
+<li><p><strong>Oportunidad de Innovación Educativa</strong>: El segmento significativo que sí utiliza Internet para educación (35.2% de hombres y 45.8% de mujeres) representa un núcleo de innovadores educativos potenciales. Este grupo podría actuar como catalizador para la adopción más amplia de recursos digitales de aprendizaje en la comunidad.</p></li>
+<li><p><strong>Implicaciones Estratégicas para CircleUp</strong>:</p>
+<ul class="simple">
+<li><p>La baja adopción general de aprendizaje en línea señala una necesidad crítica de programas de alfabetización digital y concientización sobre recursos educativos en línea.</p></li>
+<li><p>La disparidad de género ofrece la oportunidad de diseñar iniciativas de voluntariado que aprovechen y amplíen la mayor apertura de las mujeres hacia el aprendizaje digital.</p></li>
+<li><p>El segmento de usuarios activos de Internet para educación representa un recurso valioso para el diseño y liderazgo de programas de voluntariado basados en tecnología.</p></li>
+</ul>
+</li>
+<li><p><strong>Recomendaciones Estratégicas</strong>:</p>
+<ul class="simple">
+<li><p>Implementar un programa de “Embajadores Digitales” utilizando el segmento de usuarios activos para promover y enseñar habilidades de aprendizaje en línea a sus pares.</p></li>
+<li><p>Desarrollar una plataforma de microaprendizaje específica para CircleUp, que introduzca gradualmente a los <span class="va">VA</span> al aprendizaje en línea a través de contenido relevante y accesible.</p></li>
+<li><p>Establecer alianzas con empresas locales para promover y reconocer el desarrollo profesional a través del aprendizaje en línea, incentivando la adopción de estas herramientas.</p></li>
+<li><p>Crear un programa de mentorías cruzadas que aproveche la mayor adopción femenina del aprendizaje en línea para fomentar la equidad de género en habilidades digitales.</p></li>
+</ul>
+</li>
+<li><p><strong>Perspectivas de Investigación Futuras</strong>:</p>
+<ul class="simple">
+<li><p>Explorar las barreras específicas que impiden la adopción del aprendizaje en línea entre los <span class="va">VA</span>, considerando factores como acceso a tecnología, percepciones de utilidad y preferencias de aprendizaje.</p></li>
+<li><p>Investigar la correlación entre el uso de Internet para educación y la participación en actividades de voluntariado, para informar estrategias de reclutamiento y retención más efectivas.</p></li>
+</ul>
+</li>
+</ol>
+<p>Este análisis revela que CircleUp se encuentra en una posición única para catalizar una transformación digital educativa en Tocancipá. Al abordar la brecha en el uso de Internet para educación, CircleUp no solo puede mejorar la eficacia de sus programas de voluntariado, sino también contribuir significativamente al desarrollo del capital humano local, preparando a la comunidad para los desafíos de la economía del conocimiento del siglo XXI.</p>
+</section>
+<section id="redes-sociales-puente-digital-para-va">
+<h3>Redes Sociales: Puente Digital para VA<a class="headerlink" href="#redes-sociales-puente-digital-para-va" title="Link to this heading">#</a></h3>
+<table class="table" id="tbl-inter-rd">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">Uso de Internet para Redes Sociales en la Población Empleada de 25 a 44 Años con Formación Académica</span><a class="headerlink" href="#tbl-inter-rd" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>No</strong></p></th>
+<th class="head"><p><strong>Si</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>104 <span class="hl">(1,654-2,415)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>118 <span class="hl">(1,904-2,712)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-inter-rd"><span class="std std-numref">Table 8</span></a> revela una adopción casi universal de redes sociales entre los potenciales <span class="va">VA</span>, con implicaciones cruciales para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Saturación Digital</strong>: La adopción del 100% entre mujeres y 99% entre hombres indica una saturación del espacio social digital, creando un ecosistema virtual omnipresente en la vida de los <span class="va">VA</span>.</p></li>
+<li><p><strong>Brecha de Género Mínima</strong>: La diferencia marginal en adopción (1 hombre no usuario) sugiere una equidad digital de género en el ámbito social, contrastando con la brecha observada en el uso educativo de Internet.</p></li>
+<li><p><strong>Implicaciones Estratégicas</strong>:</p>
+<ul class="simple">
+<li><p><strong>Canal de Comunicación Primario</strong>: Las redes sociales emergen como el medio más eficaz para la difusión de información y reclutamiento de <span class="va">VA</span>.</p></li>
+<li><p><strong>Plataforma de Engagement</strong>: Ofrece un espacio ideal para cultivar comunidades virtuales de voluntarios, facilitando la coordinación y el intercambio de experiencias.</p></li>
+<li><p><strong>Herramienta de Microvoluntariado</strong>: Posibilita la implementación de iniciativas de voluntariado digital de bajo compromiso pero alto impacto.</p></li>
+<li><p><strong>Amplificador de Impacto</strong>: Proporciona un medio para que los <span class="va">VA</span> compartan sus experiencias, potenciando el efecto multiplicador del voluntariado.</p></li>
+</ul>
+</li>
+<li><p><strong>Recomendaciones Tácticas</strong>:</p>
+<ul class="simple">
+<li><p>Desarrollar una estrategia de contenido multiplataforma que aproveche las características únicas de cada red social.</p></li>
+<li><p>Implementar campañas de “storytelling” digital para destacar el impacto del voluntariado a través de narrativas personales de los <span class="va">VA</span>.</p></li>
+<li><p>Crear un programa de “embajadores digitales” que aproveche la influencia social de los <span class="va">VA</span> más activos en redes.</p></li>
+<li><p>Diseñar desafíos virales y campañas de hashtags que promuevan la visibilidad de CircleUp y sus iniciativas.</p></li>
+</ul>
+</li>
+<li><p><strong>Consideraciones Críticas</strong>:</p>
+<ul class="simple">
+<li><p>La alta adopción no garantiza engagement activo; es crucial desarrollar contenido que resuene con los intereses y valores de los <span class="va">VA</span>.</p></li>
+<li><p>El uso intensivo de redes sociales puede llevar a la fatiga digital; CircleUp debe equilibrar su presencia online con experiencias offline significativas.</p></li>
+<li><p>La privacidad y seguridad de datos deben ser prioritarias en todas las interacciones digitales para mantener la confianza de los <span class="va">VA</span>.</p></li>
+</ul>
+</li>
+<li><p><strong>Oportunidades de Investigación</strong>:</p>
+<ul class="simple">
+<li><p>Analizar los patrones de uso específicos de redes sociales entre los <span class="va">VA</span> para optimizar la estrategia de comunicación.</p></li>
+<li><p>Explorar la correlación entre la actividad en redes sociales y la propensión al voluntariado para informar estrategias de reclutamiento más efectivas.</p></li>
+</ul>
+</li>
+</ol>
+<p>La omnipresencia de las redes sociales entre los <span class="va">VA</span> ofrece a CircleUp un canal poderoso para catalizar el compromiso cívico digital. Al aprovechar estratégicamente este espacio virtual, CircleUp puede no solo amplificar su alcance e impacto, sino también redefinir el voluntariado para la era digital, creando un modelo de participación comunitaria que sea tan dinámico y interconectado como la sociedad a la que sirve.</p>
+</section>
+</section>
+<section id="perfil-demografico-mi-potencial-y-desafios">
+<h2>Perfil Demográfico MI: Potencial y Desafíos<a class="headerlink" href="#perfil-demografico-mi-potencial-y-desafios" title="Link to this heading">#</a></h2>
+<table class="table" id="tbl-gender-age-mi">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Distribución por Edad y Género de Potenciales (MI)</span><a class="headerlink" href="#tbl-gender-age-mi" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>14-17</strong></p></th>
+<th class="head"><p><strong>18-19</strong></p></th>
+<th class="head"><p><strong>20-24</strong></p></th>
+<th class="head"><p><strong>25-29</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>70 <span class="hl">(1,054-1,684)</span></p></td>
+<td><p>36 <span class="hl">(476-932)</span></p></td>
+<td><p>125 <span class="hl">(2,030-2,860)</span></p></td>
+<td><p>22 <span class="hl">(252-609)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>56 <span class="hl">(813-1,378)</span></p></td>
+<td><p>38 <span class="hl">(509-977)</span></p></td>
+<td><p>105 <span class="hl">(1,671-2,436)</span></p></td>
+<td><p>16 <span class="hl">(160-466)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-gender-age-mi"><span class="std std-numref">Table 9</span></a> revela patrones críticos en la composición demográfica de potenciales Mentores Inversos <span class="mi">(MI)</span>, con implicaciones significativas para CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Predominio Masculino</strong>: Con 231 hombres (est. 4,522) frente a 199 mujeres (est. 3,896), se evidencia un sesgo de género del 7.5% hacia la participación masculina. Esta brecha, aunque moderada, señala la necesidad de estrategias de inclusión focalizadas.</p></li>
+<li><p><strong>Concentración Etaria Estratégica</strong>: El grupo de 20-24 años emerge como el núcleo demográfico del programa MI, representando el 54.1% de hombres y 52.8% de mujeres. Esta concentración ofrece una base sólida de mentores con madurez emergente y habilidades digitales avanzadas.</p></li>
+<li><p><strong>Potencial de Diversidad Generacional</strong>: La presencia significativa de jóvenes de 14-19 años (106 hombres, 94 mujeres) presenta una oportunidad única para un enfoque de mentoría multigeneracional dentro del propio programa MI.</p></li>
+<li><p><strong>Implicaciones Estratégicas</strong>:</p>
+<ul class="simple">
+<li><p><strong>Equidad de Género</strong>: La brecha de género, aunque no severa, requiere atención para asegurar una representación equilibrada y maximizar la diversidad de perspectivas en el programa MI.</p></li>
+<li><p><strong>Segmentación Etaria</strong>: La concentración en el grupo 20-24 sugiere la posibilidad de un programa MI estratificado, con roles y responsabilidades diferenciados según la edad y experiencia.</p></li>
+<li><p><strong>Mentoría Escalonada</strong>: La distribución etaria permite un modelo de mentoría en cascada, donde los MI mayores pueden guiar a los más jóvenes, creando un ecosistema de aprendizaje continuo.</p></li>
+</ul>
+</li>
+<li><p><strong>Recomendaciones Tácticas</strong>:</p>
+<ul class="simple">
+<li><p>Implementar campañas de reclutamiento específicas para mujeres jóvenes, enfatizando el impacto y las oportunidades de liderazgo en tecnología y educación.</p></li>
+<li><p>Desarrollar un programa de “MI Embajadores” utilizando el grupo de 20-24 años para atraer y mentorizar a participantes más jóvenes.</p></li>
+<li><p>Crear tracks especializados dentro del programa MI que aprovechen las fortalezas específicas de cada grupo etario (e.g., innovación tecnológica para 20-24, cultura digital para 14-19).</p></li>
+<li><p>Establecer alianzas con instituciones educativas locales para integrar el programa MI en currículos de desarrollo profesional y servicio comunitario.</p></li>
+</ul>
+</li>
+<li><p><strong>Consideraciones Críticas</strong>:</p>
+<ul class="simple">
+<li><p>La sobrerrepresentación masculina podría indicar barreras subyacentes para la participación femenina en roles tecnológicos o de liderazgo que deben ser investigadas y abordadas.</p></li>
+<li><p>La amplia gama de edades (14-24) requiere un diseño de programa flexible que acomode diferentes niveles de madurez y experiencia.</p></li>
+</ul>
+</li>
+<li><p><strong>Oportunidades de Investigación</strong>:</p>
+<ul class="simple">
+<li><p>Explorar las motivaciones y barreras específicas para la participación en el programa MI entre diferentes grupos de edad y género.</p></li>
+<li><p>Analizar el impacto del programa MI en las trayectorias educativas y profesionales de los participantes a lo largo del tiempo.</p></li>
+</ul>
+</li>
+</ol>
+<p>El perfil demográfico de los potenciales MI presenta a CircleUp tanto desafíos como oportunidades únicas. Al aprovechar estratégicamente la diversidad etaria y abordar proactivamente la brecha de género, CircleUp puede desarrollar un programa MI robusto y dinámico que no solo cierre brechas digitales intergeneracionales, sino que también cultive una nueva generación de líderes tecnológicos y comunitarios en Tocancipá.</p>
+<section id="perfil-educativo-mi-base-para-la-innovacion-intergeneracional">
+<h3>Perfil Educativo MI: Base para la Innovación Intergeneracional<a class="headerlink" href="#perfil-educativo-mi-base-para-la-innovacion-intergeneracional" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Niveles de Educación</p>
+<p>Los niveles de educación considerados en este análisis son:</p>
+<ol class="arabic simple">
+<li><p>Media (10° - 13°)</p></li>
+<li><p>Técnico</p></li>
+<li><p>Tecnológico</p></li>
+<li><p>Universitaria incompleta (sin título)</p></li>
+<li><p>Universitaria completa (con título)</p></li>
+</ol>
+</div>
+<table class="table" id="tbl-mi-gender-edu">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">Distribución Nivel Educativo (MI)</span><a class="headerlink" href="#tbl-mi-gender-edu" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>Media (10° - 13°)</strong></p></th>
+<th class="head"><p><strong>Tecnológico</strong></p></th>
+<th class="head"><p><strong>Técnico</strong></p></th>
+<th class="head"><p><strong>Universitaria  incompleta (sin título)</strong></p></th>
+<th class="head"><p><strong>Universitaria completa (con título)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>72 <span class="hl">(1,089-1,728)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>4 <span class="hl">(2-155)</span></p></td>
+<td><p>10 <span class="hl">(75-317)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>69 <span class="hl">(1,037-1,663)</span></p></td>
+<td><p>4 <span class="hl">(2-155)</span></p></td>
+<td><p>11 <span class="hl">(88-342)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+<td><p>7 <span class="hl">(36-238)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-mi-gender-edu"><span class="std std-numref">Table 10</span></a> revela patrones educativos cruciales entre los potenciales Mentores Inversos <span class="mi">(MI)</span>, con implicaciones significativas para el diseño del programa de CircleUp:</p>
+<ol class="arabic simple">
+<li><p><strong>Predominio de Educación Media</strong>: La mayoría de potenciales MI (72 hombres, 69 mujeres) están en nivel medio, representando una base amplia de nativos digitales con conocimientos actualizados en tecnologías y tendencias sociales.</p></li>
+<li><p><strong>Diversidad en Educación Superior</strong>:</p>
+<ul class="simple">
+<li><p>Técnica/Tecnológica: 12 hombres vs 15 mujeres</p></li>
+<li><p>Universitaria (completa e incompleta): 14 hombres vs 14 mujeres
+Esta variedad ofrece un espectro de habilidades especializadas para la mentoría inversa.</p></li>
+</ul>
+</li>
+<li><p><strong>Paridad de Género en Educación Superior</strong>: La distribución equilibrada en niveles universitarios contrasta con la ligera ventaja femenina en educación técnica/tecnológica, sugiriendo una evolución positiva en la equidad educativa.</p></li>
+<li><p><strong>Implicaciones para la Mentoría Inversa</strong>:</p>
+<ul class="simple">
+<li><p><strong>Mentoría Escalonada</strong>: La diversidad educativa permite un sistema de mentoría multinivel, donde los MI universitarios pueden guiar a los de nivel medio en aspectos académicos, mientras estos aportan perspectivas frescas en tecnología y cultura digital.</p></li>
+<li><p><strong>Especialización por Nivel Educativo</strong>: Cada nivel educativo puede aportar diferentes tipos de mentoría: habilidades digitales básicas (nivel medio), aplicaciones prácticas (técnico/tecnológico), y conceptos avanzados (universitario).</p></li>
+<li><p><strong>Empoderamiento de Jóvenes</strong>: El programa MI puede capitalizar el entusiasmo y la familiaridad digital de los estudiantes de nivel medio para liderar iniciativas de alfabetización digital en la comunidad.</p></li>
+</ul>
+</li>
+<li><p><strong>Estrategias de Implementación</strong>:</p>
+<ul class="simple">
+<li><p>Desarrollar módulos de mentoría específicos para cada nivel educativo, maximizando las fortalezas únicas de cada grupo.</p></li>
+<li><p>Implementar un sistema de “mentores de mentores” donde los MI de nivel universitario apoyen a los de nivel medio en habilidades de liderazgo y comunicación.</p></li>
+<li><p>Crear proyectos colaborativos intergeneracionales que combinen la innovación de los MI de nivel medio con la experiencia práctica de los de nivel superior.</p></li>
+<li><p>Establecer alianzas con instituciones educativas locales para integrar la mentoría inversa en programas de servicio comunitario y desarrollo de habilidades blandas.</p></li>
+</ul>
+</li>
+<li><p><strong>Consideraciones Críticas</strong>:</p>
+<ul class="simple">
+<li><p>La concentración en educación media requiere un enfoque en el desarrollo de habilidades de comunicación y profesionalismo para estos jóvenes mentores.</p></li>
+<li><p>La menor representación en niveles técnico/tecnológico sugiere la necesidad de estrategias para aumentar la participación de este grupo, potencialmente rico en habilidades prácticas.</p></li>
+</ul>
+</li>
+<li><p><strong>Oportunidades de Investigación</strong>:</p>
+<ul class="simple">
+<li><p>Evaluar el impacto diferencial de la mentoría inversa según el nivel educativo del mentor, tanto para el mentor como para el mentoreado.</p></li>
+<li><p>Explorar cómo la participación en el programa MI influye en las decisiones educativas y profesionales futuras de los mentores.</p></li>
+</ul>
+</li>
+</ol>
+<p>El perfil educativo diverso de los potenciales MI presenta a CircleUp una oportunidad única para crear un ecosistema de mentoría inversa multinivel y multidisciplinario. Al aprovechar las fortalezas específicas de cada nivel educativo, CircleUp puede desarrollar un programa MI que no solo cierre brechas digitales intergeneracionales, sino que también fomente el desarrollo personal y profesional de los jóvenes mentores, creando un ciclo virtuoso de aprendizaje y crecimiento comunitario en Tocancipá.</p>
+</section>
+<section id="satisfaccion-vital-mi-fundamento-para-mentoria-efectiva">
+<h3>Satisfacción Vital MI: Fundamento para Mentoría Efectiva<a class="headerlink" href="#satisfaccion-vital-mi-fundamento-para-mentoria-efectiva" title="Link to this heading">#</a></h3>
+<table class="table" id="fig-mi-life-satisfaction">
+<caption><span class="caption-number">Table 11 </span><span class="caption-text">Satisfacción con la Vida - Población (MI)</span><a class="headerlink" href="#fig-mi-life-satisfaction" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>1</strong></p></th>
+<th class="head"><p><strong>10. Muy satisfecho</strong></p></th>
+<th class="head"><p><strong>4</strong></p></th>
+<th class="head"><p><strong>5</strong></p></th>
+<th class="head"><p><strong>6</strong></p></th>
+<th class="head"><p><strong>7</strong></p></th>
+<th class="head"><p><strong>8</strong></p></th>
+<th class="head"><p><strong>9</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>21 <span class="hl">(236-586)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>8 <span class="hl">(48-265)</span></p></td>
+<td><p>28 <span class="hl">(346-749)</span></p></td>
+<td><p>36 <span class="hl">(476-932)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>29 <span class="hl">(362-772)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>2 <span class="hl">(-15-93)</span></p></td>
+<td><p>3 <span class="hl">(-8-125)</span></p></td>
+<td><p>12 <span class="hl">(102-367)</span></p></td>
+<td><p>27 <span class="hl">(330-726)</span></p></td>
+<td><p>24 <span class="hl">(283-656)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#fig-mi-life-satisfaction"><span class="std std-numref">Table 11</span></a> revela patrones críticos en la satisfacción vital de los potenciales <span class="mi">MI</span>:</p>
+<div class="tip admonition">
+<p class="admonition-title">Insights Clave</p>
+<ul class="simple">
+<li><p>85.4% de hombres y 77.2% de mujeres reportan alta satisfacción (niveles 8-10).</p></li>
+<li><p>Ligera ventaja masculina en satisfacción máxima (nivel 9): 47.4% vs 38.2% en mujeres.</p></li>
+<li><p>Baja insatisfacción: solo 5.3% en ambos géneros reportan niveles ≤4.</p></li>
+</ul>
+</div>
+<p><strong>Implicaciones para CircleUp</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Base Motivacional Sólida</strong>: La alta satisfacción sugiere una cohorte de MI potencialmente comprometida y resiliente.</p></li>
+<li><p><strong>Enfoque Diferenciado</strong>: La variabilidad en satisfacción justifica un abordaje personalizado en el reclutamiento y retención de MI.</p></li>
+<li><p><strong>Potencial de Liderazgo</strong>: Los altamente satisfechos podrían ser excelentes embajadores del programa y mentores de pares.</p></li>
+<li><p><strong>Apoyo Focalizado</strong>: Implementar estrategias de apoyo específicas para el 5.3% menos satisfecho, potenciando su crecimiento personal a través de la mentoría.</p></li>
+<li><p><strong>Investigación Continua</strong>: Monitorear cómo la participación en MI impacta la satisfacción vital, informando mejoras programáticas.</p></li>
+</ol>
+<p>La satisfacción vital elevada entre los potenciales MI proporciona a CircleUp una base robusta para un programa de mentoría inversa efectivo y transformador, capaz de catalizar el desarrollo personal y comunitario en Tocancipá.</p>
+</section>
+<section id="satisfaccion-comunitaria-mi-catalizador-de-compromiso-local">
+<h3>Satisfacción Comunitaria MI: Catalizador de Compromiso Local<a class="headerlink" href="#satisfaccion-comunitaria-mi-catalizador-de-compromiso-local" title="Link to this heading">#</a></h3>
+<table class="table" id="tbl-mi-comm">
+<caption><span class="caption-number">Table 12 </span><span class="caption-text">Satisfacción con la Comunidad - Población (MI)</span><a class="headerlink" href="#tbl-mi-comm" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>0. Nada satisfecho</strong></p></th>
+<th class="head"><p><strong>1</strong></p></th>
+<th class="head"><p><strong>10. Muy satisfecho</strong></p></th>
+<th class="head"><p><strong>2</strong></p></th>
+<th class="head"><p><strong>3</strong></p></th>
+<th class="head"><p><strong>4</strong></p></th>
+<th class="head"><p><strong>5</strong></p></th>
+<th class="head"><p><strong>6</strong></p></th>
+<th class="head"><p><strong>7</strong></p></th>
+<th class="head"><p><strong>8</strong></p></th>
+<th class="head"><p><strong>9</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>1 <span class="hl">(19-58)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>8 <span class="hl">(48-265)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>1 <span class="hl">(19-58)</span></p></td>
+<td><p>6 <span class="hl">(24-211)</span></p></td>
+<td><p>13 <span class="hl">(117-392)</span></p></td>
+<td><p>26 <span class="hl">(314-703)</span></p></td>
+<td><p>30 <span class="hl">(378-795)</span></p></td>
+<td><p>13 <span class="hl">(117-392)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>0 <span class="hl">(0-0)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>4 <span class="hl">(2-155)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>1 <span class="hl">(-19-58)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+<td><p>5 <span class="hl">(12-183)</span></p></td>
+<td><p>13 <span class="hl">(117-392)</span></p></td>
+<td><p>25 <span class="hl">(299-680)</span></p></td>
+<td><p>26 <span class="hl">(314-703)</span></p></td>
+<td><p>17 <span class="hl">(175-490)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-mi-comm"><span class="std std-numref">Table 12</span></a> revela patrones significativos en la satisfacción comunitaria de los potenciales <span class="mi">MI</span>:</p>
+<div class="tip admonition">
+<p class="admonition-title">Insights Clave</p>
+<ul class="simple">
+<li><p>Alta satisfacción: 51% de hombres y 48% de mujeres en niveles 8-9.</p></li>
+<li><p>Satisfacción moderada: 39% de hombres y 38% de mujeres en niveles 6-7.</p></li>
+<li><p>Baja insatisfacción: Solo 2% en ambos géneros reportan niveles ≤3.</p></li>
+<li><p>Ligera ventaja masculina en satisfacción máxima (nivel 8): 30% vs 26% en mujeres.</p></li>
+</ul>
+</div>
+<p><strong>Implicaciones para CircleUp</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Base de Compromiso Sólida</strong>: La alta satisfacción comunitaria (51% hombres, 48% mujeres en niveles 8-9) sugiere un potencial significativo para el compromiso cívico y la mentoría local.</p></li>
+<li><p><strong>Oportunidad de Mejora</strong>: El segmento de satisfacción moderada (39% hombres, 38% mujeres en niveles 6-7) representa una oportunidad para aumentar el compromiso comunitario a través del programa MI.</p></li>
+<li><p><strong>Enfoque Inclusivo</strong>: La baja insatisfacción (2% en niveles ≤3) indica la necesidad de estrategias específicas para involucrar a este pequeño pero importante grupo.</p></li>
+<li><p><strong>Potencial de Liderazgo</strong>: El 8% de hombres y 4% de mujeres en el nivel 10 podrían ser excelentes embajadores del programa, catalizando el entusiasmo comunitario.</p></li>
+<li><p><strong>Estrategias de Género</strong>: La ligera diferencia en satisfacción máxima (30% hombres vs 26% mujeres en nivel 8) sugiere la necesidad de enfoques personalizados para maximizar la participación de ambos géneros.</p></li>
+</ol>
+<p>La satisfacción comunitaria generalmente alta entre los potenciales MI proporciona a CircleUp una base sólida para un programa de mentoría inversa arraigado en el compromiso local. Esta conexión con la comunidad puede potenciar el impacto del programa, fomentando un ciclo virtuoso de desarrollo personal y comunitario en Tocancipá.</p>
+</section>
+</section>
+<section id="perfil-poblacional-li-catalizadores-de-innovacion-social">
+<h2>Perfil Poblacional LI: Catalizadores de Innovación Social<a class="headerlink" href="#perfil-poblacional-li-catalizadores-de-innovacion-social" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Criterios de Análisis</p>
+<ul class="simple">
+<li><p>Edad: 20-34 años</p></li>
+<li><p>Formación: Técnica, Tecnológica, Universitaria, Especialización</p></li>
+<li><p>Uso de Internet: Educación y Aprendizaje</p></li>
+</ul>
+</div>
+<p><strong>Implicaciones para el Laboratorio de Innovación</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Base de Innovadores Digitales</strong>: El 42% que usa internet para educación representa un núcleo potencial de innovadores adaptados al aprendizaje digital, crucial para proyectos tecnológicos del LI.</p></li>
+<li><p><strong>Enfoque en Desarrollo Profesional Temprano</strong>: La mayor adopción en el grupo 25-29 sugiere una oportunidad para programas de innovación enfocados en profesionales en etapa de crecimiento.</p></li>
+<li><p><strong>Estrategias de Género Inclusivas</strong>: La ligera ventaja femenina ofrece la posibilidad de promover liderazgo femenino en innovación tecnológica.</p></li>
+<li><p><strong>Escalabilidad Educativa</strong>: La correlación entre nivel educativo y uso de internet para aprendizaje indica el potencial para programas de capacitación avanzada en el LI.</p></li>
+<li><p><strong>Brecha de Habilidades Digitales</strong>: El 58% que no usa internet para educación representa una oportunidad para programas de alfabetización digital y fomento de la innovación.</p></li>
+</ol>
+<p><strong>Recomendaciones Estratégicas</strong>:</p>
+<ol class="arabic simple">
+<li><p>Implementar un programa de “Embajadores de Innovación Digital” liderado por el grupo más activo en aprendizaje en línea.</p></li>
+<li><p>Desarrollar hackathons y desafíos de innovación que aborden específicamente las necesidades de desarrollo profesional del grupo 25-29.</p></li>
+<li><p>Crear una iniciativa de mentoría tecnológica que aproveche la mayor participación femenina para fomentar la diversidad en innovación.</p></li>
+<li><p>Establecer una plataforma de microaprendizaje enfocada en habilidades de innovación y tecnologías emergentes.</p></li>
+<li><p>Lanzar una campaña de “Innovación para Todos” que promueva la participación en el LI entre aquellos menos familiarizados con el aprendizaje en línea.</p></li>
+</ol>
+<p>El perfil poblacional del LI en Tocancipá presenta un terreno fértil para la innovación social impulsada por tecnología. Al capitalizar la base existente de aprendices digitales y abordar la brecha de habilidades, CircleUp puede posicionar su Laboratorio de Innovación como un catalizador clave para el desarrollo sostenible y la transformación digital de la comunidad.</p>
+<section id="diversidad-de-origen-li-motor-de-innovacion-local">
+<h3>Diversidad de Origen LI: Motor de Innovación Local<a class="headerlink" href="#diversidad-de-origen-li-motor-de-innovacion-local" title="Link to this heading">#</a></h3>
+<table class="table" id="tbl-li-born">
+<caption><span class="caption-number">Table 13 </span><span class="caption-text">Lugar de Nacimiento - Población (LI)</span><a class="headerlink" href="#tbl-li-born" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Genero</strong></p></th>
+<th class="head"><p><strong>Este municipio</strong></p></th>
+<th class="head"><p><strong>Otro municipio</strong></p></th>
+<th class="head"><p><strong>Otro país</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Hombre</strong></p></td>
+<td><p>8 <span class="hl">(48-265)</span></p></td>
+<td><p>25 <span class="hl">(299-680)</span></p></td>
+<td><p>1 <span class="hl">(19-58)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mujer</strong></p></td>
+<td><p>3 <span class="hl">(8-125)</span></p></td>
+<td><p>40 <span class="hl">(542-1,023)</span></p></td>
+<td><p>1 <span class="hl">(19-58)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>La <a class="reference internal" href="#tbl-li-born"><span class="std std-numref">Table 13</span></a> revela patrones cruciales para el Laboratorio de Innovación de CircleUp:</p>
+<div class="tip admonition">
+<p class="admonition-title">Insights Clave</p>
+<ul class="simple">
+<li><p>82.1% de potenciales participantes nacieron fuera de Tocancipá (76.5% hombres, 85.1% mujeres).</p></li>
+<li><p>Solo 14.1% son nativos de Tocancipá (23.5% hombres, 6.4% mujeres).</p></li>
+<li><p>2.6% nacieron en otro país, indicando diversidad internacional limitada.</p></li>
+</ul>
+</div>
+<p><strong>Implicaciones para la Innovación y Arraigo Comunitario</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Diversidad Cognitiva</strong>: La alta proporción de no nativos (82.1%) sugiere un rico pool de perspectivas diversas, crucial para la innovación disruptiva.</p></li>
+<li><p><strong>Desafío de Arraigo</strong>: La baja proporción de nativos (14.1%) plantea el reto de fomentar un compromiso profundo con los desafíos locales de Tocancipá.</p></li>
+<li><p><strong>Potencial de Networking Externo</strong>: Los participantes no nativos pueden aportar conexiones valiosas con ecosistemas de innovación externos.</p></li>
+<li><p><strong>Brecha de Género en Retención</strong>: La menor proporción de mujeres nativas (6.4% vs 23.5% en hombres) sugiere una posible fuga de talento femenino local.</p></li>
+<li><p><strong>Oportunidad de Integración</strong>: El LI puede actuar como catalizador para integrar el talento migrante en el tejido socioeconómico de Tocancipá.</p></li>
+</ol>
+<p><strong>Estrategias Recomendadas</strong>:</p>
+<ol class="arabic simple">
+<li><p>Implementar un programa de “Inmersión Local” para conectar a los innovadores no nativos con los desafíos y la cultura de Tocancipá.</p></li>
+<li><p>Desarrollar una iniciativa de “Embajadores de Innovación” liderada por participantes nativos para anclar los proyectos en las necesidades locales.</p></li>
+<li><p>Crear una red de “Mentores Globales” aprovechando las conexiones externas de los participantes no nativos.</p></li>
+<li><p>Lanzar un programa de “Innovadoras Locales” para retener y empoderar el talento femenino nativo.</p></li>
+<li><p>Establecer alianzas con instituciones locales para proyectos que fomenten el arraigo de los innovadores migrantes.</p></li>
+</ol>
+<p>La diversidad de origen en el LI de Tocancipá presenta una oportunidad única para catalizar innovaciones que combinen perspectivas frescas con un profundo entendimiento local. Al equilibrar la integración de talento externo con el empoderamiento de innovadores locales, CircleUp puede posicionar su Laboratorio como un hub de innovación con impacto global y raíces profundamente locales.</p>
+</section>
+<section id="perfil-etario-li-catalizador-multigeneracional-de-innovacion">
+<h3>Perfil Etario LI: Catalizador Multigeneracional de Innovación<a class="headerlink" href="#perfil-etario-li-catalizador-multigeneracional-de-innovacion" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="fig-li-age-distribution">
+<a class="reference internal image-reference" href="../_images/fig-li-born.png"><img alt="../_images/fig-li-born.png" src="../_images/fig-li-born.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Distribución por Edad de la Población (LI)</span><a class="headerlink" href="#fig-li-age-distribution" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La <a class="reference internal" href="#fig-li-age-distribution"><span class="std std-numref">Fig. 4</span></a> revela patrones cruciales para el Laboratorio de Innovación de CircleUp, considerando individuos con educación superior que utilizan internet para educación:</p>
+<div class="tip admonition">
+<p class="admonition-title">Insights Clave</p>
+<ul class="simple">
+<li><p>Grupo dominante: 25-29 años (39.7% total; 38.2% hombres, 45.5% mujeres)</p></li>
+<li><p>Segundo grupo: 30-34 años (38.5% total; 35.3% hombres, 40.9% mujeres)</p></li>
+<li><p>Grupo emergente: 20-24 años (19.2% total; 26.5% hombres, 13.6% mujeres)</p></li>
+<li><p>Mayor participación femenina en grupos 25-29 y 30-34</p></li>
+<li><p>Mayor participación masculina en grupo 20-24</p></li>
+</ul>
+</div>
+<p><strong>Implicaciones Estratégicas para el LI</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Núcleo de Innovación (25-29 años)</strong>:</p>
+<ul class="simple">
+<li><p>Representa el grupo más numeroso y diverso en género.</p></li>
+<li><p>Potencial para liderar proyectos de innovación disruptiva.</p></li>
+<li><p>Enfoque en desarrollo profesional acelerado y networking estratégico.</p></li>
+</ul>
+</li>
+<li><p><strong>Expertos Emergentes (30-34 años)</strong>:</p>
+<ul class="simple">
+<li><p>Segundo grupo más grande, con experiencia profesional consolidada.</p></li>
+<li><p>Idóneos para mentorías internas y liderazgo de proyectos complejos.</p></li>
+<li><p>Oportunidad para vincular innovación con necesidades empresariales concretas.</p></li>
+</ul>
+</li>
+<li><p><strong>Talentos en Desarrollo (20-24 años)</strong>:</p>
+<ul class="simple">
+<li><p>Grupo menor pero crucial para la renovación del ecosistema de innovación.</p></li>
+<li><p>Mayor presencia masculina sugiere necesidad de estrategias de inclusión femenina.</p></li>
+<li><p>Potencial para aportar perspectivas frescas y dominio de tecnologías emergentes.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Recomendaciones Tácticas</strong>:</p>
+<ol class="arabic simple">
+<li><p>Implementar un programa de “Líderes de Innovación” enfocado en el grupo 25-29, aprovechando su posición entre experiencia y dinamismo.</p></li>
+<li><p>Desarrollar una iniciativa de “Mentores de Impacto” liderada por el grupo 30-34, conectando experiencia profesional con proyectos de innovación social.</p></li>
+<li><p>Crear un “Programa de Aceleración de Talentos” para el grupo 20-24, con énfasis en la participación femenina en tecnología e innovación.</p></li>
+<li><p>Establecer equipos multigeneracionales para proyectos de innovación, maximizando la sinergia entre experiencia y nuevas perspectivas.</p></li>
+<li><p>Lanzar una serie de “Desafíos de Innovación Abierta” que aprovechen las fortalezas específicas de cada grupo etario.</p></li>
+</ol>
+<p>El perfil etario diverso del LI en Tocancipá ofrece una oportunidad única para crear un ecosistema de innovación multigeneracional. Al capitalizar las fortalezas específicas de cada grupo de edad y fomentar la colaboración intergeneracional, CircleUp puede posicionar su Laboratorio de Innovación como un hub dinámico que combina experiencia profesional, liderazgo emergente y perspectivas frescas para abordar los desafíos complejos de la comunidad.</p>
+</section>
+</section>
+<section id="conclusiones-del-analisis-demografico">
+<h2>Conclusiones del Análisis Demográfico<a class="headerlink" href="#conclusiones-del-analisis-demografico" title="Link to this heading">#</a></h2>
+<section id="conclusiones-generales">
+<h3>1. Conclusiones Generales<a class="headerlink" href="#conclusiones-generales" title="Link to this heading">#</a></h3>
+<p>El análisis demográfico de Tocancipá revela un ecosistema diverso y dinámico, ideal para la implementación de los programas de CircleUp. La población muestra una combinación de residentes de larga data y nuevos migrantes, creando un caldo de cultivo para la innovación y el desarrollo comunitario. Los altos niveles de satisfacción vital y comunitaria, junto con una creciente adopción de tecnologías digitales, proporcionan una base sólida para iniciativas de voluntariado e innovación social.</p>
+<p>La diversidad educativa y ocupacional observada ofrece un amplio espectro de habilidades y perspectivas, crucial para abordar los desafíos multifacéticos de la comunidad. Sin embargo, también se identificaron brechas significativas, particularmente en el uso de internet para educación y en la participación femenina en ciertos sectores, que CircleUp puede abordar estratégicamente.</p>
+</section>
+<section id="subsegmentacion-estrategica-de-circleup">
+<h3>Subsegmentación Estratégica de CircleUp<a class="headerlink" href="#subsegmentacion-estrategica-de-circleup" title="Link to this heading">#</a></h3>
+</section>
+<section id="a-voluntarios-academicos-va">
+<h3>a. Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#a-voluntarios-academicos-va" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Profesionales Altamente Satisfechos</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 30-34 años, con título universitario o superior</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>45.8% reportan satisfacción laboral de 9-10</p></li>
+<li><p>48% indican satisfacción comunitaria de 8-9</p></li>
+<li><p>51% usan internet para educación</p></li>
+</ul>
+</li>
+<li><p>Potencial: Líderes de programas de mentoría y desarrollo profesional</p></li>
+</ul>
+</li>
+<li><p><strong>Especialistas Técnicos Comprometidos</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 35-39 años, con formación técnica o tecnológica</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>36.2% reportan satisfacción laboral de 8</p></li>
+<li><p>30% indican satisfacción comunitaria de 8</p></li>
+<li><p>40% usan internet para educación</p></li>
+</ul>
+</li>
+<li><p>Potencial: Instructores en habilidades técnicas específicas y oficios</p></li>
+</ul>
+</li>
+<li><p><strong>Emprendedores Sociales Emergentes</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 25-29 años, con educación universitaria incompleta</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>25.7% son trabajadores independientes o por cuenta propia</p></li>
+<li><p>39% reportan satisfacción comunitaria de 7-8</p></li>
+<li><p>47% usan internet para educación</p></li>
+</ul>
+</li>
+<li><p>Potencial: Líderes de proyectos de innovación social y emprendimiento comunitario</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="b-mentores-inversos-mi">
+<h3>b. Mentores Inversos <span class="mi">(MI)</span><a class="headerlink" href="#b-mentores-inversos-mi" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Nativos Digitales Universitarios</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 20-24 años, estudiantes universitarios</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>54.1% de hombres y 52.8% de mujeres en este rango de edad</p></li>
+<li><p>85.4% de hombres y 77.2% de mujeres reportan satisfacción vital de 8-10</p></li>
+<li><p>Mayor adopción de internet para educación (47%)</p></li>
+</ul>
+</li>
+<li><p>Potencial: Mentores en alfabetización digital avanzada y nuevas tecnologías</p></li>
+</ul>
+</li>
+<li><p><strong>Técnicos Innovadores Jóvenes</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 18-22 años, con formación técnica o tecnológica</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>7 hombres con formación técnica vs 5 con formación tecnológica</p></li>
+<li><p>26.5% de hombres en el grupo de 20-24 años</p></li>
+<li><p>Alta satisfacción comunitaria (51% en niveles 8-9)</p></li>
+</ul>
+</li>
+<li><p>Potencial: Mentores en aplicaciones prácticas de tecnología y soluciones creativas</p></li>
+</ul>
+</li>
+<li><p><strong>Comunicadoras Digitales Emergentes</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 16-20 años, con educación media o técnica inicial</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>13.6% de mujeres en el grupo de 20-24 años</p></li>
+<li><p>Mayor presencia femenina en educación técnica (11 mujeres vs 7 hombres)</p></li>
+<li><p>Alta satisfacción vital (77.2% en niveles 8-10)</p></li>
+</ul>
+</li>
+<li><p>Potencial: Mentoras en comunicación digital, redes sociales y marketing online</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="c-laboratorio-de-innovacion-li">
+<h3>c. Laboratorio de Innovación <span class="li">(LI)</span><a class="headerlink" href="#c-laboratorio-de-innovacion-li" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Innovadores Multiculturales</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 25-29 años, nacidos fuera de Tocancipá, con educación universitaria</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>82.1% de potenciales participantes LI nacieron fuera de Tocancipá</p></li>
+<li><p>39.7% del total en el rango de 25-29 años</p></li>
+<li><p>Mayor uso de internet para educación en este grupo etario</p></li>
+</ul>
+</li>
+<li><p>Potencial: Líderes de proyectos de innovación que combinen perspectivas globales y necesidades locales</p></li>
+</ul>
+</li>
+<li><p><strong>Especialistas Técnicos Locales</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 30-34 años, nacidos en Tocancipá, con formación técnica o tecnológica</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>23.5% de hombres son nativos de Tocancipá</p></li>
+<li><p>35.3% de hombres en el grupo de 30-34 años</p></li>
+<li><p>Mayor presencia masculina en formación técnica/tecnológica</p></li>
+</ul>
+</li>
+<li><p>Potencial: Expertos en aplicación de soluciones tecnológicas a desafíos locales específicos</p></li>
+</ul>
+</li>
+<li><p><strong>Emprendedoras Sociales Digitales</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 28-34 años, con educación universitaria y experiencia laboral</p></li>
+<li><p>Datos clave:</p>
+<ul>
+<li><p>45.5% de mujeres en el grupo de 30-34 años</p></li>
+<li><p>44% de mujeres usan internet para educación vs 40% de hombres</p></li>
+<li><p>Mayor satisfacción laboral en mujeres (45.8% en nivel 9-10)</p></li>
+</ul>
+</li>
+<li><p>Potencial: Líderes de iniciativas de innovación social con fuerte componente digital y enfoque en impacto comunitario</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="conclusiones-finales">
+<h3>3. Conclusiones Finales<a class="headerlink" href="#conclusiones-finales" title="Link to this heading">#</a></h3>
+<p>El análisis demográfico de Tocancipá revela un terreno fértil para la implementación y el éxito de CircleUp. La diversidad demográfica, combinada con altos niveles de satisfacción y una creciente adopción tecnológica, proporciona una base sólida para programas de impacto social y desarrollo comunitario.</p>
+<p>Los segmentos identificados para cada línea de trabajo ofrecen oportunidades únicas:</p>
+<ul class="simple">
+<li><p>El Voluntariado Académico puede capitalizar la experiencia y compromiso de mujeres profesionales para fomentar la equidad de género y el desarrollo comunitario.</p></li>
+<li><p>El programa de Mentores Inversos puede aprovechar el entusiasmo y las habilidades digitales de los jóvenes para cerrar brechas intergeneracionales y fomentar la innovación.</p></li>
+<li><p>El Laboratorio de Innovación puede transformar la diversidad de origen en un catalizador para soluciones creativas a desafíos locales.</p></li>
+</ul>
+<p>CircleUp tiene el potencial de actuar como un nexo crucial, conectando diversos segmentos de la población y canalizando sus fortalezas hacia el desarrollo sostenible de Tocancipá. Al enfocarse en estos segmentos clave y diseñar programas que aprovechen sus características únicas, CircleUp puede maximizar su impacto, fomentando un ecosistema de aprendizaje continuo, innovación social y compromiso comunitario.</p>
+<p>El éxito de CircleUp en Tocancipá podría servir como modelo para otras comunidades en rápido desarrollo, demostrando cómo la sinergia entre voluntariado, mentoría intergeneracional e innovación puede catalizar el desarrollo sostenible y la cohesión social en contextos de cambio demográfico y económico acelerado.</p>
+</section>
+<section id="segmentacion-estrategica-alternativa-de-circleup">
+<h3>Segmentación Estratégica Alternativa de CircleUp<a class="headerlink" href="#segmentacion-estrategica-alternativa-de-circleup" title="Link to this heading">#</a></h3>
+</section>
+<section id="id2">
+<h3>a. Voluntarios Académicos <span class="va">(VA)</span><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Profesionales Migrantes en Ascenso</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 30-34 años, educación universitaria, nacidos fuera de Tocancipá</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>El 76.5% de hombres y 85.1% de mujeres en el LI nacieron fuera de Tocancipá, sugiriendo una alta proporción de migrantes calificados.</p></li>
+<li><p>Este grupo muestra la mayor satisfacción laboral (45.8% en nivel 9-10) y alta satisfacción comunitaria (48% en nivel 8-9).</p></li>
+<li><p>Su experiencia migratoria y éxito profesional los posiciona idealmente para mentorear a otros en integración y desarrollo profesional.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden liderar programas de mentoría profesional y facilitar la integración de nuevos talentos en la comunidad.</p></li>
+</ul>
+</li>
+<li><p><strong>Educadores Digitales Locales</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 35-39 años, con formación en educación o ciencias sociales</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>El 51% de mujeres en este grupo etario usan internet para educación, vs 40% de hombres.</p></li>
+<li><p>La mayor presencia femenina en empleos gubernamentales (11 mujeres vs 5 hombres) sugiere una concentración en sectores como educación.</p></li>
+<li><p>Su combinación de experiencia local y adopción tecnológica las hace ideales para programas educativos comunitarios.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden desarrollar e implementar programas educativos innovadores que combinen tecnología con conocimiento local.</p></li>
+</ul>
+</li>
+<li><p><strong>Emprendedores Sociales Tecnológicos</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 25-29 años, formación técnica/tecnológica, trabajadores independientes</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>El 25.7% son trabajadores independientes o por cuenta propia, indicando espíritu emprendedor.</p></li>
+<li><p>Este grupo muestra alta adopción de internet para educación (47%) y satisfacción comunitaria moderada-alta (39% en niveles 7-8).</p></li>
+<li><p>La combinación de habilidades técnicas y orientación emprendedora los posiciona para liderar proyectos de innovación social.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden iniciar y liderar proyectos que apliquen soluciones tecnológicas a desafíos sociales locales.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id3">
+<h3>b. Mentores Inversos <span class="mi">(MI)</span><a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Innovadores Digitales Gen Z</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 18-22 años, estudiantes universitarios en carreras STEM</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>El 54.1% de hombres y 52.8% de mujeres en el rango 20-24 años muestran alta adopción tecnológica.</p></li>
+<li><p>Este grupo reporta la mayor satisfacción vital (85.4% de hombres y 77.2% de mujeres en niveles 8-10).</p></li>
+<li><p>Su exposición reciente a tecnologías emergentes en la universidad los posiciona como expertos en innovación digital.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden liderar talleres de tecnologías emergentes y metodologías de innovación para profesionales mayores.</p></li>
+</ul>
+</li>
+<li><p><strong>Comunicadores Sociales Nativos Digitales</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 20-24 años, formación en comunicación o marketing digital</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>Mayor presencia femenina en educación superior (14 mujeres vs 10 hombres con título universitario).</p></li>
+<li><p>Alta satisfacción comunitaria (51% en niveles 8-9) sugiere fuerte conexión y comprensión del entorno local.</p></li>
+<li><p>La combinación de habilidades comunicativas y dominio digital las hace ideales para estrategias de divulgación.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden diseñar y ejecutar estrategias de comunicación digital para programas comunitarios y campañas de impacto social.</p></li>
+</ul>
+</li>
+<li><p><strong>Técnicos Creativos Emergentes</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 16-20 años, formación técnica en curso, aficionados a la tecnología</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>Mayor presencia masculina en formación técnica (7 hombres vs 11 mujeres) en edades tempranas.</p></li>
+<li><p>Alta satisfacción vital (85.4% en niveles 8-10) sugiere optimismo y energía para proyectos innovadores.</p></li>
+<li><p>Su formación técnica temprana combinada con la creatividad juvenil los posiciona para soluciones no convencionales.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden liderar talleres prácticos de prototipado rápido y soluciones tecnológicas creativas para desafíos comunitarios.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id4">
+<h3>c. Laboratorio de Innovación <span class="li">(LI)</span><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Catalizadores de Innovación Multicultural</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mixto, 28-32 años, educación universitaria internacional, experiencia laboral diversa</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>El 82.1% de potenciales participantes LI nacidos fuera de Tocancipá aporta diversidad de perspectivas.</p></li>
+<li><p>El 39.7% en el rango 25-29 años combina experiencia profesional con mentalidad innovadora.</p></li>
+<li><p>Su background internacional y experiencia laboral los posiciona para conectar soluciones globales con necesidades locales.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden liderar proyectos de innovación que adapten mejores prácticas globales al contexto local de Tocancipá.</p></li>
+</ul>
+</li>
+<li><p><strong>Especialistas en Sostenibilidad Local</strong></p>
+<ul class="simple">
+<li><p>Perfil: Mujeres, 30-34 años, formación en ciencias ambientales o ingeniería sostenible</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>45.5% de mujeres en el grupo 30-34 años con alta satisfacción laboral (45.8% en nivel 9-10).</p></li>
+<li><p>Mayor uso de internet para educación en mujeres (44% vs 40% en hombres) sugiere actualización constante.</p></li>
+<li><p>La combinación de experiencia local y enfoque en sostenibilidad es crucial para el desarrollo a largo plazo de Tocancipá.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden desarrollar e implementar soluciones de sostenibilidad adaptadas a las necesidades específicas de Tocancipá.</p></li>
+</ul>
+</li>
+<li><p><strong>Integradores Tecnológicos Comunitarios</strong></p>
+<ul class="simple">
+<li><p>Perfil: Hombres, 25-29 años, formación técnica avanzada, nativos de Tocancipá</p></li>
+<li><p>Argumentación:</p>
+<ul>
+<li><p>23.5% de hombres nativos de Tocancipá con fuerte arraigo local.</p></li>
+<li><p>Alta presencia en formación técnica/tecnológica sugiere habilidades prácticas avanzadas.</p></li>
+<li><p>Su combinación de conocimiento local y experticia técnica los posiciona para integrar tecnología en la vida cotidiana de la comunidad.</p></li>
+</ul>
+</li>
+<li><p>Potencial: Pueden liderar proyectos que integren soluciones tecnológicas en la infraestructura y servicios comunitarios existentes.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Marco%20Metodol%C3%B3gico.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">3. Marco Metodológico</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4. Población</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-demografico-y-socioeconomico-de-tocancipa">Análisis Demográfico y Socioeconómico de Tocancipá</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crecimiento-poblacional-y-estructura-etaria">Crecimiento Poblacional y Estructura Etaria</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-segmentacion-tocancipa">Análisis de Segmentación | Tocancipá</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-distribuciones-etarias">Comparación de Distribuciones Etarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-de-extrapolacion">Metodología de Extrapolación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-estimacion">Proceso de Estimación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ajuste-por-distribucion-etaria">Ajuste por Distribución Etaria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones-y-consideraciones">Limitaciones y Consideraciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-demografico-de-voluntarios-academicos-va">Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-datos-poblacion-va-25-44-anos">Distribución de Datos Población <span class="va">(VA, 25-44 años)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Análisis Demográfico de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-por-subgrupos-de-edad">Distribución por Subgrupos de Edad</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implicaciones-para-circleup">Implicaciones para CircleUp</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-panorama-laboral">Voluntarios Académicos <span class="va">(VA)</span>: Panorama Laboral</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#situacion-laboral-va-25-44-anos">Situación Laboral <span class="va">(VA, 25-44 años)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-perfil-ocupacional">Voluntarios Académicos <span class="va">(VA)</span>: Perfil Ocupacional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-ocupacional-va-25-44-anos-empleados">Distribución Ocupacional <span class="va">(VA, 25-44 años) Empleados</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntarios-academicos-va-perfil-educativo-y-migratorio">Voluntarios Académicos <span class="va">(VA)</span>: Perfil Educativo y Migratorio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-nivel-educativo-va-25-44-anos-empleados-educacion">Distribución Nivel Educativo <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-vital-de-voluntarios-academicos-va">Satisfacción Vital de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-con-la-vida-va-25-44-anos-empleados-educacion">Satisfacción con la Vida <span class="va">(VA, 25-44 años) Empleados &amp; Educación</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-laboral-de-voluntarios-academicos-va">Satisfacción Laboral de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-comunitaria-de-voluntarios-academicos-va">Satisfacción Comunitaria de Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-internet-para-educacion-entre-voluntarios-academicos-va">Uso de Internet para Educación entre Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redes-sociales-puente-digital-para-va">Redes Sociales: Puente Digital para VA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-demografico-mi-potencial-y-desafios">Perfil Demográfico MI: Potencial y Desafíos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-educativo-mi-base-para-la-innovacion-intergeneracional">Perfil Educativo MI: Base para la Innovación Intergeneracional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-vital-mi-fundamento-para-mentoria-efectiva">Satisfacción Vital MI: Fundamento para Mentoría Efectiva</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satisfaccion-comunitaria-mi-catalizador-de-compromiso-local">Satisfacción Comunitaria MI: Catalizador de Compromiso Local</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-poblacional-li-catalizadores-de-innovacion-social">Perfil Poblacional LI: Catalizadores de Innovación Social</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversidad-de-origen-li-motor-de-innovacion-local">Diversidad de Origen LI: Motor de Innovación Local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-etario-li-catalizador-multigeneracional-de-innovacion">Perfil Etario LI: Catalizador Multigeneracional de Innovación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-del-analisis-demografico">Conclusiones del Análisis Demográfico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-generales">1. Conclusiones Generales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subsegmentacion-estrategica-de-circleup">Subsegmentación Estratégica de CircleUp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-voluntarios-academicos-va">a. Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-mentores-inversos-mi">b. Mentores Inversos <span class="mi">(MI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-laboratorio-de-innovacion-li">c. Laboratorio de Innovación <span class="li">(LI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-finales">3. Conclusiones Finales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentacion-estrategica-alternativa-de-circleup">Segmentación Estratégica Alternativa de CircleUp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">a. Voluntarios Académicos <span class="va">(VA)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">b. Mentores Inversos <span class="mi">(MI)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">c. Laboratorio de Innovación <span class="li">(LI)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Circle Up Community ⚫
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Living Stones 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

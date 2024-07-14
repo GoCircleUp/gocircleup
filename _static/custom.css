@@ -167,17 +167,17 @@ h1, .markdown-section h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold !important;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold !important;
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 
@@ -211,11 +211,97 @@ pre, code {
   /* color: #b1a1ed !important; */
 }
 
-.h-word {
-  font-family: 'Montserrat', monospace;
-  font-weight: 500; /* Negrita */
-  color: #25c19f; /* O el color que prefieras */
+/* CSS para tablas */
+
+table {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño que los párrafos */
 }
+
+table th, table td {
+  font-size: 0.9em; /* Aplicar tamaño de fuente más pequeño a las celdas */
+}
+
+/* Opcional: también puedes especificar el tamaño de fuente en las celdas */
+table th {
+  font-size: 0.9em;
+}
+
+table td {
+  font-size: 0.9em;
+}
+
+
+
+.va, .mi, .li, .pc, .hl {
+  font-family: 'Montserrat', monospace;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.hl { color: #B19CD9; }
+.va { color: #9370DB; }
+.mi { color: #663399; }
+.li { color: #4A0E4E; }
+.pc { color: #B19CD9; }
+
+.hl:hover::after,
+.va:hover::after,
+.mi:hover::after,
+.li:hover::after,
+.pc:hover::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.va:hover::after { content: " (Voluntario Académico)"; }
+.mi:hover::after { content: " (Mentores Inversos)"; }
+.li:hover::after { content: " (Lab Innovación)"; }
+.pc:hover::after { content: " (Participantes CircleUp)"; }
+.hl:hover::after { content: " (Est. Personas)"; }
+
+/* Flecha para el tooltip */
+.hl:hover::before,
+.va:hover::before,
+.mi:hover::before,
+.li:hover::before,
+.pc:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% - 5px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  z-index: 1001;
+}
+
+
+/* Estilo hover para enlaces externos */
+.reference.external:hover {
+  color: #9966CC; /* Color lavanda al pasar el mouse */
+}
+
+/* Agregar texto "link" o "clink" en el hover */
+.reference.external:hover::after {
+  content: " (link)"; /* Puedes cambiar "link" por "clink" si lo prefieres */
+  font-size: 0.8em; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-left: 5px;  /* Ajusta el espacio entre el enlace y el texto */
+}
+
+
+
 
 a.reference.internal.nav-link.active {
   color: #663399 !important;
@@ -259,17 +345,6 @@ a.reference.internal.nav-link.active {
   border-bottom: none !important;
 }
 
-/* Estilo hover para enlaces externos */
-.reference.external:hover {
-  color: #9966CC; /* Color lavanda al pasar el mouse */
-}
-
-/* Agregar texto "link" o "clink" en el hover */
-.reference.external:hover::after {
-  content: " (link)"; /* Puedes cambiar "link" por "clink" si lo prefieres */
-  font-size: 0.8em; /* Ajusta el tamaño de fuente según tus preferencias */
-  margin-left: 5px;  /* Ajusta el espacio entre el enlace y el texto */
-}
 
 
 /*Ocultar Boton Toggle Dark/Light */

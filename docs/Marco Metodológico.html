@@ -1,0 +1,815 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Marco Metodológico &#8212; Circle UP ⚫</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fb436c1d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Marco Metodológico';</script>
+    <script src="../_static/custom.js?v=16113e41"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Población" href="Poblaci%C3%B3n.html" />
+    <link rel="prev" title="2. Marco Conceptual y Metodológico" href="Marco%20Conceptual.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Circle UP ⚫ - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Circle UP ⚫ - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    CircleUp | Innovación Social
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Docs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3n.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Conceptual.html">2. Marco Conceptual</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Marco Metodológico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poblaci%C3%B3n.html">4. Población</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/Marco Metodológico.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Marco Metodológico.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3. Marco Metodológico</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-la-investigacion">Diseño de la investigación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-recoleccion-de-datos-propuestos">Métodos de recolección de datos propuestos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-propuesto">Análisis de datos propuesto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consideraciones-eticas">Consideraciones éticas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones-potenciales">Limitaciones potenciales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="position: relative; width: 100%; padding: 10px;">
+    <div style="border-radius: 10px; overflow: hidden;">
+        <img src="https://i.ibb.co/TH6HzwQ/body.jpg" alt="Imagen de fondo" style="width: 100%; height: auto;">
+    </div>
+</div>
+<section id="marco-metodologico">
+<h1>3. Marco Metodológico<a class="headerlink" href="#marco-metodologico" title="Link to this heading">#</a></h1>
+<p>Este estudio propone un enfoque de investigación cualitativa con un diseño de estudio de caso, centrado en la planificación y el diseño de CircleUp en Tocancipá, Colombia. El estudio de caso, como lo define <em>Yin</em> (2018), es “una investigación empírica que investiga un fenómeno contemporáneo en profundidad y dentro de su contexto real” (p. 15). Este enfoque permitirá una comprensión profunda de los factores contextuales que influyen en el diseño de CircleUp.</p>
+<section id="diseno-de-la-investigacion">
+<h2>Diseño de la investigación<a class="headerlink" href="#diseno-de-la-investigacion" title="Link to this heading">#</a></h2>
+<p>El estudio se estructurará en tres fases principales, adaptadas para maximizar el uso de datos secundarios y análisis cuantitativos, mientras se mantiene la flexibilidad para incorporar elementos cualitativos cuando sea necesario:</p>
+<div class="tip admonition">
+<p class="admonition-title">Fases del Diseño de Investigación</p>
+<ol class="arabic simple">
+<li><p><strong>Fase de análisis de datos secundarios:</strong></p>
+<ul class="simple">
+<li><p>Recopilación y organización de las bases de datos de la Encuesta Multipropósito Bogotá-Cundinamarca y del censo 2018.</p></li>
+<li><p>Análisis exhaustivo de la literatura sobre Community-Based Learning y tecnologías emergentes en educación, con énfasis en estudios basados en datos secundarios.</p></li>
+<li><p>Revisión de políticas educativas locales y regionales relevantes para CircleUp, utilizando documentos oficiales y datos públicos.</p></li>
+</ul>
+</li>
+<li><p><strong>Fase de modelado y proyección:</strong></p>
+<ul class="simple">
+<li><p>Desarrollo de un marco analítico para CircleUp, integrando los hallazgos del análisis de datos secundarios y la revisión de literatura.</p></li>
+<li><p>Elaboración de modelos estadísticos y de proyección para estimar las condiciones actuales en Tocancipá, basados en los datos históricos disponibles.</p></li>
+<li><p>Diseño de escenarios potenciales para la implementación de CircleUp, utilizando técnicas de modelado predictivo.</p></li>
+</ul>
+</li>
+<li><p><strong>Fase de validación y refinamiento:</strong></p>
+<ul class="simple">
+<li><p>Consulta con expertos en análisis de datos, educación, tecnología educativa y desarrollo comunitario para validar los modelos y proyecciones propuestos.</p></li>
+<li><p>Realización de un análisis de sensibilidad para evaluar la robustez de nuestras estimaciones y proyecciones.</p></li>
+<li><p>Refinamiento de los modelos basado en el feedback de expertos y los resultados del análisis de sensibilidad.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Este diseño de investigación se centra en el análisis riguroso de datos secundarios y la creación de modelos predictivos. Reconocemos las limitaciones inherentes a este enfoque y nos comprometemos a ser transparentes sobre estas limitaciones en todas las fases del estudio.</p>
+</div>
+<p>Aspectos clave de este diseño:</p>
+<ol class="arabic simple">
+<li><p><strong>Integración de múltiples fuentes de datos:</strong> Combinaremos datos de la Encuesta Multipropósito, el censo 2018 y otras fuentes relevantes para crear una imagen comprehensiva de la situación en Tocancipá.</p></li>
+<li><p><strong>Enfoque en la extrapolación y proyección:</strong> Dada la naturaleza dinámica de Tocancipá, desarrollaremos modelos sofisticados para proyectar las tendencias actuales basándonos en los datos históricos disponibles.</p></li>
+<li><p><strong>Validación multidisciplinaria:</strong> Buscaremos la validación de expertos en diversos campos para asegurar que nuestras interpretaciones y proyecciones sean robustas y relevantes.</p></li>
+<li><p><strong>Flexibilidad metodológica:</strong> Aunque nos centramos en el análisis cuantitativo, mantendremos la apertura para incorporar insights cualitativos cuando sea necesario para contextualizar nuestros hallazgos.</p></li>
+<li><p><strong>Consideración de escenarios:</strong> Desarrollaremos múltiples escenarios para la implementación de CircleUp, reconociendo la incertidumbre inherente en las proyecciones a futuro.</p></li>
+</ol>
+<p>Este diseño nos permitirá aprovechar al máximo los datos disponibles, mientras mantenemos un enfoque crítico y reflexivo sobre las limitaciones de nuestro método. El objetivo es proporcionar una base sólida para la toma de decisiones informadas sobre la implementación de CircleUp en Tocancipá.</p>
+<section id="metodos-de-recoleccion-de-datos-propuestos">
+<h3>Métodos de recolección de datos propuestos<a class="headerlink" href="#metodos-de-recoleccion-de-datos-propuestos" title="Link to this heading">#</a></h3>
+<p>Para este estudio, hemos optado por un enfoque basado en el análisis de datos secundarios, aprovechando la rica información disponible a través de fuentes oficiales. Nuestra principal fuente de datos será el Departamento Administrativo Nacional de Estadística (DANE) de Colombia, específicamente:</p>
+<ol class="arabic simple">
+<li><p>Utilizaremos más de 5 bases de datos provenientes de la Encuesta Multipropósito Bogotá-Cundinamarca. Esta encuesta ofrece una visión detallada de las condiciones de vida en la región, abarcando temas como vivienda, educación, salud, y empleo.</p></li>
+<li><p>Realizaremos una extrapolación cuidadosa de los datos presentados en el censo nacional de 2018 para obtener estimaciones actualizadas para Tocancipá y la región circundante.</p></li>
+</ol>
+<div class="warning admonition">
+<p class="admonition-title">Limitaciones y consideraciones</p>
+<p>Reconocemos que este enfoque tiene limitaciones inherentes:</p>
+<ul class="simple">
+<li><p>Las estimaciones basadas en el censo de 2018 y la muestra de 2021 pueden no reflejar con precisión la situación actual, especialmente en áreas de rápido crecimiento como Tocancipá.</p></li>
+<li><p>Es probable que nuestras estimaciones subestimen los valores actuales debido al dinamismo demográfico de la región.</p></li>
+<li><p>Los usuarios de esta información deben considerar un margen de error adicional al interpretar estos resultados.</p></li>
+<li><p>Recomendamos utilizar estas estimaciones como una referencia general y no como valores precisos para la población actual de Tocancipá.</p></li>
+</ul>
+</div>
+<p>Hemos elegido este método por varias razones:</p>
+<ol class="arabic simple">
+<li><p>Eficiencia en recursos: El uso de datos secundarios nos permite acceder a una gran cantidad de información sin los costos y el tiempo asociados a la recolección de datos primarios.</p></li>
+<li><p>Confiabilidad de la fuente: El DANE es reconocido por su rigor metodológico y la calidad de sus datos.</p></li>
+<li><p>Amplitud de la información: Las bases de datos de la Encuesta Multipropósito ofrecen una visión multidimensional que sería difícil de replicar con recursos limitados.</p></li>
+<li><p>Continuidad temporal: Al utilizar datos del censo 2018 y encuestas más recientes, podemos observar tendencias y cambios a lo largo del tiempo.</p></li>
+</ol>
+<p>Sin embargo, somos conscientes de las limitaciones de este enfoque:</p>
+<ul class="simple">
+<li><p>La rapidez de los cambios demográficos y socioeconómicos en Tocancipá puede hacer que incluso datos relativamente recientes queden desactualizados.</p></li>
+<li><p>La extrapolación, aunque basada en métodos estadísticos sólidos, introduce un nivel de incertidumbre en nuestras estimaciones.</p></li>
+<li><p>Pueden existir sesgos inherentes en los datos secundarios que no podemos controlar directamente.</p></li>
+</ul>
+<p>Para mitigar estas limitaciones, nos proponemos:</p>
+<ol class="arabic simple">
+<li><p>Ser transparentes sobre la metodología y las fuentes de datos utilizadas.</p></li>
+<li><p>Proporcionar intervalos de confianza o rangos de estimación cuando sea posible.</p></li>
+<li><p>Complementar, cuando sea factible, con datos cualitativos o de fuentes locales para contextualizar nuestros hallazgos.</p></li>
+<li><p>Mantener una actitud crítica hacia nuestros propios resultados, reconociendo abiertamente las áreas de incertidumbre.</p></li>
+</ol>
+</section>
+<section id="analisis-de-datos-propuesto">
+<h3>Análisis de datos propuesto<a class="headerlink" href="#analisis-de-datos-propuesto" title="Link to this heading">#</a></h3>
+<p>El análisis de datos para este estudio se basará en un enfoque sistemático y detallado de la información proporcionada por la Encuesta Multipropósito Bogotá-Cundinamarca y los datos del censo 2018. Utilizaremos técnicas de análisis estadístico y visualización de datos para extraer insights significativos. A continuación, se describe la metodología propuesta:</p>
+<ol class="arabic simple">
+<li><p><strong>Extracción y Preparación de Datos:</strong></p>
+<ul class="simple">
+<li><p>Utilizaremos la biblioteca <code class="docutils literal notranslate"><span class="pre">xml.etree.ElementTree</span></code> para extraer metadatos y estructuras de las bases de datos del DANE.</p></li>
+<li><p>Se creará un diccionario (<code class="docutils literal notranslate"><span class="pre">data_explorer</span></code>) que mapea los capítulos de la encuesta con sus respectivos archivos de datos.</p></li>
+<li><p>Se extraerán metadatos como preguntas y categorías de respuestas para cada variable.</p></li>
+</ul>
+</li>
+<li><p><strong>Limpieza y Transformación de Datos:</strong></p>
+<ul class="simple">
+<li><p>Implementaremos funciones como <code class="docutils literal notranslate"><span class="pre">bad_nulls</span></code> para identificar y manejar valores faltantes.</p></li>
+<li><p>Se realizará una categorización de variables continuas (por ejemplo, edad, meses) para facilitar el análisis.</p></li>
+</ul>
+</li>
+<li><p><strong>Análisis Exploratorio de Datos (EDA):</strong></p>
+<ul class="simple">
+<li><p>Utilizaremos funciones como <code class="docutils literal notranslate"><span class="pre">unstack_data</span></code> para pivotar y reestructurar los datos, permitiendo análisis multidimensionales.</p></li>
+<li><p>Se calcularán estadísticas descriptivas como frecuencias, porcentajes y acumulados.</p></li>
+</ul>
+</li>
+<li><p><strong>Visualización de Datos:</strong></p>
+<ul class="simple">
+<li><p>Emplearemos la función <code class="docutils literal notranslate"><span class="pre">plot_hist_hue</span></code> para crear histogramas y gráficos de barras con múltiples subplots, permitiendo la comparación visual entre diferentes categorías.</p></li>
+<li><p>Las visualizaciones incluirán información sobre tamaños de muestra, porcentajes y estimaciones poblacionales.</p></li>
+</ul>
+</li>
+<li><p><strong>Estimación e Inferencia Estadística:</strong></p>
+<ul class="simple">
+<li><p>Implementaremos la función <code class="docutils literal notranslate"><span class="pre">pop_estimate</span></code> para calcular intervalos de confianza y errores estándar, proporcionando una medida de la precisión de nuestras estimaciones.</p></li>
+</ul>
+</li>
+<li><p><strong>Análisis Comparativo:</strong></p>
+<ul class="simple">
+<li><p>Compararemos datos entre diferentes capítulos de la encuesta para identificar patrones y relaciones entre variables.</p></li>
+</ul>
+</li>
+<li><p><strong>Manejo de Sesgos y Limitaciones:</strong></p>
+<ul class="simple">
+<li><p>Seremos transparentes sobre el tamaño de la muestra utilizada en cada análisis, expresándolo como un porcentaje del total.</p></li>
+<li><p>Aplicaremos filtros para excluir categorías con muestras muy pequeñas (por ejemplo, menos de 5 observaciones) para evitar conclusiones basadas en datos poco representativos.</p></li>
+</ul>
+</li>
+<li><p><strong>Contextualización de Resultados:</strong></p>
+<ul class="simple">
+<li><p>Integraremos los datos de la encuesta con la información del censo 2018, utilizando técnicas de extrapolación cuando sea necesario.</p></li>
+<li><p>Proporcionaremos notas explicativas sobre las limitaciones de las estimaciones, especialmente en áreas de rápido crecimiento como Tocancipá.</p></li>
+</ul>
+</li>
+</ol>
+<p>Este enfoque metodológico nos permitirá realizar un análisis robusto y detallado de los datos disponibles, siempre teniendo en cuenta las limitaciones inherentes al uso de datos secundarios y la naturaleza dinámica de la región estudiada. Nuestro objetivo es proporcionar insights valiosos mientras mantenemos un alto estándar de rigor metodológico y transparencia en nuestras conclusiones.</p>
+<p>Basándome en el contexto proporcionado y el marco metodológico general, ampliaré la información sobre las consideraciones éticas y las limitaciones potenciales:</p>
+</section>
+<section id="consideraciones-eticas">
+<h3>Consideraciones éticas<a class="headerlink" href="#consideraciones-eticas" title="Link to this heading">#</a></h3>
+<p>El diseño de la investigación incluirá la elaboración de protocolos éticos rigurosos, siguiendo las pautas éticas de la Asociación Americana de Investigación Educativa (<em>AERA</em>, 2011). Aunque nuestro estudio se basa principalmente en datos secundarios, es fundamental mantener altos estándares éticos en todas las fases de la investigación.</p>
+<ol class="arabic simple">
+<li><p><strong>Protección de la privacidad y confidencialidad:</strong></p>
+<ul class="simple">
+<li><p>Aunque trabajamos con datos agregados, nos aseguraremos de que ningún individuo pueda ser identificado en nuestros análisis o reportes.</p></li>
+<li><p>Implementaremos técnicas de anonimización adicionales si se detecta algún riesgo de identificación en los datos proporcionados por el DANE.</p></li>
+</ul>
+</li>
+<li><p><strong>Uso responsable de los datos:</strong></p>
+<ul class="simple">
+<li><p>Nos comprometemos a utilizar los datos únicamente para los fines especificados en este estudio.</p></li>
+<li><p>Evitaremos cualquier análisis o interpretación que pudiera estigmatizar o perjudicar a comunidades específicas.</p></li>
+</ul>
+</li>
+<li><p><strong>Transparencia y reproducibilidad:</strong></p>
+<ul class="simple">
+<li><p>Detallaremos meticulosamente nuestros métodos de análisis y las fuentes de datos utilizadas.</p></li>
+<li><p>Pondremos a disposición nuestros scripts de análisis para permitir la reproducibilidad de los resultados.</p></li>
+</ul>
+</li>
+<li><p><strong>Consideración de impactos potenciales:</strong></p>
+<ul class="simple">
+<li><p>Evaluaremos cuidadosamente las posibles consecuencias de nuestros hallazgos en las políticas públicas y en la comunidad de Tocancipá.</p></li>
+<li><p>Nos aseguraremos de presentar los resultados de manera equilibrada, evitando sensacionalismos o conclusiones prematuras.</p></li>
+</ul>
+</li>
+<li><p><strong>Consentimiento informado para datos adicionales:</strong></p>
+<ul class="simple">
+<li><p>En caso de que se requiera recolectar datos adicionales o realizar entrevistas para contextualizar los hallazgos, se implementarán formularios de consentimiento informado detallados.</p></li>
+</ul>
+</li>
+<li><p><strong>Manejo ético de datos sensibles:</strong></p>
+<ul class="simple">
+<li><p>Prestaremos especial atención a cualquier dato que pueda ser considerado sensible (por ejemplo, información sobre salud o situación socioeconómica), asegurándonos de manejarlo con el máximo cuidado y confidencialidad.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Es fundamental garantizar la protección de los derechos y el bienestar de todos los participantes indirectos en el estudio, manteniendo altos estándares éticos en todas las fases de la investigación, desde el análisis de datos hasta la difusión de resultados.</p>
+</div>
+</section>
+<section id="limitaciones-potenciales">
+<h3>Limitaciones potenciales<a class="headerlink" href="#limitaciones-potenciales" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Se reconoce que este estudio estará limitado al contexto específico de Tocancipá, y los resultados pueden no ser directamente generalizables a otros contextos. Además, al ser un estudio basado en datos secundarios y extrapolaciones, las conclusiones sobre la situación actual de Tocancipá y el potencial impacto de CircleUp serán tentativas.</p>
+</div>
+<ol class="arabic simple">
+<li><p><strong>Limitaciones de los datos secundarios:</strong></p>
+<ul class="simple">
+<li><p>Los datos de la Encuesta Multipropósito y del censo 2018 pueden no reflejar completamente la realidad actual de Tocancipá debido a su rápido crecimiento.</p></li>
+<li><p>Posibles sesgos inherentes en la recolección original de datos que están fuera de nuestro control.</p></li>
+</ul>
+</li>
+<li><p><strong>Desafíos en la extrapolación:</strong></p>
+<ul class="simple">
+<li><p>Las técnicas de extrapolación utilizadas para actualizar los datos del censo 2018 introducen un nivel de incertidumbre en nuestras estimaciones.</p></li>
+<li><p>El rápido desarrollo de Tocancipá puede hacer que incluso las extrapolaciones más cuidadosas subestimen la situación actual.</p></li>
+</ul>
+</li>
+<li><p><strong>Limitaciones en la generalización:</strong></p>
+<ul class="simple">
+<li><p>Los hallazgos específicos para Tocancipá pueden no ser directamente aplicables a otros municipios o regiones, incluso dentro de Cundinamarca.</p></li>
+</ul>
+</li>
+<li><p><strong>Naturaleza tentativa de las conclusiones:</strong></p>
+<ul class="simple">
+<li><p>Al ser un estudio de diseño basado en datos históricos y proyecciones, las conclusiones sobre el potencial impacto de CircleUp serán necesariamente especulativas.</p></li>
+</ul>
+</li>
+<li><p><strong>Falta de datos primarios actuales:</strong></p>
+<ul class="simple">
+<li><p>La ausencia de recolección de datos primarios limita nuestra capacidad para capturar dinámicas muy recientes o específicas de la comunidad.</p></li>
+</ul>
+</li>
+<li><p><strong>Limitaciones en la captura de aspectos cualitativos:</strong></p>
+<ul class="simple">
+<li><p>El enfoque cuantitativo basado en datos secundarios puede no capturar completamente las realidades vividas y las percepciones de la comunidad de Tocancipá.</p></li>
+</ul>
+</li>
+<li><p><strong>Desafíos en la integración de datos de diferentes fuentes:</strong></p>
+<ul class="simple">
+<li><p>La combinación de datos de la Encuesta Multipropósito y el censo puede presentar problemas de compatibilidad o consistencia.</p></li>
+</ul>
+</li>
+</ol>
+<p>Para mitigar estas limitaciones, nos comprometemos a:</p>
+<ul class="simple">
+<li><p>Ser transparentes sobre todas las limitaciones en nuestros reportes y publicaciones.</p></li>
+<li><p>Proporcionar rangos de estimación e intervalos de confianza siempre que sea posible.</p></li>
+<li><p>Recomendar cautela en la interpretación y aplicación de nuestros hallazgos.</p></li>
+</ul>
+</section>
+</section>
+<section id="referencias">
+<h2>Referencias<a class="headerlink" href="#referencias" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Nota sobre las Referencias</p>
+<p>Esta sección contiene todas las referencias citadas en el documento. Están organizadas en orden alfabético por el apellido del primer autor.</p>
+</div>
+<ul class="simple">
+<li><p>Bayne, S. (2014). What’s the matter with ‘technology-enhanced learning’? Learning, Media and Technology, 40(1), doi:10.1080/17439884.2014.915851, 5-20.</p></li>
+<li><p>Binkley, M., Erstad, O., Herman, J., Raizen, S., Ripley, M., Miller-Ricci, M., &amp; Rumble, M. (2012). Defining twenty-first century skills. En P. Griffin, B. McGaw, &amp; E. Care (Eds.), Assessment and teaching of 21st century skills (pp. 17-66). dio:10.1007/978-94-007-2324-5.</p></li>
+<li><p>Bringle, R. G., &amp; Clayton, P. H. (2020). Integrating Service Learning and Digital Technologies: Examining the Challenge and the Promise. RIED. Revista Iberoamericana de Educación a Distancia, 23(1), 43-65.</p></li>
+<li><p>Brown, P., Lauder, H., &amp; Cheung, S. Y. (2020). The Death of Human Capital?: Its Failed Promise and How to Renew It in an Age of Disruption. Oxford University Press, 320 pp.. ISBN 9780-1906-4430-7</p></li>
+<li><p>Celio, C. I., Durlak, J., &amp; Dymnicki, A. (2011). A meta-analysis of the impact of service-learning on students. Journal of Experiential Education, 34(2), 164-181.</p></li>
+<li><p>Desjardins &amp; Ioannidou R. (2020). The political economy of adult learning systems - Some
+institutional features that promote adult learning participation. doi:10.1007/s40955-020-00159-y</p></li>
+<li><p>Findsen, B., &amp; Formosa, M. (2011). Lifelong learning in later life: A handbook on older adult learning. Sense Publishers.</p></li>
+<li><p>Gerpott, F. H., Lehmann-Willenbrock, N., &amp; Voelpel, S. C. (2017). A phase model of intergenerational learning in organizations. Academy of Management Learning &amp; Education, 16(2), 193-216.</p></li>
+<li><p>Giles, D. E., &amp; Eyler, J. (1994). The theoretical roots of service-learning in John Dewey: Toward a theory of service-learning. Michigan Journal of Community Service Learning, 1(1), 77-85.</p></li>
+<li><p>Giraudeau, C., &amp; Bailly, N. (2019). Intergenerational programs: What can school-age children and older people expect from them? A systematic review. European Journal of Ageing, 16(3), 363-376.</p></li>
+<li><p>Laal, M., &amp; Salamati, P. (2012). Lifelong learning; why do we need it? Procedia-Social and Behavioral Sciences, 31, 399-403. <a class="reference external" href="http://doi.org/10.1016/j.sbspro.2011.12.073">doi.org/10.1016/j.sbspro.2011.12.073</a></p></li>
+<li><p>Lamb, S., Maire, Q., &amp; Doecke, E. (2017). Key skills for the 21st century: An evidence-based review. NSW Department of Education.</p></li>
+<li><p>Powell, W. W., &amp; Snellman, K. (2004). The knowledge economy. Annual Review of Sociology, 30, 199-220. doi: 10.1146/annurev.soc.29.010202.100037</p></li>
+<li><p>Stoecker, R. (2016). Liberating service learning and the rest of higher education civic engagement. 68(1)-2018 Temple University Press, 2016, Pp. 219. <a class="reference external" href="http://doi.org/10.1111/edth.12293">doi.org/10.1111/edth.12293</a></p></li>
+<li><p>Swyngedouw, E. (2005). Governance innovation and the citizen: The Janus face of governance-beyond-the-state. Urban Studies, 42(11), 1991-2006.</p></li>
+<li><p>UNESCO. (2016). Recommendation on adult learning and education. UNESCO Institute for Lifelong Learning.</p></li>
+<li><p>van Wijk, J., Zietsma, C., Dorado, S., de Bakker, F. G., &amp; Martí, I. (2019). Social innovation: Integrating micro, meso, and macro level insights from institutional theory. Business &amp; Society, 58(5), 887-918.</p></li>
+<li><p>World Economic Forum. (2023). The Future of Jobs Report 2023. World Economic Forum.</p></li>
+<li><p>Zawacki-Richter, O., Marín, V. I., Bond, M., &amp; Gouverneur, F. (2019). Systematic review of research on artificial intelligence applications in higher education – where are the educators? International Journal of Educational Technology in Higher Education, 16(1), 39.</p></li>
+<li><p>Howaldt, J., Kaletka, C., Schröder, A., &amp; Zirngiebl, M. (2018). Atlas of Social Innovation: New Practices for a Better Future. Sozialforschungsstelle, TU Dortmund University.</p></li>
+<li><p>Krlev, G., Anheier, H. K., &amp; Mildenberger, G. (2021). Social Innovation in a Comparative Perspective. Routledge.</p></li>
+<li><p>Moulaert, F., &amp; MacCallum, D. (2019). Advanced Introduction to Social Innovation. Edward Elgar Publishing.</p></li>
+<li><p>Pel, B., Haxeltine, A., Avelino, F., Dumitru, A., Kemp, R., Bauler, T., Kunze, I., Dorland, J., Wittmayer, J., &amp; Jørgensen, M. S. (2020). Towards a theory of transformative social innovation: A relational framework and 12 propositions. Research Policy, 49(8), 104080.</p></li>
+<li><p>Avello Martínez, R., Lavonen, J., &amp; Zapata-Ros, M. (2021). Emerging Technologies in Education for Innovative Pedagogies and Competence Development. Sustainability, 37(5), 1723. doi:org/10.14742/ajet.7680</p></li>
+<li><p>Crompton, H., &amp; Burke, D. (2018). The use of mobile learning in higher education: A systematic review. Computers &amp; Education, 123, 53-64.</p></li>
+<li><p>Lugo, M. T., &amp; Ithurburu, V. (2019). Políticas digitales en América Latina. Tecnologías para fortalecer la educación de calidad. Revista Iberoamericana de Educación, 79(1), 11-31.</p></li>
+<li><p>Zawacki-Richter, O., Marín, V. I., Bond, M., &amp; Gouverneur, F. (2019). Systematic review of research on artificial intelligence applications in higher education – where are the educators? International Journal of Educational Technology in Higher Education, 16(1), 39</p></li>
+<li><p>American Educational Research Association. (2011). Code of Ethics. Educational Researcher, 40(3), 145-156.</p></li>
+<li><p>Braun, V., &amp; Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101.</p></li>
+<li><p>Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). Sage Publications.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para una fácil navegación, puede utilizar la función de búsqueda de su navegador (generalmente Ctrl+F o Cmd+F) para encontrar rápidamente una referencia específica por autor o título.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Marco%20Conceptual.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2. Marco Conceptual y Metodológico</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Poblaci%C3%B3n.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">4. Población</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-la-investigacion">Diseño de la investigación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-recoleccion-de-datos-propuestos">Métodos de recolección de datos propuestos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-propuesto">Análisis de datos propuesto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consideraciones-eticas">Consideraciones éticas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones-potenciales">Limitaciones potenciales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referencias</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Circle Up Community ⚫
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Living Stones 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
