@@ -865,99 +865,6 @@ El análisis demográfico de Tocancipá revela un ecosistema diverso y dinámico
 
 La diversidad educativa y ocupacional observada ofrece un amplio espectro de habilidades y perspectivas, crucial para abordar los desafíos multifacéticos de la comunidad. Sin embargo, también se identificaron brechas significativas, particularmente en el uso de internet para educación y en la participación femenina en ciertos sectores, que CircleUp puede abordar estratégicamente.
 
-#### Subsegmentación Estratégica de CircleUp
-
-#### a. Voluntarios Académicos <span class="va">(VA)</span>
-
-1. **Profesionales Altamente Satisfechos**
-   - Perfil: Mujeres, 30-34 años, con título universitario o superior
-   - Datos clave:
-     - 45.8% reportan satisfacción laboral de 9-10
-     - 48% indican satisfacción comunitaria de 8-9
-     - 51% usan internet para educación
-   - Potencial: Líderes de programas de mentoría y desarrollo profesional
-
-2. **Especialistas Técnicos Comprometidos**
-   - Perfil: Hombres, 35-39 años, con formación técnica o tecnológica
-   - Datos clave:
-     - 36.2% reportan satisfacción laboral de 8
-     - 30% indican satisfacción comunitaria de 8
-     - 40% usan internet para educación
-   - Potencial: Instructores en habilidades técnicas específicas y oficios
-
-3. **Emprendedores Sociales Emergentes**
-   - Perfil: Mixto, 25-29 años, con educación universitaria incompleta
-   - Datos clave:
-     - 25.7% son trabajadores independientes o por cuenta propia
-     - 39% reportan satisfacción comunitaria de 7-8
-     - 47% usan internet para educación
-   - Potencial: Líderes de proyectos de innovación social y emprendimiento comunitario
-
-#### b. Mentores Inversos <span class="mi">(MI)</span>
-
-1. **Nativos Digitales Universitarios**
-   - Perfil: Mixto, 20-24 años, estudiantes universitarios
-   - Datos clave:
-     - 54.1% de hombres y 52.8% de mujeres en este rango de edad
-     - 85.4% de hombres y 77.2% de mujeres reportan satisfacción vital de 8-10
-     - Mayor adopción de internet para educación (47%)
-   - Potencial: Mentores en alfabetización digital avanzada y nuevas tecnologías
-
-2. **Técnicos Innovadores Jóvenes**
-   - Perfil: Hombres, 18-22 años, con formación técnica o tecnológica
-   - Datos clave:
-     - 7 hombres con formación técnica vs 5 con formación tecnológica
-     - 26.5% de hombres en el grupo de 20-24 años
-     - Alta satisfacción comunitaria (51% en niveles 8-9)
-   - Potencial: Mentores en aplicaciones prácticas de tecnología y soluciones creativas
-
-3. **Comunicadoras Digitales Emergentes**
-   - Perfil: Mujeres, 16-20 años, con educación media o técnica inicial
-   - Datos clave:
-     - 13.6% de mujeres en el grupo de 20-24 años
-     - Mayor presencia femenina en educación técnica (11 mujeres vs 7 hombres)
-     - Alta satisfacción vital (77.2% en niveles 8-10)
-   - Potencial: Mentoras en comunicación digital, redes sociales y marketing online
-
-#### c. Laboratorio de Innovación <span class="li">(LI)</span>
-
-1. **Innovadores Multiculturales**
-   - Perfil: Mixto, 25-29 años, nacidos fuera de Tocancipá, con educación universitaria
-   - Datos clave:
-     - 82.1% de potenciales participantes LI nacieron fuera de Tocancipá
-     - 39.7% del total en el rango de 25-29 años
-     - Mayor uso de internet para educación en este grupo etario
-   - Potencial: Líderes de proyectos de innovación que combinen perspectivas globales y necesidades locales
-
-2. **Especialistas Técnicos Locales**
-   - Perfil: Hombres, 30-34 años, nacidos en Tocancipá, con formación técnica o tecnológica
-   - Datos clave:
-     - 23.5% de hombres son nativos de Tocancipá
-     - 35.3% de hombres en el grupo de 30-34 años
-     - Mayor presencia masculina en formación técnica/tecnológica
-   - Potencial: Expertos en aplicación de soluciones tecnológicas a desafíos locales específicos
-
-3. **Emprendedoras Sociales Digitales**
-   - Perfil: Mujeres, 28-34 años, con educación universitaria y experiencia laboral
-   - Datos clave:
-     - 45.5% de mujeres en el grupo de 30-34 años
-     - 44% de mujeres usan internet para educación vs 40% de hombres
-     - Mayor satisfacción laboral en mujeres (45.8% en nivel 9-10)
-   - Potencial: Líderes de iniciativas de innovación social con fuerte componente digital y enfoque en impacto comunitario
-
-#### 3. Conclusiones Finales
-
-El análisis demográfico de Tocancipá revela un terreno fértil para la implementación y el éxito de CircleUp. La diversidad demográfica, combinada con altos niveles de satisfacción y una creciente adopción tecnológica, proporciona una base sólida para programas de impacto social y desarrollo comunitario.
-
-Los segmentos identificados para cada línea de trabajo ofrecen oportunidades únicas:
-- El Voluntariado Académico puede capitalizar la experiencia y compromiso de mujeres profesionales para fomentar la equidad de género y el desarrollo comunitario.
-- El programa de Mentores Inversos puede aprovechar el entusiasmo y las habilidades digitales de los jóvenes para cerrar brechas intergeneracionales y fomentar la innovación.
-- El Laboratorio de Innovación puede transformar la diversidad de origen en un catalizador para soluciones creativas a desafíos locales.
-
-CircleUp tiene el potencial de actuar como un nexo crucial, conectando diversos segmentos de la población y canalizando sus fortalezas hacia el desarrollo sostenible de Tocancipá. Al enfocarse en estos segmentos clave y diseñar programas que aprovechen sus características únicas, CircleUp puede maximizar su impacto, fomentando un ecosistema de aprendizaje continuo, innovación social y compromiso comunitario.
-
-El éxito de CircleUp en Tocancipá podría servir como modelo para otras comunidades en rápido desarrollo, demostrando cómo la sinergia entre voluntariado, mentoría intergeneracional e innovación puede catalizar el desarrollo sostenible y la cohesión social en contextos de cambio demográfico y económico acelerado.
-
 #### Segmentación Estratégica Alternativa de CircleUp
 
 #### a. Voluntarios Académicos <span class="va">(VA)</span>
@@ -1037,3 +944,17 @@ El éxito de CircleUp en Tocancipá podría servir como modelo para otras comuni
      - Alta presencia en formación técnica/tecnológica sugiere habilidades prácticas avanzadas.
      - Su combinación de conocimiento local y experticia técnica los posiciona para integrar tecnología en la vida cotidiana de la comunidad.
    - Potencial: Pueden liderar proyectos que integren soluciones tecnológicas en la infraestructura y servicios comunitarios existentes.
+
+#### 3. Conclusiones Finales
+
+El análisis demográfico de Tocancipá revela un terreno fértil para la implementación y el éxito de CircleUp. La diversidad demográfica, combinada con altos niveles de satisfacción y una creciente adopción tecnológica, proporciona una base sólida para programas de impacto social y desarrollo comunitario.
+
+Los segmentos identificados para cada línea de trabajo ofrecen oportunidades únicas:
+- El Voluntariado Académico puede capitalizar la experiencia y compromiso de mujeres profesionales para fomentar la equidad de género y el desarrollo comunitario.
+- El programa de Mentores Inversos puede aprovechar el entusiasmo y las habilidades digitales de los jóvenes para cerrar brechas intergeneracionales y fomentar la innovación.
+- El Laboratorio de Innovación puede transformar la diversidad de origen en un catalizador para soluciones creativas a desafíos locales.
+
+CircleUp tiene el potencial de actuar como un nexo crucial, conectando diversos segmentos de la población y canalizando sus fortalezas hacia el desarrollo sostenible de Tocancipá. Al enfocarse en estos segmentos clave y diseñar programas que aprovechen sus características únicas, CircleUp puede maximizar su impacto, fomentando un ecosistema de aprendizaje continuo, innovación social y compromiso comunitario.
+
+El éxito de CircleUp en Tocancipá podría servir como modelo para otras comunidades en rápido desarrollo, demostrando cómo la sinergia entre voluntariado, mentoría intergeneracional e innovación puede catalizar el desarrollo sostenible y la cohesión social en contextos de cambio demográfico y económico acelerado.
+

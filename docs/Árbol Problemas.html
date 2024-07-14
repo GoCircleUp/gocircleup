@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Árboles de Problemas y Objetivos de CircleUp &#8212; Circle UP ⚫</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fb436c1d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Árbol Problemas';</script>
+    <script src="../_static/custom.js?v=16113e41"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Laboratorio de Innovación Social Basado en Datos: Transformando Desafíos en Oportunidades" href="Lineas%20CircleUp.html" />
+    <link rel="prev" title="Módulo de Articulación Mejorado: CircleUp y Plan de Ordenanza de Tocancipá" href="Articulaci%C3%B3n.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Circle UP ⚫ - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Circle UP ⚫ - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    CircleUp | Innovación Social
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Docs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3n.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Conceptual.html">2. Marco Conceptual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Metodol%C3%B3gico.html">3. Marco Metodológico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poblaci%C3%B3n.html">4. Población</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Articulaci%C3%B3n.html">5. Articulación</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Árbol Problemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lineas%20CircleUp.html">Laboratorio de Innovación Social Basado en Datos: Transformando Desafíos en Oportunidades</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/Árbol Problemas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Árbol Problemas.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Árboles de Problemas y Objetivos de CircleUp</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntariado-academico">1. Voluntariado Académico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arbol-de-problemas">Árbol de Problemas</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="position: relative; width: 100%; padding: 10px;">
+    <div style="border-radius: 10px; overflow: hidden;">
+        <img src="https://i.ibb.co/TH6HzwQ/body.jpg" alt="Imagen de fondo" style="width: 100%; height: auto;">
+    </div>
+</div>
+<p>Entiendo su solicitud. Reformularé los árboles de problemas y objetivos para cada línea de trabajo de CircleUp, utilizando un lenguaje neutro y asegurando que cada parte esté bien definida y conceptualizada. Aquí está la versión revisada:</p>
+<section class="tex2jax_ignore mathjax_ignore" id="arboles-de-problemas-y-objetivos-de-circleup">
+<h1>Árboles de Problemas y Objetivos de CircleUp<a class="headerlink" href="#arboles-de-problemas-y-objetivos-de-circleup" title="Link to this heading">#</a></h1>
+<section id="voluntariado-academico">
+<h2>1. Voluntariado Académico<a class="headerlink" href="#voluntariado-academico" title="Link to this heading">#</a></h2>
+<section id="arbol-de-problemas">
+<h3>Árbol de Problemas<a class="headerlink" href="#arbol-de-problemas" title="Link to this heading">#</a></h3>
+<p><strong>Problema Central:</strong>
+Subutilización del capital humano local en Tocancipá para el desarrollo de habilidades comunitarias.</p>
+<p><strong>Causas Directas:</strong></p>
+<ol class="arabic simple">
+<li><p>Ausencia de un sistema estructurado para canalizar el conocimiento de profesionales locales.</p></li>
+<li><p>Desconexión entre las habilidades existentes en la comunidad y las necesidades locales.</p></li>
+</ol>
+<p><strong>Causas Indirectas:</strong>
+1.1. Falta de mecanismos para identificar y movilizar el talento local.
+1.2. Escasez de incentivos para la participación en actividades de voluntariado académico.
+2.1. Limitada identificación de las necesidades de aprendizaje de la comunidad.
+2.2. Ausencia de un currículo adaptado a las características demográficas locales.</p>
+<p><strong>Efectos Directos:</strong></p>
+<ol class="arabic simple">
+<li><p>Limitado desarrollo de habilidades relevantes para el contexto local.</p></li>
+<li><p>Desaprovechamiento del potencial de liderazgo en la comunidad.</p></li>
+</ol>
+<p><strong>Efectos Indirectos:</strong></p>
+<ol class="arabic simple">
+<li><p>Estancamiento en el desarrollo socioeconómico local.</p></li>
+<li><p>Disminución de la cohesión social y el sentido de comunidad.</p></li>
+</ol>
+<p>Entendido. Aquí está la versión revisada con todos los elementos solicitados:</p>
+<div class="note admonition">
+<p class="admonition-title">Árbol de Problemas - Voluntariado Académico</p>
+<p>El siguiente árbol de problemas analiza la situación actual del voluntariado académico en Tocancipá. Identifica como problema central la subutilización del capital humano local para el desarrollo de habilidades comunitarias. Este análisis revela una serie de causas interconectadas que contribuyen a esta situación, así como los efectos que tiene en la comunidad. La estructura del árbol permite visualizar la relación entre estos elementos, proporcionando una base para el desarrollo de estrategias efectivas de intervención.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Nivel</strong></p></th>
+<th class="head"><p><strong>Descripción</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Efectos Indirectos</strong></p></td>
+<td><p>1. Estancamiento en el desarrollo socioeconómico local.<br>2. Disminución de la cohesión social y el sentido de comunidad.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><strong>Efectos Directos</strong></p></td>
+<td><p>1. Limitado desarrollo de habilidades relevantes para el contexto local.<br>2. Desaprovechamiento del potencial de liderazgo en la comunidad.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><strong>Problema Central</strong></p></td>
+<td><p>Subutilización del capital humano local en Tocancipá para el desarrollo de habilidades comunitarias.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><strong>Causas Directas</strong></p></td>
+<td><p>1. Ausencia de un sistema estructurado para canalizar el conocimiento de profesionales locales.<br>2. Desconexión entre las habilidades existentes en la comunidad y las necesidades locales.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><strong>Causas Indirectas</strong></p></td>
+<td><p>1.1. Falta de mecanismos para identificar y movilizar el talento local.<br>1.2. Escasez de incentivos para la participación en actividades de voluntariado académico.<br>2.1. Limitada identificación de las necesidades de aprendizaje de la comunidad.<br>2.2. Ausencia de un currículo adaptado a las características demográficas locales.</p></td>
+</tr>
+</tbody>
+</table>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Implicaciones para CircleUp<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Este árbol de problemas sugiere que CircleUp debe enfocarse en:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Crear sistemas estructurados para identificar y movilizar el talento local.</p></li>
+<li><p class="sd-card-text">Desarrollar incentivos efectivos para el voluntariado.</p></li>
+<li><p class="sd-card-text">Diseñar currículos adaptados a las necesidades específicas de Tocancipá.</p></li>
+<li><p class="sd-card-text">Implementar mecanismos para identificar las necesidades de aprendizaje de la comunidad.</p></li>
+</ol>
+<p class="sd-card-text">Abordar estos aspectos podría conducir a un mejor aprovechamiento del capital humano local y, en consecuencia, a un mayor desarrollo de habilidades comunitarias.</p>
+</div>
+</details></div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para una comprensión más profunda de la dinámica del voluntariado académico en contextos comunitarios, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“Volunteer Work and Informal Learning: A Conceptual Discussion” por D. Schugurensky y K. Mündel (2005)</p></li>
+<li><p>“The Role of Volunteering in Sustainable Development” por United Nations Volunteers (2015)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+### Árbol de Objetivos
+
+**Objetivo General:**
+Optimizar el aprovechamiento del capital humano local para el desarrollo de habilidades comunitarias en Tocancipá.
+
+**Objetivos Específicos:**
+1. Implementar un sistema estructurado de voluntariado académico.
+2. Alinear las habilidades locales con las necesidades de la comunidad.
+
+**Medios:**
+1.1. Desarrollar una plataforma para la identificación y gestión de voluntarios.
+1.2. Establecer un sistema de reconocimiento para los voluntarios académicos.
+2.1. Realizar un análisis continuo de las necesidades de aprendizaje de la comunidad.
+2.2. Diseñar un currículo flexible basado en las características demográficas locales.
+
+**Fines Directos:**
+1. Incremento en la adquisición de habilidades relevantes para el contexto local.
+2. Aumento en el número de líderes comunitarios capacitados.
+
+**Fines Indirectos:**
+1. Mejora en el desarrollo socioeconómico local.
+2. Fortalecimiento de la cohesión social y el sentido de comunidad.
+
+```{admonition} Árbol de Objetivos - Voluntariado Académico
+:class: note
+
+El siguiente árbol de objetivos presenta una visión estructurada para optimizar el aprovechamiento del capital humano local en Tocancipá. Este enfoque busca transformar las problemáticas identificadas en el árbol de problemas en objetivos alcanzables y medios concretos para lograrlos. La estructura proporciona una hoja de ruta clara para el desarrollo de habilidades comunitarias, estableciendo una conexión lógica entre los objetivos, los medios para alcanzarlos y los fines esperados.
+
+| **Nivel** | **Descripción** |
+|:---------:|-----------------|
+| **Fines Indirectos** | 1. Mejora en el desarrollo socioeconómico local.&lt;br&gt;2. Fortalecimiento de la cohesión social y el sentido de comunidad. |
+| **Fines Directos** | 1. Incremento en la adquisición de habilidades relevantes para el contexto local.&lt;br&gt;2. Aumento en el número de líderes comunitarios capacitados. |
+| **Objetivo General** | Optimizar el aprovechamiento del capital humano local para el desarrollo de habilidades comunitarias en Tocancipá. |
+| **Objetivos Específicos** | 1. Implementar un sistema estructurado de voluntariado académico.&lt;br&gt;2. Alinear las habilidades locales con las necesidades de la comunidad. |
+| **Medios** | 1.1. Desarrollar una plataforma para la identificación y gestión de voluntarios.&lt;br&gt;1.2. Establecer un sistema de reconocimiento para los voluntarios académicos.&lt;br&gt;2.1. Realizar un análisis continuo de las necesidades de aprendizaje de la comunidad.&lt;br&gt;2.2. Diseñar un currículo flexible basado en las características demográficas locales. |
+
+```{dropdown} Estrategias de Implementación para CircleUp
+Para lograr estos objetivos, CircleUp podría considerar las siguientes estrategias:
+1. Desarrollar una plataforma digital para conectar voluntarios con oportunidades de enseñanza.
+2. Implementar un sistema de badges o certificaciones para reconocer el trabajo de los voluntarios.
+3. Conducir encuestas y focus groups regulares para identificar las necesidades de aprendizaje.
+4. Colaborar con expertos locales para diseñar un currículo adaptativo y relevante.
+
+Estas estrategias buscan crear un ecosistema de voluntariado académico eficiente y alineado con las necesidades de Tocancipá.
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para profundizar en estrategias de implementación de programas de voluntariado académico, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“The Nonprofit Human Resource Management Handbook” por Jessica K. A. Word y Jessica E. Sowa (2017)</p></li>
+<li><p>“Successful Volunteer Management Principles” por International Association for Volunteer Effort (IAVE)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## 2. Mentores Inversos
+
+### Árbol de Problemas
+
+**Problema Central:**
+Desaprovechamiento del potencial de los jóvenes como agentes de cambio en la transferencia de conocimientos en Tocancipá.
+
+**Causas Directas:**
+1. Falta de reconocimiento de las habilidades de los jóvenes en la comunidad.
+2. Ausencia de mecanismos para facilitar el intercambio intergeneracional de conocimientos.
+
+**Causas Indirectas:**
+1.1. Percepciones estereotipadas sobre las capacidades de los jóvenes.
+1.2. Carencia de sistemas de validación de habilidades juveniles.
+2.1. Escasez de espacios para el encuentro intergeneracional.
+2.2. Falta de programas que fomenten la colaboración entre diferentes grupos etarios.
+
+**Efectos Directos:**
+1. Subutilización de las habilidades digitales y técnicas de los jóvenes.
+2. Persistencia de la brecha de conocimientos entre generaciones.
+
+**Efectos Indirectos:**
+1. Limitada innovación social en la comunidad.
+2. Debilitamiento de los lazos intergeneracionales.
+
+```{admonition} Árbol de Problemas - Mentores Inversos
+:class: note
+
+El siguiente árbol de problemas analiza la situación actual de los mentores inversos en Tocancipá. Identifica como problema central el desaprovechamiento del potencial de los jóvenes como agentes de cambio en la transferencia de conocimientos. Este análisis revela una serie de causas interconectadas que contribuyen a esta situación, así como los efectos que tiene en la comunidad. La estructura del árbol permite visualizar la relación entre estos elementos, proporcionando una base para el desarrollo de estrategias efectivas de intervención.
+
+| **Nivel** | **Descripción** |
+|:---------:|-----------------|
+| **Efectos Indirectos** | 1. Limitada innovación social en la comunidad.&lt;br&gt;2. Debilitamiento de los lazos intergeneracionales. |
+| **Efectos Directos** | 1. Subutilización de las habilidades digitales y técnicas de los jóvenes.&lt;br&gt;2. Persistencia de la brecha de conocimientos entre generaciones. |
+| **Problema Central** | Desaprovechamiento del potencial de los jóvenes como agentes de cambio en la transferencia de conocimientos en Tocancipá. |
+| **Causas Directas** | 1. Falta de reconocimiento de las habilidades de los jóvenes en la comunidad.&lt;br&gt;2. Ausencia de mecanismos para facilitar el intercambio intergeneracional de conocimientos. |
+| **Causas Indirectas** | 1.1. Percepciones estereotipadas sobre las capacidades de los jóvenes.&lt;br&gt;1.2. Carencia de sistemas de validación de habilidades juveniles.&lt;br&gt;2.1. Escasez de espacios para el encuentro intergeneracional.&lt;br&gt;2.2. Falta de programas que fomenten la colaboración entre diferentes grupos etarios. |
+
+```{dropdown} Implicaciones para CircleUp
+Este árbol de problemas sugiere que CircleUp debe enfocarse en:
+1. Desarrollar programas de reconocimiento y validación de las habilidades de los jóvenes.
+2. Crear espacios y oportunidades para el intercambio intergeneracional de conocimientos.
+3. Implementar campañas de sensibilización sobre las capacidades de los jóvenes.
+4. Diseñar programas que fomenten la colaboración entre diferentes grupos etarios.
+
+Abordar estos aspectos podría conducir a un mejor aprovechamiento del potencial de los jóvenes como agentes de cambio y fortalecer los lazos intergeneracionales en la comunidad.
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para una comprensión más profunda de la dinámica de la mentoría inversa y el intercambio intergeneracional, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“Reverse Mentoring: Untapped Resource for the Organization” por P. C. Marcinkus Murphy (2012)</p></li>
+<li><p>“Intergenerational Learning: A Comprehensive Overview” por M. Sanchez y M. Kaplan (2014)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+### Árbol de Objetivos
+
+**Objetivo General:**
+Potenciar el rol de los jóvenes como agentes de cambio en la transferencia de conocimientos en Tocancipá.
+
+**Objetivos Específicos:**
+1. Establecer un sistema de reconocimiento de las habilidades de los jóvenes.
+2. Crear mecanismos para facilitar el intercambio intergeneracional de conocimientos.
+
+**Medios:**
+1.1. Implementar un programa de certificación de habilidades juveniles.
+1.2. Desarrollar campañas de sensibilización sobre el potencial de los jóvenes.
+2.1. Crear espacios físicos y virtuales para el encuentro intergeneracional.
+2.2. Diseñar programas de colaboración entre diferentes grupos etarios.
+
+**Fines Directos:**
+1. Aumento en la utilización de las habilidades digitales y técnicas de los jóvenes.
+2. Reducción de la brecha de conocimientos entre generaciones.
+
+**Fines Indirectos:**
+1. Incremento en la innovación social en la comunidad.
+2. Fortalecimiento de los lazos intergeneracionales.
+
+```{admonition} Árbol de Objetivos - Mentores Inversos
+:class: note
+
+El siguiente árbol de objetivos presenta una visión estructurada para potenciar el rol de los jóvenes como agentes de cambio en la transferencia de conocimientos en Tocancipá. Este enfoque busca transformar las problemáticas identificadas en el árbol de problemas en objetivos alcanzables y medios concretos para lograrlos. La estructura proporciona una hoja de ruta clara para el aprovechamiento del potencial juvenil y el fortalecimiento de los lazos intergeneracionales.
+
+| **Nivel** | **Descripción** |
+|:---------:|-----------------|
+| **Fines Indirectos** | 1. Incremento en la innovación social en la comunidad.&lt;br&gt;2. Fortalecimiento de los lazos intergeneracionales. |
+| **Fines Directos** | 1. Aumento en la utilización de las habilidades digitales y técnicas de los jóvenes.&lt;br&gt;2. Reducción de la brecha de conocimientos entre generaciones. |
+| **Objetivo General** | Potenciar el rol de los jóvenes como agentes de cambio en la transferencia de conocimientos en Tocancipá. |
+| **Objetivos Específicos** | 1. Establecer un sistema de reconocimiento de las habilidades de los jóvenes.&lt;br&gt;2. Crear mecanismos para facilitar el intercambio intergeneracional de conocimientos. |
+| **Medios** | 1.1. Implementar un programa de certificación de habilidades juveniles.&lt;br&gt;1.2. Desarrollar campañas de sensibilización sobre el potencial de los jóvenes.&lt;br&gt;2.1. Crear espacios físicos y virtuales para el encuentro intergeneracional.&lt;br&gt;2.2. Diseñar programas de colaboración entre diferentes grupos etarios. |
+
+```{dropdown} Estrategias de Implementación para CircleUp
+Para lograr estos objetivos, CircleUp podría considerar las siguientes estrategias:
+1. Desarrollar una plataforma digital para la certificación y validación de habilidades juveniles.
+2. Organizar eventos y campañas de sensibilización que destaquen los logros y capacidades de los jóvenes.
+3. Implementar un programa de &quot;cafés intergeneracionales&quot; virtuales y presenciales.
+4. Crear proyectos comunitarios que requieran la colaboración entre jóvenes y adultos mayores.
+
+Estas estrategias buscan crear un ecosistema que reconozca y aproveche el potencial de los jóvenes, mientras fomenta el intercambio intergeneracional de conocimientos.
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para profundizar en estrategias de implementación de programas de mentoría inversa e intercambio intergeneracional, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“The Power of Reverse Mentoring: How to Build Relationships that Bridge the Technology Gap” por E. Meister y K. Willyerd (2010)</p></li>
+<li><p>“Intergenerational Programs: Understanding What We Have Created” editado por V. Kuehne (2013)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## 3. Laboratorio de Innovación Social
+
+### Árbol de Problemas
+
+**Problema Central:**
+Ausencia de un enfoque sistemático para abordar los desafíos comunitarios en Tocancipá mediante la innovación social.
+
+**Causas Directas:**
+1. Falta de mecanismos para identificar y priorizar problemas comunitarios.
+2. Carencia de espacios y recursos para el desarrollo de soluciones innovadoras.
+
+**Causas Indirectas:**
+1.1. Limitada recopilación y análisis de datos sobre necesidades locales.
+1.2. Escasa participación ciudadana en la identificación de problemas.
+2.1. Ausencia de metodologías de innovación adaptadas al contexto local.
+2.2. Falta de acceso a herramientas y conocimientos para la innovación social.
+
+**Efectos Directos:**
+1. Persistencia de problemas comunitarios sin soluciones efectivas.
+2. Desaprovechamiento del potencial creativo de la comunidad.
+
+**Efectos Indirectos:**
+1. Estancamiento en el desarrollo social y económico de Tocancipá.
+2. Disminución de la capacidad de adaptación a cambios sociales y económicos.
+
+
+```{admonition} Árbol de Problemas - Laboratorio de Innovación Social
+:class: note
+
+El siguiente árbol de problemas analiza la situación actual de la innovación social en Tocancipá. Identifica como problema central la ausencia de un enfoque sistemático para abordar los desafíos comunitarios mediante la innovación social. Este análisis revela una serie de causas interconectadas que contribuyen a esta situación, así como los efectos que tiene en la comunidad. La estructura del árbol permite visualizar la relación entre estos elementos, proporcionando una base para el desarrollo de estrategias efectivas de intervención.
+
+| **Nivel** | **Descripción** |
+|:---------:|-----------------|
+| **Efectos Indirectos** | 1. Estancamiento en el desarrollo social y económico de Tocancipá.&lt;br&gt;2. Disminución de la capacidad de adaptación a cambios sociales y económicos. |
+| **Efectos Directos** | 1. Persistencia de problemas comunitarios sin soluciones efectivas.&lt;br&gt;2. Desaprovechamiento del potencial creativo de la comunidad. |
+| **Problema Central** | Ausencia de un enfoque sistemático para abordar los desafíos comunitarios en Tocancipá mediante la innovación social. |
+| **Causas Directas** | 1. Falta de mecanismos para identificar y priorizar problemas comunitarios.&lt;br&gt;2. Carencia de espacios y recursos para el desarrollo de soluciones innovadoras. |
+| **Causas Indirectas** | 1.1. Limitada recopilación y análisis de datos sobre necesidades locales.&lt;br&gt;1.2. Escasa participación ciudadana en la identificación de problemas.&lt;br&gt;2.1. Ausencia de metodologías de innovación adaptadas al contexto local.&lt;br&gt;2.2. Falta de acceso a herramientas y conocimientos para la innovación social. |
+
+```{dropdown} Implicaciones para CircleUp
+Este árbol de problemas sugiere que CircleUp debe enfocarse en:
+1. Desarrollar mecanismos eficientes para la identificación y priorización de problemas comunitarios.
+2. Crear espacios y proporcionar recursos para fomentar la innovación social.
+3. Implementar sistemas de recopilación y análisis de datos sobre necesidades locales.
+4. Fomentar la participación ciudadana en los procesos de innovación social.
+5. Adaptar metodologías de innovación al contexto específico de Tocancipá.
+6. Facilitar el acceso a herramientas y conocimientos necesarios para la innovación social.
+
+Abordar estos aspectos podría conducir a un enfoque más sistemático y efectivo para la innovación social en Tocancipá, impulsando el desarrollo comunitario y la capacidad de adaptación a cambios sociales y económicos.
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para una comprensión más profunda de los laboratorios de innovación social y su impacto en el desarrollo comunitario, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“Social Innovation: Blurring Boundaries to Reconfigure Markets” por A. Nicholls y A. Murdock (2012)</p></li>
+<li><p>“Labs for Social Innovation: A Review” por ESADE Institute for Social Innovation (2018)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+### Árbol de Objetivos
+
+**Objetivo General:**
+Implementar un enfoque sistemático para abordar los desafíos comunitarios en Tocancipá mediante la innovación social.
+
+**Objetivos Específicos:**
+1. Establecer mecanismos para identificar y priorizar problemas comunitarios.
+2. Crear espacios y recursos para el desarrollo de soluciones innovadoras.
+
+**Medios:**
+1.1. Implementar sistemas de recopilación y análisis de datos sobre necesidades locales.
+1.2. Fomentar la participación ciudadana en la identificación de problemas.
+2.1. Adaptar metodologías de innovación al contexto local.
+2.2. Proporcionar acceso a herramientas y conocimientos para la innovación social.
+
+**Fines Directos:**
+1. Aumento en la implementación de soluciones efectivas a problemas comunitarios.
+2. Aprovechamiento del potencial creativo de la comunidad.
+
+**Fines Indirectos:**
+1. Mejora en el desarrollo social y económico de Tocancipá.
+2. Incremento en la capacidad de adaptación a cambios sociales y económicos.
+
+
+```{admonition} Árbol de Objetivos - Laboratorio de Innovación Social
+:class: note
+
+El siguiente árbol de objetivos presenta una visión estructurada para implementar un enfoque sistemático de innovación social en Tocancipá. Este enfoque busca transformar las problemáticas identificadas en el árbol de problemas en objetivos alcanzables y medios concretos para lograrlos. La estructura proporciona una hoja de ruta clara para abordar los desafíos comunitarios mediante la innovación social, estableciendo una conexión lógica entre los objetivos, los medios para alcanzarlos y los fines esperados.
+
+| **Nivel** | **Descripción** |
+|:---------:|-----------------|
+| **Fines Indirectos** | 1. Mejora en el desarrollo social y económico de Tocancipá.&lt;br&gt;2. Incremento en la capacidad de adaptación a cambios sociales y económicos. |
+| **Fines Directos** | 1. Aumento en la implementación de soluciones efectivas a problemas comunitarios.&lt;br&gt;2. Aprovechamiento del potencial creativo de la comunidad. |
+| **Objetivo General** | Implementar un enfoque sistemático para abordar los desafíos comunitarios en Tocancipá mediante la innovación social. |
+| **Objetivos Específicos** | 1. Establecer mecanismos para identificar y priorizar problemas comunitarios.&lt;br&gt;2. Crear espacios y recursos para el desarrollo de soluciones innovadoras. |
+| **Medios** | 1.1. Implementar sistemas de recopilación y análisis de datos sobre necesidades locales.&lt;br&gt;1.2. Fomentar la participación ciudadana en la identificación de problemas.&lt;br&gt;2.1. Adaptar metodologías de innovación al contexto local.&lt;br&gt;2.2. Proporcionar acceso a herramientas y conocimientos para la innovación social. |
+
+```{dropdown} Estrategias de Implementación para CircleUp
+Para lograr estos objetivos, CircleUp podría considerar las siguientes estrategias:
+1. Desarrollar una plataforma digital para la recopilación y análisis de datos sobre necesidades locales.
+2. Implementar un programa de &quot;Embajadores de Innovación&quot; para fomentar la participación ciudadana.
+3. Crear un &quot;Laboratorio de Innovación Social&quot; físico y virtual en Tocancipá.
+4. Organizar talleres y cursos sobre metodologías de innovación adaptadas al contexto local.
+5. Establecer alianzas con instituciones educativas y empresas para proporcionar recursos y conocimientos.
+
+Estas estrategias buscan crear un ecosistema de innovación social que aborde de manera efectiva los desafíos comunitarios en Tocancipá.
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Para profundizar en estrategias de implementación de laboratorios de innovación social, se recomienda consultar:</p>
+<ul class="simple">
+<li><p>“The Open Book of Social Innovation” por R. Murray, J. Caulier-Grice y G. Mulgan (2010)</p></li>
+<li><p>“Design for Social Innovation: Case Studies from Around the World” por E. Manzini (2015)</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Articulaci%C3%B3n.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Módulo de Articulación Mejorado: CircleUp y Plan de Ordenanza de Tocancipá</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lineas%20CircleUp.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Laboratorio de Innovación Social Basado en Datos: Transformando Desafíos en Oportunidades</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voluntariado-academico">1. Voluntariado Académico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arbol-de-problemas">Árbol de Problemas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Circle Up Community ⚫
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Living Stones 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
