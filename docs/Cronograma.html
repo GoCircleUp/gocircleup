@@ -1,0 +1,1017 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. Cronograma de Gantt &#8212; Circle UP ⚫</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fb436c1d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Cronograma';</script>
+    <script src="../_static/custom.js?v=16113e41"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="6. Árboles de Problemas y Objetivos de CircleUp" href="Dise%C3%B1o%20%C3%81rboles.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Circle UP ⚫ - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Circle UP ⚫ - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    CircleUp | Innovación Social
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Docs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3n.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Conceptual.html">2. Marco Conceptual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Marco%20Metodol%C3%B3gico.html">3. Marco Metodológico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Poblaci%C3%B3n.html">4. Población</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Articulaci%C3%B3n.html">5. Articulación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dise%C3%B1o%20%C3%81rboles.html">6. Diseño Árboles</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Cronograma</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/Cronograma.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Cronograma.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>7. Cronograma de Gantt</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programa-de-voluntariado-academico-de-circleup-en-tocancipa">Programa de Voluntariado Académico de CircleUp en Tocancipá</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-de-desglose-del-trabajo-edt-wbs">2. Estructura de Desglose del Trabajo (EDT/WBS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-gestion-de-recursos">3. Plan de Gestión de Recursos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-recursos-necesarios">3.1 Identificación de Recursos Necesarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-raci">3.2 Matriz RACI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-capacitacion">3.3 Plan de Capacitación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presupuesto-detallado">4. Presupuesto Detallado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indicadores-clave-de-desempeno-kpis">5. Indicadores Clave de Desempeño (KPIs)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategia-de-sostenibilidad-financiera">6. Estrategia de Sostenibilidad Financiera</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-alianzas-estrategicas">7. Plan de Alianzas Estratégicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-potenciales-socios">7.1 Identificación de Potenciales Socios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategias-de-colaboracion">7.2 Estrategias de Colaboración</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cronograma-de-desarrollo-de-alianzas">7.3 Cronograma de Desarrollo de Alianzas</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div style="position: relative; width: 100%; padding: 10px;">
+    <div style="border-radius: 10px; overflow: hidden;">
+        <img src="https://i.ibb.co/TH6HzwQ/body.jpg" alt="Imagen de fondo" style="width: 100%; height: auto;">
+    </div>
+</div>
+<section id="cronograma-de-gantt">
+<h1>7. Cronograma de Gantt<a class="headerlink" href="#cronograma-de-gantt" title="Link to this heading">#</a></h1>
+<p>El siguiente cronograma detalla las actividades principales para la implementación del Programa de Voluntariado Académico, considerando un enfoque gradual debido a las limitaciones presupuestarias de Tocancipá.</p>
+<section id="programa-de-voluntariado-academico-de-circleup-en-tocancipa">
+<h2>Programa de Voluntariado Académico de CircleUp en Tocancipá<a class="headerlink" href="#programa-de-voluntariado-academico-de-circleup-en-tocancipa" title="Link to this heading">#</a></h2>
+<blockquote class="epigraph">
+<div><p>El Programa de Voluntariado Académico de CircleUp busca movilizar el conocimiento local para fortalecer las habilidades de la comunidad de Tocancipá, adaptándose a las limitaciones económicas de la región.</p>
+</div></blockquote>
+<table class="table" id="cronograma-gantt">
+<caption><span class="caption-number">Table 14 </span><span class="caption-text">Cronograma de Gantt del Programa de Voluntariado Académico</span><a class="headerlink" href="#cronograma-gantt" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Tarea</p></th>
+<th class="head"><p>Duración (días)</p></th>
+<th class="head"><p>Dependencias</p></th>
+<th class="head"><p>Recursos</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A1</p></td>
+<td><p>Análisis de necesidades comunitarias</p></td>
+<td><p>30</p></td>
+<td><p>-</p></td>
+<td><p>Coordinador de Proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p>A2</p></td>
+<td><p>Diseño del programa de voluntariado</p></td>
+<td><p>45</p></td>
+<td><p>A1</p></td>
+<td><p>Coordinador de Proyecto, Experto en Educación</p></td>
+</tr>
+<tr class="row-even"><td><p>A3</p></td>
+<td><p>Desarrollo de plataforma digital básica</p></td>
+<td><p>60</p></td>
+<td><p>A1</p></td>
+<td><p>Desarrollador Web (tiempo parcial)</p></td>
+</tr>
+<tr class="row-odd"><td><p>B1</p></td>
+<td><p>Establecimiento de alianzas locales</p></td>
+<td><p>45</p></td>
+<td><p>A1</p></td>
+<td><p>Coordinador de Proyecto</p></td>
+</tr>
+<tr class="row-even"><td><p>B2</p></td>
+<td><p>Reclutamiento de voluntarios piloto</p></td>
+<td><p>30</p></td>
+<td><p>A2, B1</p></td>
+<td><p>Coordinador de Proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p>B3</p></td>
+<td><p>Desarrollo de materiales de capacitación</p></td>
+<td><p>30</p></td>
+<td><p>A2</p></td>
+<td><p>Experto en Educación</p></td>
+</tr>
+<tr class="row-even"><td><p>C1</p></td>
+<td><p>Capacitación de voluntarios piloto</p></td>
+<td><p>15</p></td>
+<td><p>B2, B3</p></td>
+<td><p>Experto en Educación</p></td>
+</tr>
+<tr class="row-odd"><td><p>C2</p></td>
+<td><p>Preparación de espacios comunitarios</p></td>
+<td><p>30</p></td>
+<td><p>B1</p></td>
+<td><p>Coordinador de Logística (tiempo parcial)</p></td>
+</tr>
+<tr class="row-even"><td><p>D1</p></td>
+<td><p>Lanzamiento del programa piloto</p></td>
+<td><p>1</p></td>
+<td><p>C1, C2</p></td>
+<td><p>Todo el equipo</p></td>
+</tr>
+<tr class="row-odd"><td><p>D2</p></td>
+<td><p>Implementación y monitoreo inicial</p></td>
+<td><p>60</p></td>
+<td><p>D1</p></td>
+<td><p>Coordinador de Proyecto, Voluntarios</p></td>
+</tr>
+<tr class="row-even"><td><p>E1</p></td>
+<td><p>Evaluación del programa piloto</p></td>
+<td><p>30</p></td>
+<td><p>D2</p></td>
+<td><p>Coordinador de Proyecto, Experto en Educación</p></td>
+</tr>
+<tr class="row-odd"><td><p>E2</p></td>
+<td><p>Ajustes y optimización del programa</p></td>
+<td><p>30</p></td>
+<td><p>E1</p></td>
+<td><p>Todo el equipo</p></td>
+</tr>
+<tr class="row-even"><td><p>F1</p></td>
+<td><p>Expansión gradual del programa</p></td>
+<td><p>90</p></td>
+<td><p>E2</p></td>
+<td><p>Todo el equipo</p></td>
+</tr>
+</tbody>
+</table>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Hitos del Proyecto<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Finalización del diseño del programa (A2)</p></li>
+<li><p class="sd-card-text">Lanzamiento de la plataforma digital básica (A3)</p></li>
+<li><p class="sd-card-text">Inicio de la capacitación de voluntarios (C1)</p></li>
+<li><p class="sd-card-text">Lanzamiento del programa piloto (D1)</p></li>
+<li><p class="sd-card-text">Finalización de la evaluación del piloto (E1)</p></li>
+<li><p class="sd-card-text">Inicio de la expansión del programa (F1)</p></li>
+</ul>
+</div>
+</details></section>
+<section id="estructura-de-desglose-del-trabajo-edt-wbs">
+<h2>2. Estructura de Desglose del Trabajo (EDT/WBS)<a class="headerlink" href="#estructura-de-desglose-del-trabajo-edt-wbs" title="Link to this heading">#</a></h2>
+<p>La EDT proporciona una descomposición jerárquica del trabajo necesario para implementar el Programa de Voluntariado Académico en Tocancipá, considerando las limitaciones de recursos.</p>
+<figure class="align-center" id="edt-wbs">
+<img alt="https://yuml.me/diagram/boring/class/[ProgramadeVoluntariadoAcadémico]-&gt;[1.PlanificaciónyDiseño],[ProgramadeVoluntariadoAcadémico]-&gt;[2.Preparación],[ProgramadeVoluntariadoAcadémico]-&gt;[3.ImplementaciónPiloto],[ProgramadeVoluntariadoAcadémico]-&gt;[4.EvaluaciónyMejora],[ProgramadeVoluntariadoAcadémico]-&gt;[5.Expansión],[1.PlanificaciónyDiseño]-&gt;[1.1AnálisisdeNecesidades],[1.PlanificaciónyDiseño]-&gt;[1.2DiseñodelPrograma],[1.PlanificaciónyDiseño]-&gt;[1.3DesarrollodePlataforma],[2.Preparación]-&gt;[2.1AlianzasLocales],[2.Preparación]-&gt;[2.2Reclutamiento],[2.Preparación]-&gt;[2.3Capacitación],[3.ImplementaciónPiloto]-&gt;[3.1LanzamientoPiloto],[3.ImplementaciónPiloto]-&gt;[3.2MonitoreoInicial],[4.EvaluaciónyMejora]-&gt;[4.1Evaluación],[4.EvaluaciónyMejora]-&gt;[4.2Ajustes],[5.Expansión]-&gt;[5.1AmpliaciónGradual],[5.Expansión]-&gt;[5.2Sostenibilidad]" src="https://yuml.me/diagram/boring/class/[ProgramadeVoluntariadoAcadémico]-&gt;[1.PlanificaciónyDiseño],[ProgramadeVoluntariadoAcadémico]-&gt;[2.Preparación],[ProgramadeVoluntariadoAcadémico]-&gt;[3.ImplementaciónPiloto],[ProgramadeVoluntariadoAcadémico]-&gt;[4.EvaluaciónyMejora],[ProgramadeVoluntariadoAcadémico]-&gt;[5.Expansión],[1.PlanificaciónyDiseño]-&gt;[1.1AnálisisdeNecesidades],[1.PlanificaciónyDiseño]-&gt;[1.2DiseñodelPrograma],[1.PlanificaciónyDiseño]-&gt;[1.3DesarrollodePlataforma],[2.Preparación]-&gt;[2.1AlianzasLocales],[2.Preparación]-&gt;[2.2Reclutamiento],[2.Preparación]-&gt;[2.3Capacitación],[3.ImplementaciónPiloto]-&gt;[3.1LanzamientoPiloto],[3.ImplementaciónPiloto]-&gt;[3.2MonitoreoInicial],[4.EvaluaciónyMejora]-&gt;[4.1Evaluación],[4.EvaluaciónyMejora]-&gt;[4.2Ajustes],[5.Expansión]-&gt;[5.1AmpliaciónGradual],[5.Expansión]-&gt;[5.2Sostenibilidad]" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Estructura de Desglose del Trabajo (EDT/WBS) del Programa de Voluntariado Académico</span><a class="headerlink" href="#edt-wbs" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="plan-de-gestion-de-recursos">
+<h2>3. Plan de Gestión de Recursos<a class="headerlink" href="#plan-de-gestion-de-recursos" title="Link to this heading">#</a></h2>
+<p>El plan de gestión de recursos para el Programa de Voluntariado Académico de CircleUp en Tocancipá se ha diseñado considerando las limitaciones económicas de la región y la necesidad de maximizar el impacto con recursos limitados.</p>
+<section id="identificacion-de-recursos-necesarios">
+<h3>3.1 Identificación de Recursos Necesarios<a class="headerlink" href="#identificacion-de-recursos-necesarios" title="Link to this heading">#</a></h3>
+<table class="table" id="recursos-necesarios">
+<caption><span class="caption-number">Table 15 </span><span class="caption-text">Recursos Necesarios para el Programa</span><a class="headerlink" href="#recursos-necesarios" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo de Recurso</p></th>
+<th class="head"><p>Descripción</p></th>
+<th class="head"><p>Cantidad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Humano</p></td>
+<td><p>Coordinador de Proyecto</p></td>
+<td><p>1 (Tiempo completo)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Humano</p></td>
+<td><p>Experto en Educación</p></td>
+<td><p>1 (Medio tiempo)</p></td>
+</tr>
+<tr class="row-even"><td><p>Humano</p></td>
+<td><p>Desarrollador Web</p></td>
+<td><p>1 (Freelance, 60 días)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Humano</p></td>
+<td><p>Coordinador de Logística</p></td>
+<td><p>1 (Medio tiempo)</p></td>
+</tr>
+<tr class="row-even"><td><p>Humano</p></td>
+<td><p>Voluntarios</p></td>
+<td><p>10-15 (Inicio), 30-50 (Expansión)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Material</p></td>
+<td><p>Espacios comunitarios</p></td>
+<td><p>2-3 locaciones</p></td>
+</tr>
+<tr class="row-even"><td><p>Material</p></td>
+<td><p>Equipos informáticos básicos</p></td>
+<td><p>2-3 unidades</p></td>
+</tr>
+<tr class="row-odd"><td><p>Financiero</p></td>
+<td><p>Presupuesto inicial</p></td>
+<td><p>A determinar según fondos disponibles</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="matriz-raci">
+<h3>3.2 Matriz RACI<a class="headerlink" href="#matriz-raci" title="Link to this heading">#</a></h3>
+<p>La siguiente matriz RACI (Responsable, Aprobador, Consultado, Informado) define las responsabilidades del equipo en las principales actividades del programa.</p>
+<table class="table" id="id1">
+<caption><span class="caption-number">Table 16 </span><span class="caption-text">Matriz RACI del Programa de Voluntariado Académico</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Actividad</p></th>
+<th class="head"><p>Coordinador de Proyecto</p></th>
+<th class="head"><p>Experto en Educación</p></th>
+<th class="head"><p>Desarrollador Web</p></th>
+<th class="head"><p>Coordinador de Logística</p></th>
+<th class="head"><p>Voluntarios</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Análisis de necesidades</p></td>
+<td><p>R/A</p></td>
+<td><p>C</p></td>
+<td><p>-</p></td>
+<td><p>I</p></td>
+<td><p>C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Diseño del programa</p></td>
+<td><p>A</p></td>
+<td><p>R</p></td>
+<td><p>C</p></td>
+<td><p>I</p></td>
+<td><p>I</p></td>
+</tr>
+<tr class="row-even"><td><p>Desarrollo de plataforma</p></td>
+<td><p>A</p></td>
+<td><p>C</p></td>
+<td><p>R</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reclutamiento de voluntarios</p></td>
+<td><p>R/A</p></td>
+<td><p>C</p></td>
+<td><p>-</p></td>
+<td><p>I</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>Capacitación de voluntarios</p></td>
+<td><p>A</p></td>
+<td><p>R</p></td>
+<td><p>-</p></td>
+<td><p>I</p></td>
+<td><p>I</p></td>
+</tr>
+<tr class="row-odd"><td><p>Implementación de sesiones</p></td>
+<td><p>A</p></td>
+<td><p>C</p></td>
+<td><p>-</p></td>
+<td><p>I</p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="row-even"><td><p>Evaluación del programa</p></td>
+<td><p>R/A</p></td>
+<td><p>R</p></td>
+<td><p>C</p></td>
+<td><p>C</p></td>
+<td><p>I</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="plan-de-capacitacion">
+<h3>3.3 Plan de Capacitación<a class="headerlink" href="#plan-de-capacitacion" title="Link to this heading">#</a></h3>
+<p>Dado el contexto de recursos limitados en Tocancipá, el plan de capacitación se enfoca en maximizar el impacto con un presupuesto reducido:</p>
+<ol class="arabic simple">
+<li><p><strong>Capacitación inicial</strong>: Sesiones intensivas de 2 días para voluntarios piloto.</p></li>
+<li><p><strong>Capacitación continua</strong>: Sesiones mensuales de 3 horas para actualización y mejora de habilidades.</p></li>
+<li><p><strong>Aprendizaje entre pares</strong>: Fomento de intercambio de conocimientos entre voluntarios.</p></li>
+<li><p><strong>Recursos en línea</strong>: Desarrollo de una biblioteca digital de recursos educativos de bajo costo.</p></li>
+</ol>
+</section>
+</section>
+<section id="presupuesto-detallado">
+<h2>4. Presupuesto Detallado<a class="headerlink" href="#presupuesto-detallado" title="Link to this heading">#</a></h2>
+<p>El presupuesto se ha elaborado considerando las limitaciones económicas de Tocancipá y buscando maximizar el impacto con recursos mínimos.</p>
+<table class="table" id="presupuesto-estimado">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">Presupuesto Estimado del Programa de Voluntariado Académico</span><a class="headerlink" href="#presupuesto-estimado" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Categoría</p></th>
+<th class="head"><p>Descripción</p></th>
+<th class="head"><p>Costo Estimado (COP)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Personal</p></td>
+<td><p>Coordinador de Proyecto (tiempo completo, 12 meses)</p></td>
+<td><p>36,000,000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Personal</p></td>
+<td><p>Experto en Educación (medio tiempo, 12 meses)</p></td>
+<td><p>24,000,000</p></td>
+</tr>
+<tr class="row-even"><td><p>Personal</p></td>
+<td><p>Desarrollador Web (freelance, 60 días)</p></td>
+<td><p>9,000,000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Personal</p></td>
+<td><p>Coordinador de Logística (medio tiempo, 12 meses)</p></td>
+<td><p>18,000,000</p></td>
+</tr>
+<tr class="row-even"><td><p>Materiales</p></td>
+<td><p>Suministros educativos y de oficina</p></td>
+<td><p>5,000,000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tecnología</p></td>
+<td><p>Equipos informáticos básicos (3 unidades)</p></td>
+<td><p>6,000,000</p></td>
+</tr>
+<tr class="row-even"><td><p>Capacitación</p></td>
+<td><p>Materiales y recursos para capacitación de voluntarios</p></td>
+<td><p>3,000,000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Operaciones</p></td>
+<td><p>Gastos de transporte y logística</p></td>
+<td><p>4,000,000</p></td>
+</tr>
+<tr class="row-even"><td><p>Marketing</p></td>
+<td><p>Materiales promocionales y eventos de reclutamiento</p></td>
+<td><p>2,000,000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Imprevistos</p></td>
+<td><p>Reserva para contingencias (10% del total)</p></td>
+<td><p>10,700,000</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Total</strong></p></td>
+<td><p></p></td>
+<td><p><strong>117,700,000</strong></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Este presupuesto es una estimación inicial y puede requerir ajustes basados en la disponibilidad real de fondos y las condiciones económicas locales de Tocancipá.</p>
+</div>
+</section>
+<section id="indicadores-clave-de-desempeno-kpis">
+<h2>5. Indicadores Clave de Desempeño (KPIs)<a class="headerlink" href="#indicadores-clave-de-desempeno-kpis" title="Link to this heading">#</a></h2>
+<p>Los siguientes KPIs se han establecido para medir el progreso y éxito del Programa de Voluntariado Académico en Tocancipá:</p>
+<ol class="arabic simple">
+<li><p><strong>Número de voluntarios activos</strong>: Meta inicial de 15, aumentando a 50 en 12 meses.</p></li>
+<li><p><strong>Horas de voluntariado mensuales</strong>: Objetivo de 100 horas en el primer trimestre, aumentando a 300 horas en 12 meses.</p></li>
+<li><p><strong>Número de beneficiarios</strong>: Meta de 100 participantes en el primer trimestre, aumentando a 500 en 12 meses.</p></li>
+<li><p><strong>Tasa de retención de voluntarios</strong>: Objetivo del 70% de retención anual.</p></li>
+<li><p><strong>Satisfacción de los participantes</strong>: Meta de 80% de satisfacción medida por encuestas.</p></li>
+<li><p><strong>Mejora en habilidades de los participantes</strong>: Objetivo de 30% de mejora en evaluaciones pre y post programa.</p></li>
+<li><p><strong>Costo por beneficiario</strong>: Meta de reducción del 20% en el costo por beneficiario después de 12 meses.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Tablero de Control<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">El seguimiento de estos KPIs se realizará mediante un tablero de control digital, actualizado mensualmente, que incluirá:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Gráficos de tendencias para cada KPI</p></li>
+<li><p class="sd-card-text">Comparación de valores actuales vs. metas</p></li>
+<li><p class="sd-card-text">Sección de comentarios para análisis cualitativo</p></li>
+<li><p class="sd-card-text">Sistema de alertas para KPIs que no cumplan los objetivos</p></li>
+</ul>
+</div>
+</details></section>
+<section id="estrategia-de-sostenibilidad-financiera">
+<h2>6. Estrategia de Sostenibilidad Financiera<a class="headerlink" href="#estrategia-de-sostenibilidad-financiera" title="Link to this heading">#</a></h2>
+<p>Considerando las limitaciones económicas de Tocancipá, la estrategia de sostenibilidad financiera del Programa de Voluntariado Académico se enfoca en diversificar las fuentes de ingresos y optimizar los recursos:</p>
+<ol class="arabic simple">
+<li><p><strong>Generación de ingresos</strong>:</p>
+<ul class="simple">
+<li><p>Implementación de un modelo de “pago lo que puedas” para algunos cursos avanzados.</p></li>
+<li><p>Desarrollo de materiales educativos para venta a otras organizaciones.</p></li>
+<li><p>Oferta de servicios de consultoría en educación comunitaria a municipios vecinos.</p></li>
+</ul>
+</li>
+<li><p><strong>Diversificación de fuentes de financiamiento</strong>:</p>
+<ul class="simple">
+<li><p>Aplicación a subvenciones de fundaciones nacionales e internacionales.</p></li>
+<li><p>Establecimiento de un programa de donaciones recurrentes de empresas locales.</p></li>
+<li><p>Exploración de opciones de crowdfunding para proyectos específicos.</p></li>
+</ul>
+</li>
+<li><p><strong>Proyecciones financieras a largo plazo</strong>:</p>
+<ul class="simple">
+<li><p>Año 1: 80% dependencia de financiamiento externo, 20% ingresos propios.</p></li>
+<li><p>Año 3: 60% dependencia de financiamiento externo, 40% ingresos propios.</p></li>
+<li><p>Año 5: 40% dependencia de financiamiento externo, 60% ingresos propios.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="plan-de-alianzas-estrategicas">
+<h2>7. Plan de Alianzas Estratégicas<a class="headerlink" href="#plan-de-alianzas-estrategicas" title="Link to this heading">#</a></h2>
+<p>El éxito del Programa de Voluntariado Académico en Tocancipá depende en gran medida de la colaboración con diversos actores locales y regionales.</p>
+<section id="identificacion-de-potenciales-socios">
+<h3>7.1 Identificación de Potenciales Socios<a class="headerlink" href="#identificacion-de-potenciales-socios" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Sector Público</strong>:</p>
+<ul class="simple">
+<li><p>Alcaldía de Tocancipá</p></li>
+<li><p>Secretaría de Educación Municipal</p></li>
+<li><p>Instituto Municipal de Recreación y Deporte</p></li>
+</ul>
+</li>
+<li><p><strong>Sector Privado</strong>:</p>
+<ul class="simple">
+<li><p>Empresas locales del parque industrial</p></li>
+<li><p>Cámara de Comercio de Bogotá - Sede Tocancipá</p></li>
+</ul>
+</li>
+<li><p><strong>Organizaciones No Gubernamentales</strong>:</p>
+<ul class="simple">
+<li><p>Fundaciones educativas nacionales</p></li>
+<li><p>Organizaciones de desarrollo comunitario</p></li>
+</ul>
+</li>
+<li><p><strong>Instituciones Educativas</strong>:</p>
+<ul class="simple">
+<li><p>Colegios públicos y privados de Tocancipá</p></li>
+<li><p>Universidades regionales</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="estrategias-de-colaboracion">
+<h3>7.2 Estrategias de Colaboración<a class="headerlink" href="#estrategias-de-colaboracion" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Aporte de Recursos</strong>:</p>
+<ul class="simple">
+<li><p>Solicitar espacios físicos a la Alcaldía para sesiones de voluntariado.</p></li>
+<li><p>Buscar donaciones de equipos tecnológicos de empresas locales.</p></li>
+</ul>
+</li>
+<li><p><strong>Intercambio de Conocimientos</strong>:</p>
+<ul class="simple">
+<li><p>Establecer programas de prácticas con universidades regionales.</p></li>
+<li><p>Colaborar con la Secretaría de Educación para alinear el programa con necesidades educativas locales.</p></li>
+</ul>
+</li>
+<li><p><strong>Promoción y Difusión</strong>:</p>
+<ul class="simple">
+<li><p>Utilizar canales de comunicación de la Alcaldía para promocionar el programa.</p></li>
+<li><p>Participar en eventos empresariales de la Cámara de Comercio para reclutar voluntarios corporativos.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="cronograma-de-desarrollo-de-alianzas">
+<h3>7.3 Cronograma de Desarrollo de Alianzas<a class="headerlink" href="#cronograma-de-desarrollo-de-alianzas" title="Link to this heading">#</a></h3>
+<table class="table" id="cronograma-alianzas">
+<caption><span class="caption-number">Table 18 </span><span class="caption-text">Cronograma de Desarrollo de Alianzas</span><a class="headerlink" href="#cronograma-alianzas" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Fase</p></th>
+<th class="head"><p>Actividad</p></th>
+<th class="head"><p>Tiempo Estimado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Mapeo detallado de potenciales aliados</p></td>
+<td><p>1 mes</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Desarrollo de propuestas de colaboración</p></td>
+<td><p>1 mes</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Acercamiento inicial y presentaciones</p></td>
+<td><p>2 meses</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Negociación y formalización de acuerdos</p></td>
+<td><p>3 meses</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Implementación inicial de colaboraciones</p></td>
+<td><p>2 meses</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Evaluación y ajuste de alianzas</p></td>
+<td><p>Continuo</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Este plan de alianzas estratégicas se adapta a las limitaciones económicas de Tocancipá, buscando maximizar el impacto del programa a través de colaboraciones efectivas y el aprovechamiento de recursos existentes en la comunidad.</p>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Dise%C3%B1o%20%C3%81rboles.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">6. Árboles de Problemas y Objetivos de CircleUp</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programa-de-voluntariado-academico-de-circleup-en-tocancipa">Programa de Voluntariado Académico de CircleUp en Tocancipá</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-de-desglose-del-trabajo-edt-wbs">2. Estructura de Desglose del Trabajo (EDT/WBS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-gestion-de-recursos">3. Plan de Gestión de Recursos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-recursos-necesarios">3.1 Identificación de Recursos Necesarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-raci">3.2 Matriz RACI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-capacitacion">3.3 Plan de Capacitación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presupuesto-detallado">4. Presupuesto Detallado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indicadores-clave-de-desempeno-kpis">5. Indicadores Clave de Desempeño (KPIs)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategia-de-sostenibilidad-financiera">6. Estrategia de Sostenibilidad Financiera</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan-de-alianzas-estrategicas">7. Plan de Alianzas Estratégicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-potenciales-socios">7.1 Identificación de Potenciales Socios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estrategias-de-colaboracion">7.2 Estrategias de Colaboración</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cronograma-de-desarrollo-de-alianzas">7.3 Cronograma de Desarrollo de Alianzas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Circle Up Community ⚫
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Living Stones 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
