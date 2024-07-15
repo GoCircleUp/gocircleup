@@ -182,19 +182,19 @@ h4 {
 
 
 p {
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 
 
 a {
   font-family: 'Montserrat', monospace;
-  font-size: 1.05em;
+  font-size: 1.0em;
   font-weight: 400 !important;
 } 
 
 /* Estilos para listas */
 ul, ol {
-  padding-left: 2em;
+  padding-left: 1.0em;
 }
 
 /* Estilos para bloques de código */
