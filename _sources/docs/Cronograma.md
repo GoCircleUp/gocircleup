@@ -4,7 +4,6 @@
     </div>
 </div>
 
-
 ## 7. Cronograma de Gantt
 
 ### Project Manager: Voluntariado Académico (VA) de CircleUp
@@ -163,14 +162,14 @@ La Estructura de Desglose del Trabajo (EDT), también conocida como Work Breakdo
    5.2 Informes de progreso mensuales
    5.3 Plan de mejora basado en evaluaciones
 
-## 6. Plan de Gestión de Recursos
+### 6. Plan de Gestión de Recursos
 
 ```{admonition} Concepto Clave
 :class: tip
 El Plan de Gestión de Recursos describe cómo se adquirirán, asignarán, monitorizarán y controlarán los recursos del proyecto. Incluye tanto recursos humanos como materiales y financieros.
 ```
 
-### 6.1 Identificación de Recursos
+#### 6.1 Identificación de Recursos
 
 | Tipo de Recurso | Descripción |
 |-----------------|-------------|
@@ -179,7 +178,7 @@ El Plan de Gestión de Recursos describe cómo se adquirirán, asignarán, monit
 | Materiales | Equipos de cómputo, materiales de marketing |
 | Financieros | Presupuesto inicial de 15,000,000 COP |
 
-### 6.2 Matriz RACI
+#### 6.2 Matriz RACI
 
 R: Responsable, A: Aprobador, C: Consultado, I: Informado
 
@@ -192,20 +191,20 @@ R: Responsable, A: Aprobador, C: Consultado, I: Informado
 | Marketing y Comunicación | A | R | C |
 | Evaluación y Mejora | R | C | C |
 
-### 6.3 Plan de Capacitación
+#### 6.3 Plan de Capacitación
 
 1. Inducción inicial para el Asistente de Operaciones
 2. Capacitación mensual para voluntarios en metodologías de enseñanza
 3. Talleres trimestrales de actualización tecnológica para el equipo principal
 
-## 7. Indicadores Clave de Desempeño (KPIs)
+### 7. Indicadores Clave de Desempeño (KPIs)
 
 ```{admonition} Concepto Clave
 :class: tip
 Los KPIs son métricas cuantificables que reflejan los factores críticos de éxito de un proyecto. Permiten medir el rendimiento y el progreso hacia los objetivos establecidos.
 ```
 
-### 7.1 KPIs del Proyecto
+#### 7.1 KPIs del Proyecto
 
 1. Número de personas impactadas (Objetivo: 1500 en 6 meses)
 2. Tasa de retención de voluntarios (Objetivo: 80%)
@@ -213,7 +212,7 @@ Los KPIs son métricas cuantificables que reflejan los factores críticos de éx
 4. Costo por persona impactada (Objetivo: < 10,000 COP)
 5. Número de alianzas estratégicas formadas (Objetivo: 5 en 6 meses)
 
-### 7.2 Tablero de Control
+#### 7.2 Tablero de Control
 
 ```python
 import streamlit as st
@@ -246,28 +245,28 @@ st.plotly_chart(fig2)
 st.table(df)
 ```
 
-## 8. Estrategia de Sostenibilidad Financiera
+### 8. Estrategia de Sostenibilidad Financiera
 
 ```{admonition} Concepto Clave
 :class: tip
 La sostenibilidad financiera se refiere a la capacidad del proyecto para mantener sus actividades y generar beneficios a largo plazo, más allá del financiamiento inicial.
 ```
 
-### 8.1 Plan de Generación de Ingresos
+#### 8.1 Plan de Generación de Ingresos
 
 1. Cursos premium especializados (a partir del mes 4)
 2. Servicios de consultoría para empresas locales
 3. Venta de recursos educativos digitales
 4. Eventos y talleres pagos para profesionales
 
-### 8.2 Diversificación de Fuentes de Financiamiento
+#### 8.2 Diversificación de Fuentes de Financiamiento
 
 1. Subvenciones gubernamentales para proyectos educativos
 2. Patrocinios corporativos
 3. Donaciones de la comunidad
 4. Crowdfunding para proyectos específicos
 
-### 8.3 Proyecciones Financieras a Largo Plazo
+#### 8.3 Proyecciones Financieras a Largo Plazo
 
 ```python
 import streamlit as st
@@ -295,14 +294,14 @@ st.plotly_chart(fig)
 st.table(df)
 ```
 
-## 9. Plan de Alianzas Estratégicas
+### 9. Plan de Alianzas Estratégicas
 
 ```{admonition} Concepto Clave
 :class: tip
 Las alianzas estratégicas son acuerdos de colaboración entre organizaciones que comparten objetivos comunes. Pueden proporcionar recursos adicionales, ampliar el alcance y mejorar la efectividad del proyecto.
 ```
 
-### 9.1 Potenciales Socios
+#### 9.1 Potenciales Socios
 
 1. Gobierno Local de Tocancipá
 2. Empresas tecnológicas de la región
@@ -310,7 +309,7 @@ Las alianzas estratégicas son acuerdos de colaboración entre organizaciones qu
 4. ONGs enfocadas en educación y desarrollo comunitario
 5. Asociaciones de profesionales en tecnología
 
-### 9.2 Estrategias de Colaboración
+#### 9.2 Estrategias de Colaboración
 
 1. Intercambio de conocimientos y recursos
 2. Co-creación de programas educativos
@@ -318,7 +317,7 @@ Las alianzas estratégicas son acuerdos de colaboración entre organizaciones qu
 4. Provisión de espacios para actividades presenciales
 5. Mentoría cruzada entre organizaciones
 
-### 9.3 Cronograma de Desarrollo de Alianzas
+#### 9.3 Cronograma de Desarrollo de Alianzas
 
 | Mes | Actividad |
 |-----|-----------|
@@ -350,6 +349,7 @@ Las alianzas estratégicas son acuerdos de colaboración entre organizaciones qu
 
 Este plan de proyecto proporciona una base sólida para la implementación del Voluntariado Académico de CircleUp en Tocancipá, considerando las limitaciones presupuestarias, la ejecución principalmente los sábados, y el objetivo de impactar a 1500 personas en 6 meses.
 
+-----
 
 ## Plan de Proyecto: Mentoría Inversa CircleUp
 
@@ -632,11 +632,9 @@ La utilización de la reserva para contingencias requerirá la aprobación del G
 
 Este presupuesto detallado proporciona una visión clara de los costos asociados con cada fase del proyecto de Mentoría Inversa de CircleUp. El flujo de caja proyectado muestra cómo se espera que el programa alcance la sostenibilidad financiera hacia el final del primer año, con un saldo acumulado positivo a partir del mes 10. La reserva para contingencias asegura que el proyecto tenga la flexibilidad necesaria para abordar desafíos imprevistos y oportunidades que puedan surgir durante su implementación.
 
+----
 
-
-
-
-## Plan de Proyecto: Laboratorio de Innovación Social Basado en Datos CircleUp
+## Plan de Proyecto: Laboratorio de Innovación Social Basado en Datos
 
 ### 1. Cronograma de Gantt
 
