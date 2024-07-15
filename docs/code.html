@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Vivienda &#8212; Circle UP ⚫</title>
+    <title>11. Anexos &#8212; Circle UP ⚫</title>
   
   
   
@@ -191,11 +191,10 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="Cadena%20de%20Valor.html">8. Cadena de Valor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Impactos%20y%20Beneficios.html">9. Capítulo: Impactos y Beneficios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Impactos%20y%20Beneficios.html">9. Impactos y Beneficios</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Referencias.html">10. Referencias</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Vivienda</strong></a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Anexos</a></li>
 </ul>
 
     </div>
@@ -381,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vivienda</h1>
+    <h1>11. Anexos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -391,10 +390,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Vivienda</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#educacion"><strong>Educacion</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-visualizacion-de-datos-con-python">Análisis y Visualización de Datos con Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorizacion-de-datos">Categorización de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-visual-de-categorias">Formato Visual de Categorías</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carga-y-filtrado-de-microdatos-del-dane">Carga y Filtrado de Microdatos del DANE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extraccion-de-metadatos">Extracción de Metadatos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unificacion-y-procesamiento-de-datos">Unificación y Procesamiento de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-poblacional">Estimación Poblacional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desagregacion-y-analisis-de-datos">Desagregación y Análisis de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-distribuciones">Visualización de Distribuciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-variables-sociodemograficas">Lista de Variables Sociodemográficas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-demograficos">Análisis de Datos Demográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-edades-por-genero">Distribución de Edades por Género</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-la-distribucion-de-probabilidad">Visualización de la Distribución de Probabilidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-satisfaccion-con-la-vida">Distribución de Satisfacción con la Vida</a></li>
 </ul>
-
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -405,58 +417,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>└───DANE
-├───Censo, (2018)
-│       25815 Infograma Censo 2018.pdf
-│       Censo 25817Tocancipá, 2018.pdf
-│       Censo, 2018.csv
-│       Censo, 2018.xlsx
-│
-└───Microdatos EM, (2021)
-│   (Capítulo A).csv
-│   (Capítulo B).csv
-│   (Capítulo C).csv
-│   (Capítulo D).csv
-│   (Capítulo E).csv
-│   (Capítulo F).csv
-│   (Capítulo G).csv
-│   (Capítulo H).csv
-│   (Capítulo I).csv
-│   (Capítulo J).csv
-│   (Capítulo K).csv
-│   (Capítulo L).csv
-│   (Capítulo M1).csv
-│   (Capítulo M2).csv
-│   Boletin_EM_2021.pdf
-│   DANE-DIMPE-EM-2021.xml
-│   Encuesta Multipropósito, (2021).pdf
-│   Preguntas Multipropósito, (2021).pdf
-│
-├───FilesPDF
-│       Censo 25817Tocancipá, 2018.pdf
-│       EM Demografia, (2021).pdf
-│       EM Educación, (2021).pdf
-│       EM Muestreo, (2021).pdf
-│       EM Participación, (2021).pdf
-│       EM Salud, (2021).pdf
-│       EM TIC, (2021).pdf
-│       EM Trabajo, (2021).pdf
-│
-└───RARFiles
-(Capitulo A).zip
-(Capitulo B).zip
-(Capitulo C).zip
-(Capitulo D).zip
-(Capitulo E).zip
-(Capitulo F).zip
-(Capitulo G).zip
-(Capitulo H).zip
-(Capitulo I).zip
-(Capitulo J).zip
-(Capitulo K).zip
-(Capitulo L).zip
-(Capitulo M1).zip
-(Capitulo M2).zip</p>
+  <section id="anexos">
+<h1>11. Anexos<a class="headerlink" href="#anexos" title="Link to this heading">#</a></h1>
+<section id="analisis-y-visualizacion-de-datos-con-python">
+<h2>Análisis y Visualización de Datos con Python<a class="headerlink" href="#analisis-y-visualizacion-de-datos-con-python" title="Link to this heading">#</a></h2>
+<p>Este código importa bibliotecas esenciales de Python para trabajar con datos. <code class="docutils literal notranslate"><span class="pre">pandas</span></code> se utiliza para manipular y analizar datos estructurados, <code class="docutils literal notranslate"><span class="pre">numpy</span></code> proporciona herramientas para cálculos numéricos, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> simplifica la creación de gráficos estadísticos atractivos y <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> permite personalizar visualizaciones de datos. Esta combinación de bibliotecas es fundamental para explorar, comprender y comunicar información a partir de conjuntos de datos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -467,6 +432,17 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="categorizacion-de-datos">
+<h2>Categorización de Datos<a class="headerlink" href="#categorizacion-de-datos" title="Link to this heading">#</a></h2>
+<p>Estas funciones en Python transforman valores numéricos (edad, horas, meses) en categorías discretas. Esto es útil para agrupar datos y facilitar el análisis, especialmente en áreas como demografía (categorías de edad) o análisis de comportamiento (categorías de horas trabajadas). Las categorías detalladas de edad podrían ser relevantes para estudios específicos que requieran mayor precisión en ciertos rangos de edad.</p>
+<p><strong>Glosario:</strong></p>
+<ul class="simple">
+<li><p><strong>V (25-44 años):</strong> Voluntarios Académicos</p></li>
+<li><p><strong>MI (14-24 años):</strong> Mentores Inversos</p></li>
+<li><p><strong>LI (20-34 años):</strong> Lab Innovación</p></li>
+<li><p><strong>PC:</strong> Participantes de CircleUp</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">age_category</span><span class="p">(</span><span class="n">edad</span><span class="p">):</span>
@@ -517,14 +493,6 @@ document.write(`
         <span class="k">return</span> <span class="s1">&#39;10-12&#39;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;12+&#39;</span>
-    
-
-<span class="c1"># Glosario de Siglas:</span>
-
-<span class="c1"># V (25-44 años): Voluntarios Academicos</span>
-<span class="c1"># MI (14-24 años): Mentores Inversos</span>
-<span class="c1"># LI (20-34 años): Lab Innovación</span>
-<span class="c1"># PC: Participantes de CircleUp</span>
 
 
 
@@ -563,6 +531,10 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="formato-visual-de-categorias">
+<h2>Formato Visual de Categorías<a class="headerlink" href="#formato-visual-de-categorias" title="Link to this heading">#</a></h2>
+<p>Estas funciones se utilizan para dar formato visual a las categorías de datos. La función <code class="docutils literal notranslate"><span class="pre">format_category</span></code> aplica estilos CSS específicos a las categorías ‘MI’, ‘PC’, ‘LI’ y ‘VA’ para resaltarlas visualmente. La función <code class="docutils literal notranslate"><span class="pre">age_format</span></code> asigna estas categorías a los rangos de edad correspondientes y devuelve una cadena de texto con el rango de edad y las categorías formateadas, listas para ser mostradas en una interfaz web o aplicación.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">format_category</span><span class="p">(</span><span class="n">category</span><span class="p">):</span>
@@ -601,6 +573,10 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="carga-y-filtrado-de-microdatos-del-dane">
+<h2>Carga y Filtrado de Microdatos del DANE<a class="headerlink" href="#carga-y-filtrado-de-microdatos-del-dane" title="Link to this heading">#</a></h2>
+<p>Este código carga datos socioeconómicos del DANE (Departamento Administrativo Nacional de Estadística de Colombia) desde archivos CSV. La función <code class="docutils literal notranslate"><span class="pre">load_data</span></code> permite seleccionar un capítulo específico de los microdatos y filtrar los datos para incluir solo información correspondiente al municipio de Tocancipá (código 25817). Adicionalmente, la función puede renombrar las columnas del conjunto de datos utilizando un diccionario de características (<code class="docutils literal notranslate"><span class="pre">dfeatures</span></code>) para facilitar la interpretación y análisis de los datos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">adata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./Datos/DANE/Microdatos EM, (2021)/(Capítulo A).csv&#39;</span><span class="p">,</span> 
@@ -630,6 +606,16 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="extraccion-de-metadatos">
+<h2>Extracción de Metadatos<a class="headerlink" href="#extraccion-de-metadatos" title="Link to this heading">#</a></h2>
+<p>Este código extrae información relevante del archivo XML de metadatos de la Encuesta de Micronegocios del DANE (DANE-DIMPE-EM-2021.xml).</p>
+<p><strong>Funcionalidades:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Organización de la Estructura de Datos:</strong> Crea diccionarios que relacionan capítulos de la encuesta con los archivos de datos correspondientes (<code class="docutils literal notranslate"><span class="pre">data_explorer</span></code>), y almacenan metadatos sobre las variables (nombres de variables y preguntas asociadas) para cada capítulo (<code class="docutils literal notranslate"><span class="pre">dfeatures</span></code>).</p></li>
+<li><p><strong>Mapeo de Respuestas:</strong> La función <code class="docutils literal notranslate"><span class="pre">answers_mapping</span></code> permite obtener el mapeo entre los valores numéricos de las respuestas y las etiquetas de texto correspondientes para una pregunta específica en un capítulo determinado.</p></li>
+<li><p><strong>Identificación de Valores Nulos y Preguntas Relevantes:</strong> Las funciones <code class="docutils literal notranslate"><span class="pre">bad_nulls</span></code> y <code class="docutils literal notranslate"><span class="pre">good_qstn</span></code> ayudan a identificar variables con alta o baja cantidad de valores nulos y a extraer las preguntas asociadas a las variables con pocos valores nulos. Esta información puede ser útil para comprender la calidad de los datos y para seleccionar variables relevantes para el análisis.</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
@@ -700,6 +686,17 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="unificacion-y-procesamiento-de-datos">
+<h2>Unificación y Procesamiento de Datos<a class="headerlink" href="#unificacion-y-procesamiento-de-datos" title="Link to this heading">#</a></h2>
+<p>Este código unifica y procesa los datos de múltiples capítulos de la Encuesta de Micronegocios del DANE.</p>
+<p><strong>Funcionalidades Principales:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Mapeo de Respuestas:</strong> La función <code class="docutils literal notranslate"><span class="pre">map_dataframe</span></code> convierte las respuestas numéricas de los datos en etiquetas de texto descriptivas utilizando el mapeo obtenido del archivo XML de metadatos.</p></li>
+<li><p><strong>Unificación de Datos por Capítulo:</strong> La función <code class="docutils literal notranslate"><span class="pre">unified_data</span></code> combina los datos demográficos (Capítulo E) con los datos de un capítulo específico, asegurando que solo se incluyan los registros que tienen información en ambos capítulos. También realiza el mapeo de respuestas para el capítulo seleccionado.</p></li>
+<li><p><strong>Unificación de Múltiples Capítulos:</strong> La función <code class="docutils literal notranslate"><span class="pre">unified</span></code> unifica los datos de varios capítulos seleccionados (‘E’, ‘H’, ‘J’, ‘I’, ‘K’, ‘F’). Agrega categorías de edad (‘AGE_RANGE’, ‘AGE_DETAIL’) basadas en la variable ‘NPCEP4’ del capítulo E. También formatea las categorías de edad para su visualización (‘AGE_FORMAT’). Además, la función <code class="docutils literal notranslate"><span class="pre">multiple_merge</span></code> permite combinar los datos de los capítulos seleccionados mientras evita conflictos de nombres de columnas.</p></li>
+<li><p><strong>Manejo de Valores Nulos:</strong> Aunque el código tiene comentarios que indican la posibilidad de eliminar columnas con muchos valores nulos, esta funcionalidad no está activa en la versión actual.</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
@@ -786,6 +783,23 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="estimacion-poblacional">
+<h2>Estimación Poblacional<a class="headerlink" href="#estimacion-poblacional" title="Link to this heading">#</a></h2>
+<p>Estas funciones en Python estiman características de la población de Tocancipá (Colombia) a partir de una muestra de la Encuesta de Micronegocios del DANE de 2021. Asumen una población de 39,416 en 2018 y un tamaño de muestra de 2,015.</p>
+<p><strong>Funcionalidades:</strong></p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pop_estimate_raw(value)</span></code>:</strong> Calcula y muestra la proporción estimada, el valor estimado en la población, el intervalo de confianza del 95% y el error estándar relativo. Incluye una explicación y una advertencia sobre la posible subestimación debido al crecimiento poblacional.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pop_estimate(value)</span></code>:</strong> Retorna el intervalo de confianza y el error estándar relativo en un formato más compacto.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pop_estimate_range(value)</span></code>:</strong> Similar a <code class="docutils literal notranslate"><span class="pre">pop_estimate</span></code>, pero presenta el intervalo de confianza en un formato legible “Est. [límite inferior] a [límite superior] Pers.”.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pop(value)</span></code>:</strong> Simplifica aún más el formato de salida, retornando solo el intervalo de confianza estimado “(límite inferior-límite superior)”. Si el valor de entrada es 0, retorna “(0-0)”.</p></li>
+</ul>
+<p><strong>Consideraciones Importantes:</strong></p>
+<ul class="simple">
+<li><p><strong>Subestimación:</strong> Las estimaciones pueden ser inferiores a los valores reales debido al crecimiento poblacional de Tocancipá desde 2018.</p></li>
+<li><p><strong>Margen de Error:</strong> Los intervalos de confianza indican la incertidumbre asociada a las estimaciones. Un intervalo más amplio indica mayor incertidumbre.</p></li>
+<li><p><strong>Error Estándar Relativo:</strong> Mide la precisión de la estimación en relación con su magnitud. Un valor más bajo indica mayor precisión.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -906,6 +920,17 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="desagregacion-y-analisis-de-datos">
+<h2>Desagregación y Análisis de Datos<a class="headerlink" href="#desagregacion-y-analisis-de-datos" title="Link to this heading">#</a></h2>
+<p>Esta función <code class="docutils literal notranslate"><span class="pre">unstack_data</span></code> procesa datos de la Encuesta de Micronegocios del DANE para un capítulo y un conjunto de preguntas específicas.</p>
+<p><strong>Funcionalidades:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Carga y Preprocesamiento:</strong> Carga datos del capítulo, crea categorías de edad y mes si las variables ‘NPCEP4’ y ‘NPCKP20A’ están presentes, y mapea respuestas numéricas a etiquetas de texto.</p></li>
+<li><p><strong>Filtrado:</strong> Elimina filas con valores nulos en las preguntas de interés y selecciona las 15 categorías más frecuentes de la primera pregunta para un análisis más enfocado.</p></li>
+<li><p><strong>Tabla Dinámica:</strong> Crea una tabla dinámica (pivot table) que cuenta las ocurrencias de cada combinación de respuestas a las dos primeras preguntas.</p></li>
+<li><p><strong>Transformación y Enriquecimiento:</strong> Desapila la tabla dinámica para obtener un formato más adecuado para visualización, agrega columnas con el porcentaje acumulado y el intervalo de confianza (IC 95%) y error estándar relativo.</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">unstack_data</span><span class="p">(</span><span class="n">chapter</span><span class="p">,</span><span class="n">questions</span><span class="p">,</span><span class="n">question_names</span><span class="p">,</span><span class="n">idx_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">idx</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -955,6 +980,38 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="visualizacion-de-distribuciones">
+<h2>Visualización de Distribuciones<a class="headerlink" href="#visualizacion-de-distribuciones" title="Link to this heading">#</a></h2>
+<p>Esta función <code class="docutils literal notranslate"><span class="pre">plot_hist_hue</span></code> crea gráficos para analizar la distribución de una variable (<code class="docutils literal notranslate"><span class="pre">question</span></code>) en diferentes categorías de otra variable (<code class="docutils literal notranslate"><span class="pre">hue</span></code>), proporcionando estimaciones poblacionales para cada categoría.</p>
+<p><strong>Funcionalidades:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Distribución por Categoría:</strong> Genera histogramas (para variables numéricas) o diagramas de barras (para variables categóricas) para cada valor único de la variable <code class="docutils literal notranslate"><span class="pre">hue</span></code>.</p></li>
+<li><p><strong>Etiquetado:</strong></p>
+<ul class="simple">
+<li><p>Muestra el valor y el porcentaje de cada barra.</p></li>
+<li><p>Resalta la barra más alta en cada categoría.</p></li>
+<li><p>Incluye el nombre de la categoría (<code class="docutils literal notranslate"><span class="pre">hue_value</span></code>), el total de observaciones en esa categoría, el porcentaje respecto al total general y una estimación del rango poblacional.</p></li>
+</ul>
+</li>
+<li><p><strong>Formato y Diseño:</strong></p>
+<ul class="simple">
+<li><p>Ajusta automáticamente el tamaño de la figura según el número de categorías.</p></li>
+<li><p>Personaliza el tamaño y estilo de las fuentes, los ejes y la cuadrícula.</p></li>
+<li><p>Maximiza el espacio utilizado en la figura.</p></li>
+<li><p>Opcionalmente, guarda la figura en un archivo.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Parámetros:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: DataFrame de Pandas que contiene los datos.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hue</span></code>: Nombre de la variable categórica que define las categorías.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">question</span></code>: Nombre de la variable a analizar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: Etiqueta para el eje X.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hue_name</span></code>: Nombre descriptivo de la variable <code class="docutils literal notranslate"><span class="pre">hue</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">image_name</span></code> (opcional): Nombre del archivo para guardar la figura.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_hist_hue</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">hue</span><span class="p">,</span> <span class="n">question</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">hue_name</span><span class="p">,</span><span class="n">image_name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -1020,35 +1077,6 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="vivienda">
-<h1><strong>Vivienda</strong><a class="headerlink" href="#vivienda" title="Link to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># data = load_data(&#39;B&#39;, dfeatures=None)</span>
-<span class="c1"># plot_donut(data, &#39;NVCBP10&#39;,&#39;B&#39;,&#39;Dist. Tipos Vivienda Tocancipá&#39;,&#39;Tipos Vivienda&#39;,&#39;Tipos Vivienda&#39;)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># #. ¿Cuáles de los siguientes problemas presenta el entorno donde está ubicada su vivienda? Inseguridad</span>
-<span class="c1"># plot_donut(data, &#39;NVCBP15C&#39;,&#39;B&#39;,&#39;Dist. Inseguridad Tocancipá&#39;,&#39;Inseguridad&#39;,None)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># #  ¿Cuáles de los siguientes problemas presenta el entorno donde está ubicada su vivienda?: 4. Contaminación del aire</span>
-<span class="c1"># plot_donut(data, &#39;NVCBP15D&#39;,&#39;B&#39;,&#39;Dist. Contaminación Aire Tocancipá&#39;,&#39;Contaminación&#39;,None)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="educacion">
-<h1><strong>Educacion</strong><a class="headerlink" href="#educacion" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datasets</span> <span class="o">=</span> <span class="n">unified</span><span class="p">()</span>
@@ -1056,19 +1084,79 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#SEXO, AGE_RANGE: NPCEP4, ESTADO CIVIL: NPCEP7, DONDE NACIO: NPCEP11A, UBICACION HACE 5 ANOS: NPCEP13, OTRO PAIS-PAIS HACE 5 ANOS: NPCEP13D</span>
-<span class="c1">#EDUCACION NIVEL: NPCHP4,   Deporte: NPCHP30B, Teatro, Danza, Música: NPCHP30C, Biblioteca: NPCHP30E, Lectura: NPCHP30G,      ASISTENCIA ESCOLAR:NPCHP2, ALFABETIZACION: NPCHP1</span>
-<span class="c1">#EDU DISCRIMINACION APARIENCIA FISICA: NPCHP35E , CONDICION SOCIAL: NPCHP35I, EXTRANJERO: NPCHP35K  </span>
-<span class="c1">#TRABAJO SITUACION LABORAL: NPCKP1, TIPO LABOR: NPCKP17, TIPO CONTRATO: NPCKP20, MONTH_RANGE LABORADO, MEDIO DE EMPLEARSE: NPCKP22, UBICACION LABOR: NPCKPA46, MODALIDAD VIRTUAL: NPCKNP48 TRA. COMUNITARION NO REMUNERADO: NPCKP59G</span>
-<span class="c1">#PARTICIPACION SATISFECHO CON: VIDA: NPCJP9AA, INGRESOS: NPCJP9AC,  SALUD: NPCJP9AD, TRABAJO: NPCJP9AE,  AMIGOS: NPCJP9AG, COMUNIDAD: NPCJP9AK</span>
-<span class="c1">#TIC FREQ USO INTERNET:NPCIP4, USO DISPOSITIVOS: NPCIP1, INTERNET VIVIENDA: NPCIP7A, INTERNET EDU: NPCIP8F, INT. ENTRETENIMINETO: NPCIP7A, TRABAJAR: NPCIP8K, REDES SOCIALES: NPCIP8C, WHATSAPP: NPCIP16D, NO USO INT.: NPCIP5</span>
-<span class="c1">#SALUD ESTADO GENERAL:NPCFP12, CANCER: NPCFP14B, TRANS. MENTALES: NPCFP14C</span>
-</pre></div>
-</div>
-</div>
-</div>
+</section>
+<section id="lista-de-variables-sociodemograficas">
+<h2>Lista de Variables Sociodemográficas<a class="headerlink" href="#lista-de-variables-sociodemograficas" title="Link to this heading">#</a></h2>
+<p>Esta lista contiene nombres de variables relevantes para el análisis sociodemográfico y de salud, extraídas de la Encuesta de Micronegocios del DANE. Cada variable va acompañada de una breve descripción y su posible código en la encuesta (si está disponible).</p>
+<p><strong>Demografía:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SEXO</span></code>: Sexo del encuestado.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AGE_RANGE</span></code>: Rango de edad del encuestado (categorizado).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NPCEP4</span></code>: Edad del encuestado (numérica).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ESTADO</span> <span class="pre">CIVIL</span></code>: Estado civil del encuestado (<code class="docutils literal notranslate"><span class="pre">NPCEP7</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DONDE</span> <span class="pre">NACIO</span></code>: Lugar de nacimiento del encuestado (<code class="docutils literal notranslate"><span class="pre">NPCEP11A</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBICACION</span> <span class="pre">HACE</span> <span class="pre">5</span> <span class="pre">ANOS</span></code>: Ubicación del encuestado hace 5 años (<code class="docutils literal notranslate"><span class="pre">NPCEP13</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OTRO</span> <span class="pre">PAIS-PAIS</span> <span class="pre">HACE</span> <span class="pre">5</span> <span class="pre">ANOS</span></code>: País de residencia hace 5 años si era diferente a Colombia (<code class="docutils literal notranslate"><span class="pre">NPCEP13D</span></code>).</p></li>
+</ul>
+<p><strong>Educación:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">EDUCACION</span> <span class="pre">NIVEL</span></code>: Nivel educativo alcanzado (<code class="docutils literal notranslate"><span class="pre">NPCHP4</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ASISTENCIA</span> <span class="pre">ESCOLAR</span></code>: Asistencia actual a alguna institución educativa (<code class="docutils literal notranslate"><span class="pre">NPCHP2</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ALFABETIZACION</span></code>: Nivel de alfabetización (<code class="docutils literal notranslate"><span class="pre">NPCHP1</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EDU</span> <span class="pre">DISCRIMINACION</span> <span class="pre">APARIENCIA</span> <span class="pre">FISICA</span></code>: Discriminación en educación por apariencia física (<code class="docutils literal notranslate"><span class="pre">NPCHP35E</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONDICION</span> <span class="pre">SOCIAL</span></code>: Discriminación en educación por condición social (<code class="docutils literal notranslate"><span class="pre">NPCHP35I</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EXTRANJERO</span></code>: Discriminación en educación por ser extranjero (<code class="docutils literal notranslate"><span class="pre">NPCHP35K</span></code>).</p></li>
+</ul>
+<p><strong>Actividades Culturales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Deporte</span></code>: Participación en actividades deportivas (<code class="docutils literal notranslate"><span class="pre">NPCHP30B</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Teatro,</span> <span class="pre">Danza,</span> <span class="pre">Música</span></code>: Participación en actividades artísticas (<code class="docutils literal notranslate"><span class="pre">NPCHP30C</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Biblioteca</span></code>: Uso de bibliotecas (<code class="docutils literal notranslate"><span class="pre">NPCHP30E</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lectura</span></code>: Hábito de lectura (<code class="docutils literal notranslate"><span class="pre">NPCHP30G</span></code>).</p></li>
+</ul>
+<p><strong>Trabajo:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SITUACION</span> <span class="pre">LABORAL</span></code>: Situación laboral actual (<code class="docutils literal notranslate"><span class="pre">NPCKP1</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TIPO</span> <span class="pre">LABOR</span></code>: Tipo de trabajo (<code class="docutils literal notranslate"><span class="pre">NPCKP17</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TIPO</span> <span class="pre">CONTRATO</span></code>: Tipo de contrato laboral (<code class="docutils literal notranslate"><span class="pre">NPCKP20</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MONTH_RANGE</span> <span class="pre">LABORADO</span></code>: Meses trabajados en el último año (categorizado).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MEDIO</span> <span class="pre">DE</span> <span class="pre">EMPLEARSE</span></code>: Cómo consiguió el empleo (<code class="docutils literal notranslate"><span class="pre">NPCKP22</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBICACION</span> <span class="pre">LABOR</span></code>: Lugar de trabajo (<code class="docutils literal notranslate"><span class="pre">NPCKPA46</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MODALIDAD</span> <span class="pre">VIRTUAL</span></code>: Si trabaja en modalidad virtual (<code class="docutils literal notranslate"><span class="pre">NPCKNP48</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TRA.</span> <span class="pre">COMUNITARIO</span> <span class="pre">NO</span> <span class="pre">REMUNERADO</span></code>: Participación en trabajo comunitario no remunerado (<code class="docutils literal notranslate"><span class="pre">NPCKP59G</span></code>).</p></li>
+</ul>
+<p><strong>Satisfacción:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SATISFECHO</span> <span class="pre">CON:</span> <span class="pre">VIDA</span></code>: Nivel de satisfacción con la vida (<code class="docutils literal notranslate"><span class="pre">NPCJP9AA</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">INGRESOS</span></code>: Nivel de satisfacción con los ingresos (<code class="docutils literal notranslate"><span class="pre">NPCJP9AC</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SALUD</span></code>: Nivel de satisfacción con la salud (<code class="docutils literal notranslate"><span class="pre">NPCJP9AD</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TRABAJO</span></code>: Nivel de satisfacción con el trabajo (<code class="docutils literal notranslate"><span class="pre">NPCJP9AE</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AMIGOS</span></code>: Nivel de satisfacción con los amigos (<code class="docutils literal notranslate"><span class="pre">NPCJP9AG</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COMUNIDAD</span></code>: Nivel de satisfacción con la comunidad (<code class="docutils literal notranslate"><span class="pre">NPCJP9AK</span></code>).</p></li>
+</ul>
+<p><strong>TIC:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">FREQ</span> <span class="pre">USO</span> <span class="pre">INTERNET</span></code>: Frecuencia de uso de internet (<code class="docutils literal notranslate"><span class="pre">NPCIP4</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">USO</span> <span class="pre">DISPOSITIVOS</span></code>: Uso de dispositivos electrónicos (<code class="docutils literal notranslate"><span class="pre">NPCIP1</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">INTERNET</span> <span class="pre">VIVIENDA</span></code>: Acceso a internet en la vivienda (<code class="docutils literal notranslate"><span class="pre">NPCIP7A</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">INTERNET</span> <span class="pre">EDU</span></code>: Uso de internet para educación (<code class="docutils literal notranslate"><span class="pre">NPCIP8F</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">INT.</span> <span class="pre">ENTRETENIMIENTO</span></code>: Uso de internet para entretenimiento (<code class="docutils literal notranslate"><span class="pre">NPCIP7A</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TRABAJAR</span></code>: Uso de internet para trabajar (<code class="docutils literal notranslate"><span class="pre">NPCIP8K</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REDES</span> <span class="pre">SOCIALES</span></code>: Uso de redes sociales (<code class="docutils literal notranslate"><span class="pre">NPCIP8C</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">WHATSAPP</span></code>: Uso de WhatsApp (<code class="docutils literal notranslate"><span class="pre">NPCIP16D</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NO</span> <span class="pre">USO</span> <span class="pre">INT.</span></code>: Razones para no usar internet (<code class="docutils literal notranslate"><span class="pre">NPCIP5</span></code>).</p></li>
+</ul>
+<p><strong>Salud:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ESTADO</span> <span class="pre">GENERAL</span></code>: Estado general de salud (<code class="docutils literal notranslate"><span class="pre">NPCFP12</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CANCER</span></code>: Diagnóstico de cáncer (<code class="docutils literal notranslate"><span class="pre">NPCFP14B</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TRANS.</span> <span class="pre">MENTALES</span></code>: Diagnóstico de trastornos mentales (<code class="docutils literal notranslate"><span class="pre">NPCFP14C</span></code>).</p></li>
+</ul>
+<p><strong>Nota:</strong> Es posible que algunos códigos de variables no estén completos o sean aproximados. Se recomienda consultar la documentación oficial del DANE para obtener información precisa sobre las variables y sus códigos.</p>
+</section>
+<section id="analisis-de-datos-demograficos">
+<h2>Análisis de Datos Demográficos<a class="headerlink" href="#analisis-de-datos-demograficos" title="Link to this heading">#</a></h2>
+<p>Este código filtra y transforma datos de la Encuesta de Micronegocios del DANE para analizar el lugar de nacimiento de mujeres jóvenes (20-34 años) con educación superior y acceso a internet para fines educativos en Tocancipá. Genera una tabla dinámica que cruza el género con el lugar de nacimiento, y aplica una función <code class="docutils literal notranslate"><span class="pre">pop</span></code> (no definida en el código) para estimar valores poblacionales a partir de los datos de la muestra.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">custom_data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -1143,6 +1231,10 @@ document.write(`
 </table>
 </div></div></div>
 </div>
+</section>
+<section id="distribucion-de-edades-por-genero">
+<h2>Distribución de Edades por Género<a class="headerlink" href="#distribucion-de-edades-por-genero" title="Link to this heading">#</a></h2>
+<p>Este gráfico muestra cómo se distribuyen las edades de los individuos en diferentes grupos, diferenciando entre géneros (masculino y femenino). Permite visualizar si existen patrones o diferencias en la composición por edades entre ambos géneros.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_hist_hue</span><span class="p">(</span><span class="n">summary</span><span class="p">,</span> <span class="s1">&#39;SEXO&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE_DETAIL&#39;</span><span class="p">,</span><span class="s1">&#39;Grupo Edad&#39;</span><span class="p">,</span><span class="s1">&#39;Genero&#39;</span><span class="p">)</span>
@@ -1153,6 +1245,9 @@ document.write(`
 <img alt="../_images/23edfaeab9ba30caa647eeed3102ce213fc8f5d3566a6c8fd83c0ab634ab86af.png" src="../_images/23edfaeab9ba30caa647eeed3102ce213fc8f5d3566a6c8fd83c0ab634ab86af.png" />
 </div>
 </div>
+<section id="visualizacion-de-la-distribucion-de-probabilidad">
+<h3>Visualización de la Distribución de Probabilidad<a class="headerlink" href="#visualizacion-de-la-distribucion-de-probabilidad" title="Link to this heading">#</a></h3>
+<p>Esta función crea un histograma detallado que muestra cómo se distribuyen las respuestas a una pregunta específica de una encuesta. Resalta la probabilidad de cada respuesta, la media y la mediana, y el porcentaje de respuestas que caen dentro de dos desviaciones estándar de la media. Además, el histograma puede ser personalizado para mostrar etiquetas específicas para ciertas preguntas, lo que facilita la interpretación de los datos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_hist</span><span class="p">(</span><span class="n">chapter</span><span class="p">,</span> <span class="n">question</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span><span class="nb">bin</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">image_name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -1226,13 +1321,25 @@ document.write(`
     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-    <span class="k">if</span> <span class="n">image_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">image_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span><span class="n">sx</span>
         <span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;./circleup/figures&#39;</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">image_name</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">73</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;./circleup/figures&#39;</span>
+    <span class="o">^</span>
+<span class="ne">IndentationError</span>: unexpected indent
+</pre></div>
 </div>
+</div>
+</div>
+</section>
+<section id="distribucion-de-satisfaccion-con-la-vida">
+<h3>Distribución de Satisfacción con la Vida<a class="headerlink" href="#distribucion-de-satisfaccion-con-la-vida" title="Link to this heading">#</a></h3>
+<p>Este gráfico ilustra cómo se distribuyen las respuestas a la pregunta “¿Estás satisfecho con tu vida?” en una escala del 1 al 10. La mayoría de los encuestados (96.36%) se ubican dentro de dos desviaciones estándar de la media, indicando una alta concentración de respuestas en torno a los valores centrales. La mediana (9) y la media (8.47) son relativamente altas, sugiriendo un nivel general de satisfacción elevado en la muestra.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_hist</span><span class="p">(</span><span class="s1">&#39;J&#39;</span><span class="p">,</span><span class="s1">&#39;NPCJP9AA&#39;</span><span class="p">,</span><span class="s1">&#39;¿Estás satisfecho con tu vida?&#39;</span><span class="p">)</span>
@@ -1243,6 +1350,9 @@ document.write(`
 <img alt="../_images/d5923ff133050f993d043f754635d0cb79494c55f2d3de7a2aec966b6b39c65d.png" src="../_images/d5923ff133050f993d043f754635d0cb79494c55f2d3de7a2aec966b6b39c65d.png" />
 </div>
 </div>
+<p>Se presenta una visión general de las funciones utilizadas para analizar y visualizar datos de encuestas, incluyendo la distribución de edades por género y la satisfacción con la vida. Aunque no abarca todos los análisis realizados, demuestra el uso de histogramas, gráficos de densidad y estadísticas descriptivas para comprender patrones y tendencias en los datos. Estas herramientas son fundamentales para extraer información significativa y tomar decisiones basadas en evidencia a partir de los resultados de la encuesta.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1300,10 +1410,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Vivienda</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#educacion"><strong>Educacion</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-visualizacion-de-datos-con-python">Análisis y Visualización de Datos con Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorizacion-de-datos">Categorización de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-visual-de-categorias">Formato Visual de Categorías</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carga-y-filtrado-de-microdatos-del-dane">Carga y Filtrado de Microdatos del DANE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extraccion-de-metadatos">Extracción de Metadatos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unificacion-y-procesamiento-de-datos">Unificación y Procesamiento de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-poblacional">Estimación Poblacional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desagregacion-y-analisis-de-datos">Desagregación y Análisis de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-distribuciones">Visualización de Distribuciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-variables-sociodemograficas">Lista de Variables Sociodemográficas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-demograficos">Análisis de Datos Demográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-edades-por-genero">Distribución de Edades por Género</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-la-distribucion-de-probabilidad">Visualización de la Distribución de Probabilidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-satisfaccion-con-la-vida">Distribución de Satisfacción con la Vida</a></li>
 </ul>
-
+</li>
+</ul>
   </nav></div>
 
 </div></div>

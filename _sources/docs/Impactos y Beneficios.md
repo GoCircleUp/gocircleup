@@ -4,7 +4,7 @@
     </div>
 </div>
 
-## 9. Capítulo: Impactos y Beneficios
+## 9. Impactos y Beneficios
 
 ### Introducción
 

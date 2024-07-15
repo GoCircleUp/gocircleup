@@ -1,7 +1,3 @@
-
-
-
-
 ## 10. Referencias
 
 ```{admonition} Referencias
