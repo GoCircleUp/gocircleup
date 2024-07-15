@@ -284,7 +284,7 @@ CircleUp promueve la innovación social mediante:
 - El apoyo técnico y metodológico para la implementación de proyectos de innovación social.
 ```
 
-```{tab-item} Emprendimiento Social
+```{tab-item} Emprendimiento
 El impacto de CircleUp en el emprendimiento social se refleja en:
 
 - El aumento de iniciativas de triple impacto (económico, social y ambiental) en el municipio.
@@ -292,7 +292,7 @@ El impacto de CircleUp en el emprendimiento social se refleja en:
 - El fortalecimiento del tejido social a través de proyectos colaborativos de impacto comunitario.
 ```
 
-```{tab-item} Metodologías Innovadoras
+```{tab-item} Metodologías
 CircleUp implementa metodologías innovadoras como:
 
 - Design Thinking aplicado a desafíos sociales locales.
