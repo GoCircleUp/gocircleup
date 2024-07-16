@@ -136,37 +136,27 @@ Este cálculo muestra un ROI estimado de 3088.00%, indicando un retorno signific
 Evaluación para voluntarios y participantes, reconociendo beneficios del voluntariado y aprendizaje continuo.
 ```
 
-```{tab-set}
-:class: custom-tabs
+````{tab-set}
+---
+id: salud-mental-tab-set
+---
 
 ```{tab-item} Voluntarios
-```{card}
-:class-card: bg-light
-
 - Reducción en síntomas de estrés y ansiedad: {bdg-success}`15%`
 - Aumento en sensación de propósito: {bdg-success}`20%`
 ```
-```
 
 ```{tab-item} Participantes
-```{card}
-:class-card: bg-light
-
 - Disminución en sentimientos de aislamiento: {bdg-success}`10%`
 - Incremento en autoestima: {bdg-success}`15%`
 ```
-```
 
 ```{tab-item} Impacto Económico
-```{card}
-:class-card: bg-light
-
 - Costo promedio de tratamiento: {bdg-info}`500,000 COP/año/persona`
 - Población impactada: {bdg-info}`75 personas (5%)`
 - Ahorro potencial: {bdg-success}`37,500,000 COP`
 ```
-```
-```
+````
 
 ## 3. Fomento de Innovación y Emprendimiento Local
 
