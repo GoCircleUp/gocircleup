@@ -152,10 +152,9 @@ El siguiente árbol de objetivos presenta una visión estructurada para implemen
 ```{dropdown} Estrategias de Implementación para CircleUp
 Para lograr estos objetivos, CircleUp podría considerar las siguientes estrategias:
 1. Desarrollar una plataforma digital para la recopilación y análisis de datos sobre necesidades locales.
-2. Implementar un programa de "Embajadores de Innovación" para fomentar la participación ciudadana.
-3. Crear un "Laboratorio de Innovación Social" físico y virtual en Tocancipá.
-4. Organizar talleres y cursos sobre metodologías de innovación adaptadas al contexto local.
-5. Establecer alianzas con instituciones educativas y empresas para proporcionar recursos y conocimientos.
+2. Implementar un programa de "Embajadores de Innovación" para fomentar la participación ciudadana..
+3. Organizar talleres y cursos sobre metodologías de innovación adaptadas al contexto local.
+4. Establecer alianzas con instituciones educativas y empresas para proporcionar recursos y conocimientos.
 
 Estas estrategias buscan crear un ecosistema de innovación social que aborde de manera efectiva los desafíos comunitarios en Tocancipá.
 ```

@@ -73,16 +73,29 @@ Estimaciones basadas en datos locales de Tocancipá y proyecciones conservadoras
   - Intermunicipal: 450 × 12,000 COP × 8 sesiones = 43,200,000 COP
 - Total: 15,120,000 + 43,200,000 = 58,320,000 COP
 - Estimación conservadora: 43,200,000 COP
-```
 
-```python
-inversion_inicial = 15000000
-beneficio_estimado = 478200000
-roi = (beneficio_estimado - inversion_inicial) / inversion_inicial * 100
-print(f"ROI estimado: {roi:.2f}%")
-```
+$$
+\text{Inversión Inicial} = 15,000,000
+$$
+
+$$
+\text{Beneficio Estimado} = 478,200,000
+$$
+
+$$
+\text{ROI} = \frac{\text{Beneficio Estimado} - \text{Inversión Inicial}}{\text{Inversión Inicial}} \times 100\%
+$$
+
+$$
+\text{ROI} = \frac{478,200,000 - 15,000,000}{15,000,000} \times 100\%
+$$
+
+$$
+\text{ROI} = 3,088.00\%
+$$
 
 Este cálculo muestra un ROI estimado de 3088.00%, indicando un retorno significativo sobre la inversión inicial.
+```
 
 #### 2.2 Valoración Social
 
@@ -114,40 +127,82 @@ Este cálculo muestra un ROI estimado de 3088.00%, indicando un retorno signific
    - Estimación: 2 personas beneficiadas indirectamente por cada voluntario.
    - Potencial creación de 3-5 iniciativas educativas independientes.
 
-2. **Mejora en Salud Mental**: 
+# Evaluación de Impacto Social
+
+## 2. Mejora en Salud Mental
 
 ```{admonition} Contexto de Salud Mental
 :class: note
 Evaluación para voluntarios y participantes, reconociendo beneficios del voluntariado y aprendizaje continuo.
 ```
 
-a. Voluntarios:
-   - Proyección de 15% de reducción en síntomas de estrés y ansiedad.
-   - Estimación de 20% de aumento en sensación de propósito.
+```{tab-set}
+:class: custom-tabs
 
-b. Participantes:
-   - Proyección de 10% de disminución en sentimientos de aislamiento.
-   - Estimación de 15% de incremento en autoestima.
+```{tab-item} Voluntarios
+```{card}
+:class-card: bg-light
 
-c. Impacto Económico en Salud:
-   - Costo promedio de tratamiento: 500,000 COP/año/persona
-   - Mejora significativa estimada en 5% de población impactada (75 personas)
-   - Ahorro potencial: 75 × 500,000 = 37,500,000 COP
+- Reducción en síntomas de estrés y ansiedad: {bdg-success}`15%`
+- Aumento en sensación de propósito: {bdg-success}`20%`
+```
+```
 
-3. **Fomento de Innovación y Emprendimiento Local**: 
+```{tab-item} Participantes
+```{card}
+:class-card: bg-light
 
-a. Nuevas Iniciativas:
-   - Proyección de 2-3 nuevos emprendimientos educativos/tecnológicos.
-   - Estimación de 1-2 proyectos de innovación social propuestos.
+- Disminución en sentimientos de aislamiento: {bdg-success}`10%`
+- Incremento en autoestima: {bdg-success}`15%`
+```
+```
 
-b. Atracción de Inversión:
-   - Proyección de 10% de aumento en interés de empresas locales en programas educativos.
-   - Estimación conservadora de 50,000,000 COP en nuevas inversiones educativas en 12 meses (5 empresas × 10,000,000 COP promedio).
+```{tab-item} Impacto Económico
+```{card}
+:class-card: bg-light
+
+- Costo promedio de tratamiento: {bdg-info}`500,000 COP/año/persona`
+- Población impactada: {bdg-info}`75 personas (5%)`
+- Ahorro potencial: {bdg-success}`37,500,000 COP`
+```
+```
+```
+
+## 3. Fomento de Innovación y Emprendimiento Local
+
+```{dropdown} Nuevas Iniciativas
+   - Nuevos emprendimientos educativos/tecnológicos: {bdg-primary}`2-3`
+   - Proyectos de innovación social propuestos: {bdg-primary}`1-2`
+```
+
+```{dropdown} Atracción de Inversión
+   - Aumento en interés de empresas locales: {bdg-primary}`10%`
+   - Nuevas inversiones educativas (12 meses): {bdg-success}`50,000,000 COP`
+     - Desglose: 5 empresas × 10,000,000 COP promedio
+```
 
 ```{admonition} Nota de Proyección
 :class: warning
 Proyecciones preliminares que requieren validación continua durante la implementación.
 ```
+
+:::::{grid} 2
+::::{grid-item-card} Próximos Pasos
+:class-card: bg-light
+
+- Implementar sistema de seguimiento
+- Realizar encuestas trimestrales
+- Analizar datos y ajustar proyecciones
+::::
+
+::::{grid-item-card} Recursos Adicionales
+:class-card: bg-light
+
+- Guía de mejores prácticas
+- Herramientas de evaluación
+- Casos de estudio relacionados
+::::
+:::::
 
 ## Conclusión
 

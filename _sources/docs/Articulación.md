@@ -117,47 +117,7 @@ El Programa de Mentoría Inversa de CircleUp empodera a jóvenes de entre 14 y 2
 Es fundamental asegurar que los programas de mentoría inversa cumplan con las normativas laborales y de protección de menores. Se recomienda establecer protocolos claros de supervisión y evaluación, especialmente para mentores menores de edad.
 ```
 
-#### 3.1.3 Subprograma 2.1: Cultura: Fortalecimiento, Fomento y Desarrollo
-
-CircleUp se alinea con este subprograma al democratizar el acceso a contenidos culturales y fomentar la participación en actividades que fortalecen la identidad cultural local.
-
-````{tab-set}
-```{tab-item} Alineación Cultural
-CircleUp se alinea con este subprograma al:
-
-- Integrar contenidos culturales locales en sus cursos y talleres.
-- Fomentar la participación de artistas y gestores culturales locales como voluntarios.
-- Utilizar espacios públicos para actividades culturales y educativas.
-```
-
-```{tab-item} Impacto Comunitario
-El impacto de CircleUp en el ámbito cultural incluye:
-
-- Fortalecimiento de la identidad cultural local a través de programas educativos.
-- Creación de espacios de diálogo intercultural e intergeneracional.
-- Promoción de la creatividad y la expresión artística local.
-```
-
-```{tab-item} Desafíos Culturales
-Desafíos en la implementación cultural incluyen:
-
-- Asegurar la representación diversa de expresiones culturales locales.
-- Balancear la preservación de tradiciones con la innovación cultural.
-- Medir y evaluar el impacto cultural de las actividades de CircleUp.
-```
-````
-
-```{admonition} Plataforma de Difusión Cultural
-:class: note
-La plataforma de CircleUp puede servir como un catalizador para la difusión y preservación de la cultura local, integrando contenidos culturales en sus programas educativos y fomentando la participación de artistas y gestores culturales locales como voluntarios y mentores.
-```
-
-```{admonition} Oportunidad de Innovación
-:class: tip
-CircleUp podría desarrollar un programa específico de "Embajadores Culturales" dentro de su plataforma, donde los voluntarios y mentores se especialicen en compartir y preservar el patrimonio cultural de Tocancipá a través de cursos, talleres y proyectos comunitarios.
-```
-
-#### 3.1.5 Subprograma 14.1: Fortalecimiento de la convivencia
+#### 3.1.4 Subprograma 14.1: Fortalecimiento de la convivencia
 
 CircleUp fomenta la participación ciudadana y el diálogo comunitario, alineándose con los objetivos de fortalecer la convivencia y la cultura ciudadana.
 
@@ -197,7 +157,7 @@ El Laboratorio de Innovación Social de CircleUp, en particular, puede jugar un 
 Se recomienda establecer un "Consejo de Convivencia Comunitaria" dentro de CircleUp, integrado por representantes de diferentes sectores de la comunidad, que pueda asesorar y guiar las iniciativas de la plataforma relacionadas con la convivencia y la cultura ciudadana.
 ```
 
-#### 3.1.6 Subprograma 14.2: Fortalecimiento comunal y ciudadano
+#### 3.1.5 Subprograma 14.2: Fortalecimiento comunal y ciudadano
 
 CircleUp contribuye directamente a este subprograma al proporcionar espacios virtuales y presenciales para la participación ciudadana y el fortalecimiento de las organizaciones comunitarias.
 
@@ -226,90 +186,6 @@ Aspectos innovadores de CircleUp en participación ciudadana incluyen:
 - La creación de un "mercado de ideas" donde los ciudadanos puedan proponer y votar por proyectos
 ```
 ````
-
-### 3.2 Eje Estratégico 2: Progreso con Desarrollo Económico y Productividad
-
-CircleUp se posiciona como un catalizador para el desarrollo económico local, alineándose con los objetivos de fomento al empleo y al emprendimiento.
-
-#### 3.2.1 Subprograma 6.1: Tocancipá Semillero de Emprendedores
-
-CircleUp se alinea con este subprograma al proporcionar capacitación y asistencia técnica a emprendedores locales, fomentando la formalización empresarial y el desarrollo de nuevos negocios.
-
-````{tab-set}
-```{tab-item} Emprendimiento
-CircleUp apoya este subprograma mediante:
-
-- Cursos y talleres específicos sobre emprendimiento y gestión empresarial.
-- Mentoría personalizada para emprendedores a través de su programa de voluntariado.
-- Creación de una red de apoyo y colaboración entre emprendedores locales.
-```
-
-```{tab-item} Ecosistema Emprendedor
-El impacto de CircleUp en el emprendimiento local incluye:
-
-- Reducción de los índices de informalidad empresarial.
-- Aumento en la tasa de supervivencia de nuevos emprendimientos.
-- Fortalecimiento de las cadenas de valor locales a través de la conexión entre emprendedores y empresas establecidas.
-```
-
-```{tab-item} Apoyo
-Aspectos innovadores de CircleUp para fomentar el emprendimiento:
-
-- Implementación de un "Simulador de Startups" en la plataforma para que los emprendedores practiquen en un entorno virtual.
-- Organización de "Retos de Innovación" donde empresas locales presentan desafíos para que los emprendedores propongan soluciones.
-- Creación de un "Marketplace Virtual" donde los emprendedores puedan promocionar sus productos y servicios.
-```
-````
-
-```{admonition} Laboratorio de Innovación Social
-:class: note
-El Laboratorio de Innovación Social de CircleUp juega un papel crucial en este subprograma, actuando como un espacio de experimentación y desarrollo para nuevos modelos de negocio y soluciones innovadoras a desafíos locales.
-```
-
-```{admonition} Propuesta de Valor Añadido
-:class: tip
-Se recomienda establecer un "Fondo de Seed Capital CircleUp", en colaboración con entidades financieras locales y el gobierno municipal, para proporcionar financiamiento inicial a los proyectos de emprendimiento más prometedores desarrollados en la plataforma.
-```
-
-#### 3.2.2 Subprograma 6.3: Innovación para el Emprendimiento Social y Comunitario
-
-CircleUp se alinea directamente con este subprograma al promover la innovación social y el emprendimiento comunitario a través de sus programas de mentoría y laboratorio de innovación.
-
-````{tab-set}
-```{tab-item} Innovación Social
-CircleUp promueve la innovación social mediante:
-
-- La identificación y priorización de desafíos comunitarios a través de su plataforma.
-- La facilitación de procesos de co-creación y diseño participativo de soluciones.
-- El apoyo técnico y metodológico para la implementación de proyectos de innovación social.
-```
-
-```{tab-item} Emprendimiento
-El impacto de CircleUp en el emprendimiento social se refleja en:
-
-- El aumento de iniciativas de triple impacto (económico, social y ambiental) en el municipio.
-- La creación de nuevos modelos de negocio que abordan necesidades sociales no atendidas.
-- El fortalecimiento del tejido social a través de proyectos colaborativos de impacto comunitario.
-```
-
-```{tab-item} Metodologías
-CircleUp implementa metodologías innovadoras como:
-
-- Design Thinking aplicado a desafíos sociales locales.
-- Lean Startup para el desarrollo ágil de emprendimientos sociales.
-- Teoría del Cambio para la planificación y evaluación de impacto de proyectos comunitarios.
-```
-````
-
-```{admonition} Programa de Mentoría Inversa
-:class: note
-El programa de Mentoría Inversa de CircleUp contribuye significativamente a este subprograma al empoderar a jóvenes para que lideren iniciativas de innovación social, aportando perspectivas frescas y habilidades digitales a la resolución de problemas comunitarios.
-```
-
-```{admonition} Oportunidad de Escalamiento
-:class: important
-Se sugiere establecer alianzas con aceleradoras de impacto y fondos de inversión social para proporcionar vías de escalamiento a los emprendimientos sociales más exitosos surgidos de CircleUp, potenciando su impacto más allá de Tocancipá.
-```
 
 ### 3.3 Eje Estratégico 3: Tocancipá Progresa con Territorio Innovador Ordenado, Ambiente Protegido, e Infraestructura para la Vida
 
@@ -353,11 +229,11 @@ El Laboratorio de Innovación Social de CircleUp juega un papel fundamental en e
 Es crucial asegurar que las iniciativas de Smart City promovidas por CircleUp sean inclusivas y no exacerben las desigualdades existentes. Se recomienda implementar estrategias específicas para garantizar el acceso y la participación de grupos vulnerables en estas iniciativas tecnológicas.
 ```
 
-## 4. Conclusiones y Recomendaciones
+## 4. Conclusiones
 
 CircleUp demuestra una sólida articulación con el Plan de Ordenanza de Tocancipá, alineándose de manera significativa con múltiples ejes estratégicos y subprogramas. La iniciativa tiene el potencial de catalizar el desarrollo local en áreas clave como educación, empleo, emprendimiento, innovación social y transformación digital.
 
-### Recomendaciones Finales
+### Recomendaciones
 
 1. Establecer un comité de coordinación interinstitucional para asegurar la alineación continua de CircleUp con los objetivos del Plan de Ordenanza.
 

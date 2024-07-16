@@ -20,7 +20,7 @@ El siguiente cronograma detalla las actividades principales para la implementaci
 |----|-------|---------------------|--------------|----------|
 | 1 | Planificación inicial | 3 | - | Owner |
 | 2 | Configuración de infraestructura en la nube | 2 | 1 | Owner, Servicios en la nube |
-| 3 | Desarrollo de sitio web con herramientas no-code | 4 | 2 | Owner, Plataforma no-code |
+| 3 | Desarrollo de sitio web | 4 | 2 | Owner, Plataforma no-code |
 | 4 | Integración de APIs | 2 | 3 | Owner, APIs variadas |
 | 5 | Configuración de automatizaciones | 2 | 4 | Owner, Herramientas de automatización |
 | 6 | Reclutamiento de voluntarios | 4 | 3 | Asistente de Operaciones |
@@ -136,31 +136,31 @@ La Estructura de Desglose del Trabajo (EDT), también conocida como Work Breakdo
 
 ### 5.1 Entregables Principales
 
-1. Plataforma Tecnológica
-   1.1 Infraestructura en la nube
-   1.2 Sitio web funcional
-   1.3 Sistema de gestión de voluntarios
-   1.4 Plataforma de aprendizaje en línea
+1. Plataforma Tecnológica  
+   1.1 Infraestructura en la nube  
+   1.2 Sitio web funcional  
+   1.3 Sistema de gestión de voluntarios  
+   1.4 Plataforma de aprendizaje en línea  
 
-2. Programa de Voluntariado
-   2.1 Manual de capacitación de voluntarios
-   2.2 Red de voluntarios establecida
-   2.3 Sistema de reconocimiento de voluntarios
+2. Programa de Voluntariado  
+   2.1 Manual de capacitación de voluntarios  
+   2.2 Red de voluntarios establecida  
+   2.3 Sistema de reconocimiento de voluntarios  
 
-3. Currículum Educativo
-   3.1 Módulos de aprendizaje desarrollados
-   3.2 Recursos educativos digitales
-   3.3 Guías para facilitadores
+3. Currículum Educativo  
+   3.1 Módulos de aprendizaje desarrollados  
+   3.2 Recursos educativos digitales  
+   3.3 Guías para facilitadores  
 
-4. Estrategia de Marketing y Comunicación
-   4.1 Plan de marketing digital
-   4.2 Materiales promocionales
-   4.3 Campaña de reclutamiento de participantes
+4. Estrategia de Marketing y Comunicación  
+   4.1 Plan de marketing digital  
+   4.2 Materiales promocionales  
+   4.3 Campaña de reclutamiento de participantes  
 
-5. Evaluación y Mejora Continua
-   5.1 Sistema de recopilación de feedback
-   5.2 Informes de progreso mensuales
-   5.3 Plan de mejora basado en evaluaciones
+5. Evaluación y Mejora Continua  
+   5.1 Sistema de recopilación de feedback  
+   5.2 Informes de progreso mensuales  
+   5.3 Plan de mejora basado en evaluaciones  
 
 ### 6. Plan de Gestión de Recursos
 
@@ -180,7 +180,15 @@ El Plan de Gestión de Recursos describe cómo se adquirirán, asignarán, monit
 
 #### 6.2 Matriz RACI
 
-R: Responsable, A: Aprobador, C: Consultado, I: Informado
+```{admonition} Concepto Clave
+:class: tip
+La Matriz RACI es una herramienta utiliszada para definir responsabilidades y asignar roles en un proyecto. RACI es un acrónimo que significa:
+
+- R: Responsable (quien realiza la tarea)
+- A: Aprobador (quien aprueba el trabajo y toma la responsabilidad final)
+- C: Consultado (quien proporciona información para la tarea)
+- I: Informado (quien es mantenido al tanto del progreso)
+```
 
 | Actividad | Owner | Asistente de Operaciones | Voluntarios |
 |-----------|-------|--------------------------|-------------|
