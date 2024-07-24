@@ -22,7 +22,7 @@ El siguiente árbol de problemas analiza la situación actual del voluntariado a
 | **Causas Indirectas** | 1.1. Falta de mecanismos para identificar y movilizar el talento local.<br>1.2. Escasez de incentivos para la participación en actividades de voluntariado académico.<br>2.1. Limitada identificación de las necesidades de aprendizaje de la comunidad.<br>2.2. Ausencia de un currículo adaptado a las características demográficas locales. |
 
 
-![ap-va](https://yuml.me/gocircleup/ao-va.svg)
+![ap-va](https://yuml.me/gocircleup/ap-va.svg)
 
 
 ```{dropdown} Implicaciones para CircleUp
